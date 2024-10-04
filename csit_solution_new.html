@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description"
+        content="A lightweight web application using only JavaScript, HTML, and CSS. This application will help and serve as a resource for accessing solutions to the past questions for all semester of the BSc.CSIT program’s Students.">
+    <meta name="keywords"
+        content="CSIT, solution, past questions solutions, BSc.CSIT, web application, csitsolution, csitsolution github">
+    <meta name="author" content="Dili Hang Rai">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content=" CSIT Solution App">
+    <meta property="og:description"
+        content="A lightweight web application using only JavaScript, HTML, and CSS. This application will help and serve as a resource for accessing solutions to the past questions for all semester of the BSc.CSIT program’s Students.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/Dilli822/dilli822.github.io/main/resources/img/appMetaCover/Lite CSIT Solution App Front Page.png">
+    <meta property="og:image:alt" content=" CSIT Solution App Front Page">
+    <meta property="og:url" content="https://dilli822.github.io/csit_solutionLite.html">
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="1115582239317761">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content=" CSIT Solution App">
+    <meta name="twitter:description"
+        content="A lightweight web application using only JavaScript, HTML, and CSS. This application will help and serve as a resource for accessing solutions to the past questions for all semester of the BSc.CSIT program’s Students.">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/Dilli822/dilli822.github.io/main/resources/img/appMetaCover/Lite CSIT Solution App Front Page.png">
+    <!-- Additional Meta Tags -->
+    <meta name="application-name" content=" CSIT Solution App">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:locale" content="en_US">
+
+    <title>CSIT Solution New</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            *, .lead {
+                letter-spacing: 1px;
+            }
+    
+            li a ,a, .carousel-control-prev-icon, .carousel-control-next{
+                color: rgb(0, 109, 0) !important;
+            }
+    
+            .carousel-image {
+                height: 60vh;
+                /* Adjust the height as needed */
+                object-fit: contain;
+            }
+
+            .goToUp{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            font-size: 45px;
+            display: flex;
+            width: 100%;
+            justify-content: end;
+        }
+        </style>
+</head>
+
+<body>
+    <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
+        <div class="container-sm d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="https://csit-solution.github.io/resources/img/logos/main/logocsit.jpg" alt="CSIT Logo"
+                    class="img-fluid rounded-circle" style="width: 70px;">
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select Semester
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#first">First</a></li>
+                                <li><a class="dropdown-item" href="#second">Second</a></li>
+                                <li><a class="dropdown-item" href="#third">Third</a></li>
+                                <li><a class="dropdown-item" href="#fourth">Fourth</a></li>
+                                <li><a class="dropdown-item" href="#fifth">Fifth</a></li>
+                                <li><a class="dropdown-item" href="#sixth">Sixth</a></li>
+                                <li><a class="dropdown-item" href="#seventh">Seventh</a></li>
+                                <li><a class="dropdown-item" href="#eighth">Eighth</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Old/New Syllabus
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./index.html">Old 2074 Syllabus</a></li>
+                                <li><a class="dropdown-item" href="./csit_solution_new.html">New 2079 Syllabus </a></li>
+                                <li>
+                                    <a class="dropdown-item" href="./indexOLD.html">Old CSIT Solution App Version</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <span class="container goToUp ">
+        <a href="#topp"> <i class="fa-regular fa-circle-up"></i> </a>
+    </span>
+
+
+    <section class="hero bg-light" id="topp">
+        <div class="container-sm d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="col-md-8 col-sm-12 order-md-1 order-2 order-sm-2">
+                <h3 class="display-6">One Solution For All</h3>
+                <h2 class="display-3">CSIT SOLUTION</h2>
+                <p class="lead" id="todayDate">N/A</p>
+            </div>
+            <div class="col-md-4 order-md-2 order-sm-1">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://ih1.redbubble.net/image.3965967781.5752/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+                                class="d-block w-100 carousel-image" alt="CSIT Banner 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://miro.medium.com/v2/resize:fit:600/0*f8XR9lxWqAqPF8CM.gif"
+                                class="d-block w-100 carousel-image" alt="CSIT Banner 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.tuiost.edu.np/images/tech.jpg" class="d-block w-100 carousel-image"
+                                alt="CSIT Banner 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <p class="text-center lead m-5">
+        CSIT Solution Is A Valuable Educational Resource Created With Simple Frontend
+        Technologies.<br>
+        Aims to Provide Students With Free Solutions to Specific-Semester Question.
+        <span id="first"></span>
+        <br>
+        Powered By: <a href="https://www.linkedin.com/company/nor-ai" class="text-decoration-none" target="_blank">Nōrai</a>  | <a href="https://www.linkedin.com/in/dilli708/" class="text-decoration-none" target="_blank">Dilli Hang Rai</a> 
+
+    </p>
+
+    <br>
+
+    <section class="semester py-5 bg-light" >
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 mb-4 col-sm-12 order-md-1 order-2 order-sm-2" >
+                    <h3 class="display-6">FIRST SEMESTER</h3>
+                    <br>
+                    <ul class="list-style">
+                        <li> <a class="text-black text-decoration-none"
+                                href="./solutions/semester/first/csc-109IT.html"> CSC 114 Introduction to IT </a></li>
+                        <br>
+                        <li> <a class="text-black text-decoration-none"
+                                href="./solutions/semester/first/csc-110DL.html"> CSC 115 Digital Logic </a> </li><br>
+                        <li> <a class="text-black text-decoration-none"
+                                href="./solutions/semester/first/csit-first-sem.html"> CSC 116 C-Programming</a></li>
+                        <br>
+
+                        <li> <a class="text-black text-decoration-none"
+                                href="./solutions/semester/first/csit-first-sem.html"> MTH 117 Mathematics-I</a></li>
+                        <br>
+                        <li id="second"> <a class="text-black text-decoration-none"
+                                href="./solutions/semester/first/csit-first-sem.html"> CSC 118 Physics</a></li><br>
+                    </ul>
+
+                </div>
+                <div class="col-md-6 col-sm-12 order-md-1 order-sm-1">
+                    <div class="col-md-11 col-sm-12 mb-2">
+                        <img src="https://plus.unsplash.com/premium_photo-1685136479835-1dfa5dbc5d44"
+                            alt="First Semester Image" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div class="row d-flex align-items-center mt-5">
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="col-11">
+                        <img src="https://plus.unsplash.com/premium_photo-1681488165136-eeecfb177145"
+                            alt="First Semester Image" class="img-fluid rounded mb-5">
+                    </div>
+
+                </div>
+
+                <div class="col-md-5 mb-4 col-sm-12">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h3 class="display-6" >SECOND SEMESTER</h3>
+                            <br>
+                            <ul class="list-style">
+                                <li> <a class="text-black text-decoration-none"
+                                        href="./solutions/semester/first/csc-109IT.html"> CSC 165 Discrete Structure
+                                    </a></li> <br>
+                                <li> <a class="text-black text-decoration-none"
+                                        href="./solutions/semester/first/csc-110DL.html"> CSC 166 Object Oriented
+                                        Programming </a> </li><br>
+                                <li> <a class="text-black text-decoration-none"
+                                        href="./solutions/semester/first/csit-first-sem.html"> CSC 167
+                                        MicroProcessor</a></li><br>
+                                <li> <a class="text-black text-decoration-none"
+                                        href="./solutions/semester/first/csit-first-sem.html"> MTH 1168
+                                        Mathematics-II</a></li><br>
+                                <li id="third"> <a class="text-black text-decoration-none"
+                                        href="./solutions/semester/first/csit-first-sem.html"> STA 169 Statistics-I</a>
+                                </li><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <br><br> <br><br>
+
+
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7 mb-4 col-sm-12  order-md-1 order-2 order-sm-2" id="first">
+                        <h3 class="display-6">THIRD SEMESTER</h3>
+                        <br>
+                        <ul class="list-style">
+                            <li> <a class="text-black text-decoration-none"
+                                    href="./solutions/semester/first/csc-109IT.html"> CSC 211 Data Structure and Algorithms </a>
+                            </li> <br>
+                            <li> <a class="text-black text-decoration-none"
+                                    href="./solutions/semester/first/csc-110DL.html"> CSC 212 Numerical Method </a> </li>
+                            <br>
+                            <li> <a class="text-black text-decoration-none"
+                                    href="./solutions/semester/first/csit-first-sem.html"> CSC 213 Computer Architecture </a>
+                            </li><br>
+
+                            <li> <a class="text-black text-decoration-none"
+                                    href="./solutions/semester/first/csit-first-sem.html"> CSC 214 Computer Graphics</a>
+                            </li><br>
+                            <li id="fourth"> <a class="text-black text-decoration-none"
+                                    href="./solutions/semester/first/csit-first-sem.html"> STA 215 Statistics-II</a></li><br>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-5 col-sm-12  order-md-1 order-sm-1">
+                        <div class="col-md-12 col-sm-12">
+                            <img src="https://static.vecteezy.com/system/resources/previews/006/202/357/non_2x/flat-isometric-concept-illustration-connect-information-from-books-to-computer-free-vector.jpg"
+                                alt="First Semester Image" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+
+
+                <hr>
+                <br><br> <br><br>
+
+                <div class="row d-flex align-items-center mt-3">
+
+                    <div class="col-md-6 col-sm-12 mb-3">
+                        <div class="col-11">
+                            <img src="https://cdn.pixabay.com/photo/2021/01/21/15/54/books-5937716_1280.jpg"
+                                alt="First Semester Image" class="img-fluid rounded mb-5">
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 mb-4 col-sm-12">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h3 class="display-6" id="second">FOURTH SEMESTER</h3>
+                                <br>
+                                <ul class="list-style">
+                                    <li> <a class="text-black text-decoration-none"
+                                            href="./solutions/semester/first/csc-109IT.html"> CSC 262 Theory of Computation
+                                        </a></li> <br>
+                                    <li> <a class="text-black text-decoration-none"
+                                            href="./solutions/semester/first/csc-110DL.html"> CSC 263 Computer Networks
+                                            </a> </li><br>
+                                    <li> <a class="text-black text-decoration-none"
+                                            href="./solutions/semester/first/csit-first-sem.html"> CSC 264 Operating Systems 
+                                 </a></li><br>
+                                    <li> <a class="text-black text-decoration-none"
+                                            href="./solutions/semester/first/csit-first-sem.html"> CSC 265 Database Management System
+                         </a></li><br>
+                                    <li id="fifth"> <a class="text-black text-decoration-none"
+                                            href="./solutions/semester/first/csit-first-sem.html"> CSC 266 Artificial Intelligence
+                                          </a></li><br>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr>
+                <br><br> <br><br>
+
+
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6 mb-4 col-sm-12  order-md-1 order-2 order-sm-2" id="first">
+                        <h3 class="display-6">FIFTH SEMESTER</h3>
+                        <br>
+                        <ul class="list-style">
+                            <li> <a class="text-black text-decoration-none"
+                                    href="./solutions/semester/first/csc-109IT.html"> CSC 325 Design and Analysis of Algorithms </a>
+                            </li> <br>
+                            <li> <a class="text-black text-decoration-none"
+                                    href="./solutions/semester/first/csc-110DL.html"> CSC 326 System Analysis and Design </a> </li>
+                            <br>
+                            <li> <a class="text-black text-decoration-none"
+                                    href="#"> CSC 327 Cryptography</a>
+                            </li><br>
+
+                            <li> <a class="text-black text-decoration-none"
+                                    href="#"> CSC 328 Simulation and Modeling</a>
+                            </li><br>
+                            <li id="sixth"> <a class="text-black text-decoration-none"
+                                    href="#"> CSC 329 Web Technology</a></li><br>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Electives I
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Multimedia Computing (CSC330)</a></li>
+                                            <li><a class="dropdown-item" href="#">Wireless Networking (CSC331)</a></li>
+                                            <li><a class="dropdown-item" href="#">Image Processing (CSC332)</a></li>
+                                            <li><a class="dropdown-item" href="#">Knowledge Management (CSC333)</a></li>
+                                            <li><a class="dropdown-item" href="#">Society and Ethics in Information Technology (CSC334)</a></li>
+                                            <li id="sixth"><a class="dropdown-item" href="#">Microprocessor Based Design (CSC335)</a></li>
+                                        </ul>
+                                    </li>
+                                    <br>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-6 col-sm-12  order-md-1  order-sm-1 ">
+                        <div class="col-md-12 col-sm-12 mb-5">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/paper-notes_4BQYVBZ5VK.jpg"
+                                alt="First Semester Image" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+  
+
+                <div class="row d-flex align-items-center mt-3">
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="col-md-11 col-sm-12 mb-3">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/laptop-apple_Z086QPPWUL.jpg"
+                                alt="First Semester Image" class="img-fluid rounded mb-5">
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 mb-4 col-sm-12" id="">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h3 class="display-6" >SIXTH SEMESTER</h3>
+                                <br>
+                                <ul class="list-style">
+                                    <li> <a class="text-black text-decoration-none"
+                                            href="#"> CSC 375 Software Engineering
+                                        </a></li> <br>
+                                        <li> <a class="text-black text-decoration-none"
+                                            href="#"> CSC 376 Complier Design and Construction
+                                        </a></li> <br>
+                                        <li> <a class="text-black text-decoration-none"
+                                            href="#"> CSC 377 E-Governance
+                                        </a></li> <br>
+                                        <li> <a class="text-black text-decoration-none"
+                                            href="#"> CSC 378 NET Centric Computing
+                                        </a></li> <br>
+                                        <li> <a class="text-black text-decoration-none"
+                                            href="#"> CSC 379 Technical Writing
+                                        </a></li> <br>
+
+        
+                                            <li class="nav-item dropdown" id="seventh">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Electives II
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Applied Logic (CSC380)</a></li>
+                                                    <li><a class="dropdown-item" href="#">E-commerce (CSC381)</a></li>
+                                                    <li><a class="dropdown-item" href="#">Automation and Robotics (CSC382)</a></li>
+                                                    <li><a class="dropdown-item" href="#">Neural Networks (CSC383)</a></li>
+                                                    <li><a class="dropdown-item" href="#">Computer Hardware Design (CSC384)</a></li>
+                                                    <li><a class="dropdown-item" href="#">Cognitive Science (CSC385)</a></li>
+                                                </ul>
+                                            </li>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+
+
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 mb-4 col-sm-12  order-md-1 order-2 order-sm-2" id="#">
+                    <h3 class="display-6">SEVENTH SEMESTER</h3>
+                    <br>
+                    <ul class="list-style">
+                        <li> <a class="text-black text-decoration-none"
+                                href="./solutions/semester/first/csc-109IT.html"> CSC 419 Advanced Java Programming </a>
+                        </li> <br>
+                        <li> <a class="text-black text-decoration-none"
+                                href="./solutions/semester/first/csc-110DL.html"> CSC 420 Data Warehousing and Data Mining </a> </li>
+                        <br>
+                        <li> <a class="text-black text-decoration-none"
+                                href="#"> CSC 421 Principles of Management </a>
+                        </li><br>
+
+                        <li> <a class="text-black text-decoration-none"
+                                href="#"> CSC 422 Project Work </a>
+                        </li><br>
+
+
+                            <li class="nav-item dropdown" id="seventh">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Electives III
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Information Retrieval (CSC423)</a></li>
+                                    <li><a class="dropdown-item" href="#">Database Administration (CSC424)</a></li>
+                                    <li><a class="dropdown-item" href="#">Software Project Management (CSC425)</a></li>
+                                    <li><a class="dropdown-item" href="#">Network Security (CSC426)</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital System Design (CSC427)</a></li>
+                                    <li><a class="dropdown-item" href="#"> International Marketing (MGT428)</a></li>
+                                </ul>
+                            </li>
+                            <br>
+
+                    </ul>
+
+                </div>
+                <div class="col-md-6 col-sm-12  order-md-1 order-sm-1">
+                    <div class="col-md-12 col-sm-12 mb-5">
+                        <img src="https://cdn.stocksnap.io/img-thumbs/960w/notepad-graph%20paper_L2KBJB91D6.jpg"
+                            alt="First Semester Image" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+            <hr>
+         
+
+            <div class="row d-flex align-items-center mt-3">
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="col-md-11 col-sm-12">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/10/08/47/laptop-2620118_1280.jpg"
+                            alt="First Semester Image" class="img-fluid rounded mb-5">
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 mb-4 col-sm-12" id="eighth">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h3 class="display-6" id="eighth">EIGHTH SEMESTER</h3>
+                            <br>
+                            <ul class="list-style">
+                                <li> <a class="text-black text-decoration-none"
+                                        href="./solutions/semester/first/csc-109IT.html"> CSC 475 Advanced Database
+                                    </a></li> <br>
+                                    <li> <a class="text-black text-decoration-none"
+                                        href="./solutions/semester/first/csc-109IT.html"> CSC 476 Internship
+                                    </a></li> <br>
+
+                                    <li class="nav-item dropdown" id="seventh">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Electives IV
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Advanced Networking with IPV6 (CSC477)</a></li>
+                                            <li><a class="dropdown-item" href="#">Distributed Networking (CSC478)</a></li>
+                                            <li><a class="dropdown-item" href="#">Game Technology (CSC479)</a></li>
+                                            <li><a class="dropdown-item" href="#">Distributed and Object Oriented Database (CSC480)</a></li>
+                                            <li><a class="dropdown-item" href="#">Introduction to Cloud Computing (CSC481)</a></li>
+                                            <li><a class="dropdown-item" href="#">Geographical Information System (CSC482)</a></li>
+                                        </ul>
+                                    </li>
+                                    <br>
+
+
+                                    <li class="nav-item dropdown" id="seventh">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Electives V
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Decision Support System and Expert System (CSC483)</a></li>
+                                            <li><a class="dropdown-item" href="#">Mobile Application Development (CSC484)</a></li>
+                                            <li><a class="dropdown-item" href="#">Real Time Systems (CSC485)</a></li>
+                                            <li><a class="dropdown-item" href="#">Network and System Administration (CSC486)</a></li>
+                                            <li><a class="dropdown-item" href="#">Embedded Systems Programming (CSC487)</a></li>
+                                            <li><a class="dropdown-item" href="#">International Business Management (MGT488)</a></li>
+                                        </ul>
+                                    </li>
+                                    <br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <footer>
+        <br>
+        <p class="text-center lead">
+            All CopyRight Reserved &copy;
+            2023 - <span id="todayDateFoot"></span> CSIT Solution <br>
+            Powered By: <a href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a>  | <a href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a> 
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('todayDate').textContent = new Date().toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: '2-digit' }) + ' | ' + new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+        document.getElementById('todayDateFoot').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric' });
+    </script>
+
+</body>
+
+</html>

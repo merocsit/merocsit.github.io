@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /private/
+
+# Allow specific search engine bots
+User-agent: Googlebot
+Disallow:
+
+User-agent: Bingbot
+Disallow:
