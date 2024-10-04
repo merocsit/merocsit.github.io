@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titleInfo"> </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../../../resources/favicon_io/favicon.ico" type="image/x-icon">
+    <style>
+        *,
+        .lead {
+            letter-spacing: 1px;
+        }
+
+        li a,
+        a,
+        .carousel-control-prev-icon,
+        .carousel-control-next {
+            color: rgb(0, 109, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
+        <div class="container-sm d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="./csc364SoftwareEngineering.html">
+                    <img src="https://csit-solution.github.io/resources/img/logos/main/logocsit.jpg" alt="CSIT Logo"
+                        class="img-fluid rounded-circle" style="width: 50px;">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select Semester
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../../index.html">First</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Second</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Third</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fourth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fifth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Sixth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Seventh</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Eighth</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <section class="container" style="min-height: 70vh;">
+        <div class="row">
+            <div class="col-md-3  col-sm-12 border-right ">
+
+                <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
+                    <h5>Software Engineering</h5>
+                    <li class="nav-item dropdown">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Questions
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2074">Question 2074</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2075">Question 2075</a></li>
+
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2076">Question 2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2077">Question 2077 </a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2078">Question 2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2079">Question 2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2080">Question 2080</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Solution
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2075">Solution2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2076">Solution2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2077">Solution2077</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2078">Solution2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2079">Solution2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2080">Solution2080</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="notesOldSyllabus">Notes By Dilli Hang Rai</a></li>
+                            <li><a class="dropdown-item" href="#" id="notesNewSyllabus">Notes By XYZ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="refBooks" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Reference Books
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="refBook1">
+                                    Software Engineering
+                                    TENTH editon Ian Sommerville
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook2">
+                                    Software Engineering: A Practitioner’s Approach, 8th Edition, Roger S. Pressman and
+                                    Bruce R. Maxim, McGraw-Hill Education 2015
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook3">
+                                    Beginning Software Engineering, Rod Stephens, John Wiley & Sons Inc 201
+                                </a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Syllabus
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="oldSyllabus">CSC 364 Old Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="newSyllabus">CSC 375 New Syllabus</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="col-md-9  col-sm-12">
+                <div class="border rounded p-3" id="content">
+                    <!-- Dynamic content will be displayed here -->
+                    <div class="">
+                        <div class="text-center mb-4">
+                            <strong style="font-size: 24px;">Software Engineering</strong>
+                        </div>
+
+                        <div class="mt-4">
+                            <p><strong>Course Title:</strong> Software Engineering</p>
+                            <p><strong>Course No:</strong> CSC364</p>
+                            <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+                            <p><strong>Semester:</strong> VI</p>
+                            <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+                            <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+                            <p><strong>Credit Hrs:</strong> 3</p>
+                        </div>
+
+                        <div class="mt-4">
+                            <strong>Course Description</strong>
+                            <p>This course familiarizes students with different concepts of software engineering mainly
+                                focusing on software process models, agile development, requirements engineering,
+                                models, design, implementation, testing, evolution, and software project management.</p>
+                        </div>
+
+                        <div class="mt-4">
+                            <strong>Course Objectives</strong>
+                            <p>The main objective of this course is to provide knowledge of different concepts of
+                                software engineering so that students will be able to develop high-quality software
+                                using different software management skills.</p>
+                        </div>
+
+                        <div class="mt-4">
+                            <strong>Course Contents</strong>
+                            <div class="mt-3">
+                                <strong>Unit 1: Introduction (2 Hrs.)</strong>
+                                <ul>
+                                    <li>Software and its Types; Attributes of Good Software; Software Engineering and
+                                        its Importance.</li>
+                                    <li>Fundamental Software Engineering Activities; Difference between Software
+                                        Engineering and Computer Science; Difference between Software Engineering and
+                                        System Engineering.</li>
+                                    <li>Challenges and Cost of Software Engineering; Professional Software Development;
+                                        Software Engineering Diversity; Internet Software Engineering; Software
+                                        Engineering Ethics.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <strong>Unit 2: Software Processes (5 Hrs.)</strong>
+                                <ul>
+                                    <li>Software Process; Software Process Models (Waterfall Model; Incremental
+                                        Development; Integration and Configuration).</li>
+                                    <li>Software Process Activities (Software Specification, Software Design and
+                                        Implementation; Software Validation; Software Evolution).</li>
+                                    <li>Coping with Change (Prototyping, Incremental Delivery); Process Improvement.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <strong>Unit 3: Agile Software Development (3 Hrs.)</strong>
+                                <ul>
+                                    <li>Agile Development; Plan-Driven vs. Agile Development; Agile Methods; Agile
+                                        Development Techniques; Introduction to Agile Project Management.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <strong>Unit 4: Requirements Engineering (3 Hrs.)</strong>
+                                <ul>
+                                    <li>Concept of User and System Requirements; Functional and Non-Functional
+                                        Requirements.</li>
+                                    <li>Requirements Engineering Process; Requirements Elicitation; Requirements
+                                        Specification; Requirements Validation; Requirements Change.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <strong>Unit 5: System Modeling (6 Hrs.)</strong>
+                                <ul>
+                                    <li>Introduction to System Modeling; Context Models; Interaction Models; Structural
+                                        Models; Behavioral Models; Model-Driven Architecture.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <strong>Unit 6: Architectural Design (6 Hrs.)</strong>
+                                <ul>
+                                    <li>Introduction; Architectural Design Decisions; Architectural Views; Architectural
+                                        Patterns; Application Architectures.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <strong>Unit 7: Design and Implementation (5 Hrs.)</strong>
+                                <ul>
+                                    <li>Introduction; Object-Oriented Design using UML; Design Patterns; Implementation
+                                        Issues; Open-Source Development.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <strong>Unit 8: Software Testing (5 Hrs.)</strong>
+                                <ul>
+                                    <li>Introduction; Validation and Verification Testing; Software Inspection; Software
+                                        Testing Process.</li>
+                                    <li>Development Testing; Test-Driven Development; Release Testing; User Testing.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <strong>Unit 9: Software Evolution (3 Hrs.)</strong>
+                                <ul>
+                                    <li>Evolution Process; Legacy Systems; Software Maintenance.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <strong>Unit 10: Software Management (7 Hrs.)</strong>
+                                <ul>
+                                    <li>Software Project Management; Project Management Activities (Project Planning,
+                                        Risk Management, People Management, Reporting and Proposal Writing).</li>
+                                    <li>Project Planning (Software Pricing, Plan-Driven Development, Project Scheduling,
+                                        Estimation Techniques, COCOMO Cost Modeling).</li>
+                                    <li>Introduction to Quality Management and Configuration Management.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <strong>Laboratory / Project Work</strong>
+                            <p>Students should prepare a project report along with a software product using different
+                                concepts of software engineering. The project can be done in groups with at most four
+                                members in each group using any suitable database, programming, interfacing
+                                technologies, and project management concepts.</p>
+                        </div>
+
+                        <div class="mt-4">
+                            <strong>Text Book</strong>
+                            <ul>
+                                <li>Software Engineering, 10th Edition, Ian Sommerville, Pearson Education 2016</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4">
+                            <strong>Reference Books</strong>
+                            <ul>
+                                <li>Software Engineering: A Practitioner’s Approach, 8th Edition, Roger S. Pressman and
+                                    Bruce R. Maxim, McGraw-Hill Education 2015</li>
+                                <li>Beginning Software Engineering, Rod Stephens, John Wiley & Sons Inc 2015</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <br>
+
+    </div>
+
+    <footer class="container">
+        <hr>
+        <br>
+        <p class="text-center lead">
+            All CopyRight Reserved &copy; 2023 - <span id="todayDateFoot"></span> CSIT Solution <br> Powered By: <a
+                href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
+                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to dynamically update content
+        const content = document.getElementById('content');
+
+        const contents = {
+
+            questions: `<h2 class="text-left"> Questions Collection </h2> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h4> Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+
+            pastYearQuestion2074: `
+            <div class="">
+    <div class="text-center">
+        <h4>Tribhuvan University</h4>
+        <h5>Institute of Science and Technology</h5>
+        <p>2074</p>
+        <h6>Bachelor Level / Sixth Semester / Science</h6>
+        <h6>Computer Science and Information Technology (CSC364)</h6>
+        <h6>(Software Engineering)</h6>
+        <p>Full Marks: 60 &nbsp;&nbsp;&nbsp; Pass Marks: 24 &nbsp;&nbsp;&nbsp; Time: 3 hours</p>
+    </div>
+    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+    <p><strong>The figures in the margin indicate full marks.</strong></p>
+    
+    <p><strong>Attempt any Ten questions. (10 x 6 = 60)</strong></p>
+
+    <ol>
+        <li>
+            <p>Differentiable between software engineering and system engineering. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Describe spiral model with its advantages and disadvantages. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is risk management? Explain risk management process. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is a software requirement? Explain software requirement process. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is rapid prototyping technique? Mention the types of rapid prototyping techniques and explain it. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Why is formal specification important for software development? Explain. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is client-server model? Explain the advantages and disadvantages of client-server model. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Draw use case diagram of credit card validation system. [Use your own assumptions]. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Describe the clean room software development process. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Compare and contrast between white box and black box testing. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is source code translation? Explain the program translation process with a diagram. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+    </ol>
+</div>
+
+
+`,
+
+            pastYearQuestion2075: `   <div class="">
+    <div class="text-center">
+        <h4>Tribhuvan University</h4>
+        <h5>Institute of Science and Technology</h5>
+        <p>2075</p>
+        <h6>Bachelor Level / Sixth Semester / Science</h6>
+        <h6>Computer Science and Information Technology (CSC364)</h6>
+        <h6>(Software Engineering)</h6>
+        <p>Full Marks: 60 &nbsp;&nbsp;&nbsp; Pass Marks: 24 &nbsp;&nbsp;&nbsp; Time: 3 hours</p>
+    </div>
+    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+    <p><strong>The figures in the margin indicate full marks.</strong></p>
+    
+    <p><strong>Attempt any six questions. (10 x 6 = 60)</strong></p>
+
+    <ol>
+        <li>
+            <p>Suppose you are a Software Engineer of "ABC Software Company". You are developing large numbers of software. Have you faced any problems? Give your idea. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is waterfall model? Describe the activities of waterfall model and also mention its drawbacks. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is project planning? Explain the types of project plan. <span class="font-weight-bold">(10 marks)</span></p>
+        </li>
+        <li>
+            <p>Differentiate between functional and non-functional requirements of software engineering requirements. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Explain why, for large systems development, it is recommended that prototypes should be throw-away prototypes. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Explain formal specification in software development process. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is repository model? Explain its advantages and disadvantages. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Draw class diagram of Library Management System [Use your own assumptions]. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Explain validation and verification planning. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Compare between top down and bottom up testing. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is reverse engineering? Describe reverse engineering process. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Write short notes on (any two):</p>
+            <ol>
+                <li><p>a) Security assessment</p></li>
+                <li><p>b) Expert judgment</p></li>
+                <li><p>c) System and their environment</p></li>
+            </ol>
+            <span class="font-weight-bold">(6 marks)</span>
+        </li>
+    </ol>
+</div>
+
+`,
+
+            pastYearQuestion2076: ` 
+            <div class="">
+    <div class="text-center">
+        <h4>Tribhuvan University</h4>
+        <h5>Institute of Science and Technology</h5>
+        <p>2076</p>
+        <h6>Bachelor Level / Sixth Semester / Science</h6>
+        <h6>Computer Science and Information Technology (CSC375)</h6>
+        <h6>(Software Engineering)</h6>
+        <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+    </div>
+    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+    <p><strong>The figures in the margin indicate full marks.</strong></p>
+    
+    <div class="mt-4">
+        <strong>Group A</strong><br>
+        <strong>Attempt any TEN</strong><br><br>
+        
+        <ol>
+            <li>
+                <p>Explain system modeling with a suitable example. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>What is a software process model? Discuss the waterfall model with its merits and demerits. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>Discuss different types of risks that are likely to arise in software projects. Briefly explain the risk analysis stage during the risk management process. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>Briefly explain functional, non-functional, and domain requirements. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>What are rapid prototyping techniques? Briefly explain different rapid prototyping techniques. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>What is formal specification? Discuss interface specification in detail. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>What are the activities of the architectural design process? Discuss the abstract machine model. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>What is modular decomposition? Discuss the object-oriented model of decomposition. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>Discuss the importance of use case diagrams in object-oriented development. Draw a use case diagram for a library system. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>What is cleanroom software development? Discuss the characteristics of cleanroom software development. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>Discuss path testing with a suitable example. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>Write short notes on: <br>
+                   a. Reliability validation <br>
+                   b. Reverse engineering <span class="font-weight-bold">(6)</span></p>
+            </li>
+        </ol>
+    </div>
+</div>
+
+
+        `,
+
+
+            pastYearQuestion2077: `
+
+
+ <div class="">
+    <div class="text-center">
+        <h4>Tribhuvan University</h4>
+        <h5>Institute of Science and Technology</h5>
+        <p>2077</p>
+        <h6>Bachelor Level / Sixth Semester / Science</h6>
+        <h6>Computer Science and Information Technology (CSC375)</h6>
+        <h6>(Software Engineering)</h6>
+        <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+    </div>
+    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+    <p><strong>The figures in the margin indicate full marks.</strong></p>
+    
+    <div class="mt-4">
+        <strong>Group A</strong><br>
+        <strong>Attempt any TWO</strong><br><br>
+        
+        <ol>
+            <li>
+                <p>Explain the detailed tasks in a software configuration management process with examples. <span class="font-weight-bold">(10)</span></p>
+            </li>
+            <li>
+                <p>Explain agile software development. Compare agile software development with prototyping software development. <span class="font-weight-bold">(10)</span></p>
+            </li>
+            <li>
+                <p>Compare verification and validation. Why is validation a particularly difficult process? Explain with examples. <span class="font-weight-bold">(10)</span></p>
+            </li>
+        </ol>
+        
+        <strong>Group B</strong><br>
+        <strong>Attempt any EIGHT</strong><br><br>
+        
+        <ol>
+            <li>
+                <p>What are the good characteristics of software? Explain. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Explain the process of requirement engineering. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Differentiated between the waterfall model and spiral model. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Explain software quality assurance with examples. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Discuss the structure of an SRS document. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Explain how COCOMO can be used for software cost estimation with examples. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Discuss an example of reuse-based software engineering. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Write down the software version control process. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Differentiated between Alpha testing and Beta testing. <span class="font-weight-bold">(5)</span></p>
+            </li>
+        </ol>
+    </div>
+</div>
+
+
+`,
+
+
+            pastYearQuestion2078: `
+<h2 class='text-danger'> Not Available </h2>
+
+`,
+
+
+            pastYearQuestion2079: `<div class="">
+    <div class="text-center">
+        <h4>Tribhuvan University</h4>
+        <h5>Institute of Science and Technology</h5>
+        <p>2079</p>
+        <h6>Bachelor Level / Sixth Semester / Science</h6>
+        <h6>Computer Science and Information Technology (CSC375)</h6>
+        <h6>(Software Engineering)</h6>
+        <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+    </div>
+    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+    <p><strong>The figures in the margin indicate full marks.</strong></p>
+    
+    <div class="mt-4">
+        <strong>Group A</strong><br>
+        <strong>Attempt any TWO</strong><br><br>
+        
+        <ol>
+            <li>
+                <p>Explain how the prototyping model helps in developing software? Differentiate between Evolutionary and throw-away prototype models. <span class="font-weight-bold">(10)</span></p>
+            </li>
+            <li>
+                <p>Differentiate between functional and non-functional requirements. Describe any three functional and non-functional requirements for a library management system. <span class="font-weight-bold">(10)</span></p>
+            </li>
+            <li>
+                <p>Explain in detail about the activities carried out in software configuration management. Why is it required? <span class="font-weight-bold">(10)</span></p>
+            </li>
+        </ol>
+        
+        <strong>Group B</strong><br>
+        <strong>Attempt any EIGHT</strong><br><br>
+        
+        <ol>
+            <li>
+                <p>Explain Agile software development and its applications. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Differentiate between software engineering and system engineering. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>What do you understand by software quality assurance? <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>What is a behavioral model? Explain with an example. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Explain component-based software engineering. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Draw a use case diagram and sequence diagram for an online movie ticketing system. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Differentiate between verification and validation. Explain the software inspection process. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Differentiate between reengineering and reverse engineering. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Suppose that a project was estimated to be 400 KLOC. Calculate the effort and development time for organic and semidetached. <span class="font-weight-bold">(5)</span></p>
+            </li>
+        </ol>
+    </div>
+</div>
+`,
+            pastYearQuestion2080: `
+
+            <div class="">
+    <div class="text-center">
+        <h4>Tribhuvan University</h4>
+        <h5>Institute of Science and Technology</h5>
+        <p>2080</p>
+        <h6>Bachelor Level / Sixth Semester / Science</h6>
+        <h6>Computer Science and Information Technology (CSC375)</h6>
+        <h6>(Software Engineering)</h6>
+        <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+    </div>
+    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+    <p><strong>The figures in the margin indicate full marks.</strong></p>
+    
+    <div class="mt-4">
+        <strong>Group A</strong><br>
+        <strong>Attempt any TWO</strong><br><br>
+        
+        <ol>
+            <li>
+                <p>In the software development process, how does software configuration management facilitate the changes that may occur during different stages of a software development life cycle? Justify your explanation with examples. <span class="font-weight-bold">(10)</span></p>
+            </li>
+            <li>
+                <p>Explain the main activities used in requirements engineering. What are the desirable characteristics of a good SRS document? Explain with examples. <span class="font-weight-bold">(10)</span></p>
+            </li>
+            <li>
+                <p>Explain architectural views. Illustrate layered architecture, repository architecture, and pipe and filter architecture. <span class="font-weight-bold">(10)</span></p>
+            </li>
+        </ol>
+        
+        <strong>Group B</strong><br>
+        <strong>Attempt any EIGHT</strong><br><br>
+        
+        <ol>
+            <li>
+                <p>Explain software engineering ethics with examples. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Differentiate between evolutionary and throw-away prototyping models. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Differentiate plan-driven and agile development. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>What is the difference between functional and non-functional requirements? Which is more critical and why? <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>What is release testing? Differentiate between release testing and system testing. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>What do you mean by a legacy system? Explain its importance. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Draw a use case diagram and class diagram for an online bus ticketing system. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Explain the behavioral model with examples. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Explain the COCOMO model. <span class="font-weight-bold">(5)</span></p>
+            </li>
+        </ol>
+    </div>
+</div>
+
+
+         
+        `,
+
+            pastYearSolution: `<h2 class="text-left">  Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            <h4> Please use Menu </h4> <p> Need Help Watch Tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `,
+
+            pastYearSolution2075: `
+<h5>  Solution 2075 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe> 
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+`,
+
+            pastYearSolution2076: `
+<h5>  Solution 2076 </h5>   
+<hr>
+
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+`,
+
+            pastYearSolution2077: `
+<h5> 
+     Solution 2078 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+`,
+
+            pastYearSolution2078: `
+    <h5> 
+     Solution 2078 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+`,
+
+            pastYearSolution2079: `
+<h5> 
+     Solution 2079 </h5>   
+<hr>
+<!---<iframe src="./pastSolutions/2079 Solution CSC 316 Cryptograhy.pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>  ----->
+
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+
+`,
+
+            pastYearSolution2080: `
+<h5> 
+     Solution 2080 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+
+
+
+`,
+
+            refBooks: `<iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+
+            refBook1: `
+            <h5> Software Engineering
+TENTH edition
+Ian Sommerville </h5>   
+<hr>
+<iframe src="https://api.pageplace.de/preview/DT0400.9781292096148_A26661611/preview-9781292096148_A26661611.pdf" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe> 
+
+<div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="https://api.pageplace.de/preview/DT0400.9781292096148_A26661611/preview-9781292096148_A26661611.pdf" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class="nav-link" 
+href="https://api.pageplace.de/preview/DT0400.9781292096148_A26661611/preview-9781292096148_A26661611.pdf" 
+download>
+Download Reference Book
+</a>
+</button>
+</div>
+
+
+`,
+
+            refBook2: `      
+ <h5> Software Engineering: A Practitioner’s Approach, 8th Edition, Roger S. Pressman and Bruce R. Maxim, McGraw-Hill Education 2015 </h5>
+<hr>
+<iframe src="https://intranetssn.github.io/www.ssn.net/twiki/pub/CseIntranet/CseBCS6403/PressmanBook.pdf" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+
+<div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="https://intranetssn.github.io/www.ssn.net/twiki/pub/CseIntranet/CseBCS6403/PressmanBook.pdf" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class="nav-link" 
+href="https://intranetssn.github.io/www.ssn.net/twiki/pub/CseIntranet/CseBCS6403/PressmanBook.pdf" 
+download>
+Download Reference Book
+</a>
+</button>
+</div>
+
+`,
+
+            refBook3: `      
+<h5> Beginning Software Engineering,Rod Stephens, John Wiley & Sons Inc 2015 </h5>   
+<hr>
+<iframe src="https://lengqinjie.xyz/itbook/se/Beginning%20Software%20Engineering.pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>  
+
+
+<div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="https://lengqinjie.xyz/itbook/se/Beginning%20Software%20Engineering.pdf" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class="nav-link" 
+href="https://lengqinjie.xyz/itbook/se/Beginning%20Software%20Engineering.pdf" 
+download>
+Download Reference Book
+</a>
+</button>
+</div>
+
+
+`
+            ,
+
+            oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
+            // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
+            // notesNewSyllabus: `<h2>Notes - New 2079 Syllabus</h2><p>Here is the content for the notes of new 2079 syllabus.</p>`,
+            notesOldSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            notesNewSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+
+            notes: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            syllabus: `
+            <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            oldSyllabus: `
+            <div class="">
+    <div class="text-center mb-4">
+        <strong style="font-size: 24px;">Software Engineering</strong>
+    </div>
+
+    <div class="mt-4">
+        <p><strong>Course Title:</strong> Software Engineering</p>
+        <p><strong>Course No:</strong> CSC364</p>
+        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+        <p><strong>Semester:</strong> VI</p>
+        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+        <p><strong>Credit Hrs:</strong> 3</p>
+    </div>
+
+    <div class="mt-4">
+        <strong>Course Description</strong>
+        <p>This course familiarizes students with different concepts of software engineering mainly focusing on software process models, agile development, requirements engineering, models, design, implementation, testing, evolution, and software project management.</p>
+    </div>
+
+    <div class="mt-4">
+        <strong>Course Objectives</strong>
+        <p>The main objective of this course is to provide knowledge of different concepts of software engineering so that students will be able to develop high-quality software using different software management skills.</p>
+    </div>
+
+    <div class="mt-4">
+        <strong>Course Contents</strong>
+        <div class="mt-3">
+            <strong>Unit 1: Introduction (2 Hrs.)</strong>
+            <ul>
+                <li>Software and its Types; Attributes of Good Software; Software Engineering and its Importance.</li>
+                <li>Fundamental Software Engineering Activities; Difference between Software Engineering and Computer Science; Difference between Software Engineering and System Engineering.</li>
+                <li>Challenges and Cost of Software Engineering; Professional Software Development; Software Engineering Diversity; Internet Software Engineering; Software Engineering Ethics.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 2: Software Processes (5 Hrs.)</strong>
+            <ul>
+                <li>Software Process; Software Process Models (Waterfall Model; Incremental Development; Integration and Configuration).</li>
+                <li>Software Process Activities (Software Specification, Software Design and Implementation; Software Validation; Software Evolution).</li>
+                <li>Coping with Change (Prototyping, Incremental Delivery); Process Improvement.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 3: Agile Software Development (3 Hrs.)</strong>
+            <ul>
+                <li>Agile Development; Plan-Driven vs. Agile Development; Agile Methods; Agile Development Techniques; Introduction to Agile Project Management.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 4: Requirements Engineering (3 Hrs.)</strong>
+            <ul>
+                <li>Concept of User and System Requirements; Functional and Non-Functional Requirements.</li>
+                <li>Requirements Engineering Process; Requirements Elicitation; Requirements Specification; Requirements Validation; Requirements Change.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 5: System Modeling (6 Hrs.)</strong>
+            <ul>
+                <li>Introduction to System Modeling; Context Models; Interaction Models; Structural Models; Behavioral Models; Model-Driven Architecture.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 6: Architectural Design (6 Hrs.)</strong>
+            <ul>
+                <li>Introduction; Architectural Design Decisions; Architectural Views; Architectural Patterns; Application Architectures.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 7: Design and Implementation (5 Hrs.)</strong>
+            <ul>
+                <li>Introduction; Object-Oriented Design using UML; Design Patterns; Implementation Issues; Open-Source Development.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 8: Software Testing (5 Hrs.)</strong>
+            <ul>
+                <li>Introduction; Validation and Verification Testing; Software Inspection; Software Testing Process.</li>
+                <li>Development Testing; Test-Driven Development; Release Testing; User Testing.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 9: Software Evolution (3 Hrs.)</strong>
+            <ul>
+                <li>Evolution Process; Legacy Systems; Software Maintenance.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 10: Software Management (7 Hrs.)</strong>
+            <ul>
+                <li>Software Project Management; Project Management Activities (Project Planning, Risk Management, People Management, Reporting and Proposal Writing).</li>
+                <li>Project Planning (Software Pricing, Plan-Driven Development, Project Scheduling, Estimation Techniques, COCOMO Cost Modeling).</li>
+                <li>Introduction to Quality Management and Configuration Management.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <strong>Laboratory / Project Work</strong>
+        <p>Students should prepare a project report along with a software product using different concepts of software engineering. The project can be done in groups with at most four members in each group using any suitable database, programming, interfacing technologies, and project management concepts.</p>
+    </div>
+
+    <div class="mt-4">
+        <strong>Text Book</strong>
+        <ul>
+            <li>Software Engineering, 10th Edition, Ian Sommerville, Pearson Education 2016</li>
+        </ul>
+    </div>
+
+    <div class="mt-4">
+        <strong>Reference Books</strong>
+        <ul>
+            <li>Software Engineering: A Practitioner’s Approach, 8th Edition, Roger S. Pressman and Bruce R. Maxim, McGraw-Hill Education 2015</li>
+            <li>Beginning Software Engineering, Rod Stephens, John Wiley & Sons Inc 2015</li>
+        </ul>
+    </div>
+</div>
+ 
+            `,
+            newSyllabus: `
+            <div class="">
+    <div class="text-center mb-4">
+        <strong style="font-size: 24px;">Software Engineering</strong>
+    </div>
+
+    <div class="mt-4">
+        <p><strong>Course Title:</strong> Software Engineering</p>
+        <p><strong>Course No:</strong> CSC375</p>
+        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+        <p><strong>Semester:</strong> VI</p>
+        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+        <p><strong>Credit Hrs:</strong> 3</p>
+    </div>
+
+    <div class="mt-4">
+        <strong>Course Description</strong>
+        <p>This course familiarizes students with different concepts of software engineering mainly focusing on software process models, agile development, requirements engineering, models, design, implementation, testing, evolution, and software project management.</p>
+    </div>
+
+    <div class="mt-4">
+        <strong>Course Objectives</strong>
+        <p>The main objective of this course is to provide knowledge of different concepts of software engineering so that students will be able to develop high-quality software using different software management skills.</p>
+    </div>
+
+    <div class="mt-4">
+        <strong>Course Contents</strong>
+        <div class="mt-3">
+            <strong>Unit 1: Introduction (2 Hrs.)</strong>
+            <ul>
+                <li>Software and its Types; Attributes of Good Software; Software Engineering and its Importance.</li>
+                <li>Fundamental Software Engineering Activities; Difference between Software Engineering and Computer Science; Difference between Software Engineering and System Engineering.</li>
+                <li>Challenges and Cost of Software Engineering; Professional Software Development; Software Engineering Diversity; Internet Software Engineering; Software Engineering Ethics.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 2: Software Processes (5 Hrs.)</strong>
+            <ul>
+                <li>Software Process; Software Process Models (Waterfall Model; Incremental Development; Integration and Configuration).</li>
+                <li>Software Process Activities (Software Specification, Software Design and Implementation; Software Validation; Software Evolution).</li>
+                <li>Coping with Change (Prototyping, Incremental Delivery); Process Improvement.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 3: Agile Software Development (3 Hrs.)</strong>
+            <ul>
+                <li>Agile Development; Plan-Driven vs. Agile Development; Agile Methods; Agile Development Techniques; Introduction to Agile Project Management.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 4: Requirements Engineering (3 Hrs.)</strong>
+            <ul>
+                <li>Concept of User and System Requirements; Functional and Non-Functional Requirements.</li>
+                <li>Requirements Engineering Process; Requirements Elicitation; Requirements Specification; Requirements Validation; Requirements Change.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 5: System Modeling (6 Hrs.)</strong>
+            <ul>
+                <li>Introduction to System Modeling; Context Models; Interaction Models; Structural Models; Behavioral Models; Model-Driven Architecture.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 6: Architectural Design (6 Hrs.)</strong>
+            <ul>
+                <li>Introduction; Architectural Design Decisions; Architectural Views; Architectural Patterns; Application Architectures.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 7: Design and Implementation (5 Hrs.)</strong>
+            <ul>
+                <li>Introduction; Object-Oriented Design using UML; Design Patterns; Implementation Issues; Open-Source Development.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 8: Software Testing (5 Hrs.)</strong>
+            <ul>
+                <li>Introduction; Validation and Verification Testing; Software Inspection; Software Testing Process.</li>
+                <li>Development Testing; Test-Driven Development; Release Testing; User Testing.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 9: Software Evolution (3 Hrs.)</strong>
+            <ul>
+                <li>Evolution Process; Legacy Systems; Software Maintenance.</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <strong>Unit 10: Software Management (7 Hrs.)</strong>
+            <ul>
+                <li>Software Project Management; Project Management Activities (Project Planning, Risk Management, People Management, Reporting and Proposal Writing).</li>
+                <li>Project Planning (Software Pricing, Plan-Driven Development, Project Scheduling, Estimation Techniques, COCOMO Cost Modeling).</li>
+                <li>Introduction to Quality Management and Configuration Management.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <strong>Laboratory / Project Work</strong>
+        <p>Students should prepare a project report along with a software product using different concepts of software engineering. The project can be done in groups with at most four members in each group using any suitable database, programming, interfacing technologies, and project management concepts.</p>
+    </div>
+
+    <div class="mt-4">
+        <strong>Text Book</strong>
+        <ul>
+            <li>Software Engineering, 10th Edition, Ian Sommerville, Pearson Education 2016</li>
+        </ul>
+    </div>
+
+    <div class="mt-4">
+        <strong>Reference Books</strong>
+        <ul>
+            <li>Software Engineering: A Practitioner’s Approach, 8th Edition, Roger S. Pressman and Bruce R. Maxim, McGraw-Hill Education 2015</li>
+            <li>Beginning Software Engineering, Rod Stephens, John Wiley & Sons Inc 2015</li>
+        </ul>
+    </div>
+</div>
+
+      `,
+
+
+        };
+
+
+        document.getElementById('refBooks').addEventListener('click', () => {
+            content.innerHTML = contents.refBooks;
+        });
+
+
+        document.getElementById('refBook1').addEventListener('click', () => {
+            content.innerHTML = contents.refBook1;
+        });
+
+        document.getElementById('refBook2').addEventListener('click', () => {
+            content.innerHTML = contents.refBook2;
+        });
+
+
+        document.getElementById('refBook3').addEventListener('click', () => {
+            content.innerHTML = contents.refBook3;
+        });
+
+
+        document.getElementById('questions').addEventListener('click', () => {
+            content.innerHTML = contents.questions;
+        });
+
+        document.getElementById('pastYearQuestion2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2075;
+        });
+
+        document.getElementById('pastYearQuestion2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2076;
+        });
+
+        document.getElementById('pastYearQuestion2077').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2077;
+        });
+
+
+        document.getElementById('pastYearQuestion2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2078;
+        });
+
+        document.getElementById('pastYearQuestion2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2079;
+        });
+
+
+        document.getElementById('pastYearQuestion2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2080;
+        });
+
+        document.getElementById('pastYearQuestion2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2074;
+        });
+
+        document.getElementById('pastYearSolution').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution;
+        });
+
+        document.getElementById('pastYearSolution2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2075;
+        });
+
+        document.getElementById('pastYearSolution2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2076;
+        });
+
+
+        document.getElementById('pastYearSolution2077').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2077;
+        });
+
+        document.getElementById('pastYearSolution2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2078;
+        });
+
+        document.getElementById('pastYearSolution2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2079;
+        });
+
+
+        document.getElementById('pastYearSolution2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2080;
+        });
+
+        document.getElementById('notes').addEventListener('click', () => {
+            content.innerHTML = contents.notes;
+        });
+
+        document.getElementById('syllabus').addEventListener('click', () => {
+            content.innerHTML = contents.syllabus;
+        });
+
+        document.getElementById('oldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.oldSyllabus;
+        });
+
+        document.getElementById('newSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.newSyllabus;
+        });
+
+        document.getElementById('oldAppVersion').addEventListener('click', () => {
+            content.innerHTML = contents.oldAppVersion;
+        });
+
+        document.getElementById('notesOldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesOldSyllabus;
+        });
+
+        document.getElementById('notesNewSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesNewSyllabus;
+        });
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+
+        // Set current year in the footer
+        document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
+        document.getElementById("titleInfo").innerHTML = "CSC364 Software Engineering ~ CSIT Solution"
+        function showModal(src, alt) {
+            $('#modalImage').attr('src', src);
+            $('#imageModalLabel').text(alt);
+            $('#imageModal').modal('show');
+        }
+    </script>
+</body>
+
+</html>

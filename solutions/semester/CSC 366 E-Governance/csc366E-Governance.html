@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titleInfo"> </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../../../resources/favicon_io/favicon.ico" type="image/x-icon">
+    <style>
+        *,
+        .lead {
+            letter-spacing: 1px;
+        }
+
+        li a,
+        a,
+        .carousel-control-prev-icon,
+        .carousel-control-next {
+            color: rgb(0, 109, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
+        <div class="container-sm d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="./csc366E-Governance.html">
+                    <img src="https://csit-solution.github.io/resources/img/logos/main/logocsit.jpg" alt="CSIT Logo"
+                        class="img-fluid rounded-circle" style="width: 50px;">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select Semester
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../../index.html">First</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Second</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Third</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fourth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fifth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Sixth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Seventh</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Eighth</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <section class="container" style="min-height: 70vh;">
+        <div class="row">
+            <div class="col-md-3  col-sm-12 border-right ">
+
+                <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
+                    <h5 id="navName"></h5>
+                    <li class="nav-item dropdown">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Questions
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2074">Question 2074</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2075">Question 2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2076">Question 2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2077">Question 2077 </a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2078">Question 2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2079">Question 2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2080">Question 2080</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Solution
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2075">Solution2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2076">Solution2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2077">Solution2077</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2078">Solution2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2079">Solution2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2080">Solution2080</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="notesOldSyllabus">Notes By Dilli Hang Rai</a></li>
+                            <li><a class="dropdown-item" href="#" id="notesNewSyllabus">Notes By XYZ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="refBooks" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Reference Books
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="refBook1">
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook2">
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook3">
+
+                                </a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Syllabus
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="oldSyllabus">CSC <span
+                                        id="oldSyllabusYear"></span> Old Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="newSyllabus">CSC <span
+                                        id="newSyllabusYear"></span> New Syllabus</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="col-md-9  col-sm-12">
+                <div class="border rounded p-3" id="content">
+
+                </div>
+            </div>
+    </section>
+    <br>
+
+    </div>
+
+    <footer class="container">
+        <hr>
+        <br>
+        <p class="text-center lead">
+            All CopyRight Reserved &copy; 2023 - <span id="todayDateFoot"></span> CSIT Solution <br> Powered By: <a
+                href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
+                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to dynamically update content
+        const content = document.getElementById('content');
+
+        const contents = {
+
+            questions: `<h2 class="text-left"> Questions Collection </h2> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h4> Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+
+            pastYearQuestion2074: `
+            <div class="container">
+    <h4 class="text-center">Tribhuwan University</h4>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <p class="text-center">2074</p>
+    <p class="text-center">
+        Bachelor Level / Sixth Semester / Science<br>
+        Computer Science and Information Technology ( CSC366 )<br>
+        ( E-Governance )
+    </p>
+    <p><strong>Full Marks:</strong> 60</p>
+    <p><strong>Pass Marks:</strong> 24</p>
+    <p><strong>Time:</strong> 3 hours</p>
+    
+    <p><em>Candidates are required to give their answers in their own words as far as practicable.</em></p>
+    <p><em>The figures in the margin indicate full marks.</em></p>
+
+    <h5 class="mt-4">Long Answer Questions:</h5>
+
+    <h5>Group A</h5>
+    <p><strong>Attempt any two questions. (2*10=20)</strong></p>
+    
+    <ol>
+        <li>
+            Differentiate between e-Government and e-Governance. Explain in brief about e-Governance applications and the digital divide. <br>
+         
+        </li><br>
+        <li>
+            Differentiate between data warehousing and data mining. Explain the applications of data warehousing and data mining in e-Governance applications. <br>
+          
+        </li><br>
+        <li>
+            Explain in detail the development of e-Governance in Nepal. <br><br>
+      
+        </li>
+    </ol>
+
+    <h5 class="mt-4">Short Answer Questions:</h5>
+
+    <h5>Group B</h5>
+    <p><strong>Attempt any eight questions. (8*5=40)</strong></p>
+    
+    <ol>
+        <li>
+            Explain the comparative analysis model of e-Governance. <br><br>
+       
+        </li>
+        <li>
+            Mention the maturity model of e-Governance. <br><br>
+
+        </li>
+        <li>
+            Discuss the Institutional Infrastructure preparedness model of e-Governance. <br><br>
+        
+        </li>
+        <li>
+            How can we use data warehousing and data mining concepts in the education sector? <br><br>
+
+        </li>
+        <li>
+            Discuss in brief the development of e-Governance in Brazil. <br><br>
+  
+        </li>
+        <li>
+            Why are cyber laws and Human Resource Management software important for Nepal? <br><br>
+
+        </li>
+        <li>
+            Differentiate between G to G (Government to Government) and G to B (Government to Business). <br><br>
+  
+        </li>
+        <li>
+            What do you mean by digital system infrastructure? Explain. <br><br>
+    
+        </li>
+        <li>
+            Explain the development of e-Governance in Andhra Pradesh. <br><br>
+  
+        </li>
+        <li>
+            Write short notes on:  <br>
+            a) Critical Flow model <br>
+            b) Smart Nagarpalika <br>
+
+        </li>
+    </ol>
+</div>
+
+
+
+`,
+
+            pastYearQuestion2075: `   
+
+`,
+
+            pastYearQuestion2076: ` 
+           
+<div class="container">
+    <h4 class="text-center">Tribhuwan University</h4>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <p class="text-center">2076</p>
+    <p class="text-center">
+        Bachelor Level / Sixth Semester / Science<br>
+        Computer Science and Information Technology ( CSC366 )<br>
+        ( E-Governance )
+    </p>
+    <p><strong>Full Marks:</strong> 60</p>
+    <p><strong>Pass Marks:</strong> 24</p>
+    <p><strong>Time:</strong> 3 hours</p>
+
+    <p><em>Candidates are required to give their answers in their own words as far as practicable.</em></p>
+    <p><em>The figures in the margin indicate full marks.</em></p>
+
+    <h5 class="mt-4">Long Answer Questions:</h5>
+
+    <h5>Group A</h5>
+    <p><strong>Attempt any two questions. (2*10=20)</strong></p>
+    
+    <ol>
+        <li>
+            Differentiate between e-Government and e-Governance. What are the various stages of E-governance? <br>
+            <strong>10 marks view</strong>
+        </li>
+        <li>
+            Explain with example the maturity model of e-governance. <br>
+            <strong>10 marks view</strong>
+        </li>
+        <li>
+            Explain the components of a data warehouse. What are the applications of data mining in e-Governance in the context of Nepal? <br>
+            <strong>10 marks view</strong>
+        </li>
+    </ol>
+
+    <h5 class="mt-4">Short Answer Questions:</h5>
+
+    <h5>Group B</h5>
+    <p><strong>Attempt any eight questions. (8*5=40)</strong></p>
+    
+    <ol>
+        <li>
+            Explain the critical flow model in e-Governance. <br>
+            <strong>5 marks view</strong>
+        </li>
+        <li>
+            What do you mean by the e-Readiness framework? Explain with an example. <br>
+            <strong>5 marks view</strong>
+        </li>
+        <li>
+            Discuss the main impact of e-Governance application on the digital divide. <br>
+            <strong>5 marks view</strong>
+        </li>
+        <li>
+            What are the current trends of e-Governance development in Nepal? <br>
+            <strong>5 marks view</strong>
+        </li>
+        <li>
+            Explain the Comparative Analysis Model with an example. <br>
+            <strong>5 marks view</strong>
+        </li>
+        <li>
+            What are the pre-requisites of e-readiness for infrastructure development? <br>
+            <strong>5 marks view</strong>
+        </li>
+        <li>
+            How can you develop rural areas through e-governance? <br>
+            <strong>5 marks view</strong>
+        </li>
+        <li>
+            Explain the importance of strategic planning for e-Government implementation. <br>
+            <strong>5 marks view</strong>
+        </li>
+        <li>
+            What are the main contents needed for human resource management software? Explain. <br>
+            <strong>5 marks view</strong>
+        </li>
+        <li>
+            Write short notes on: <br>
+            a) IT in Judiciary <br>
+            b) e-payment <br>
+            <strong>5 marks view</strong>
+        </li>
+    </ol>
+</div>
+
+
+        `,
+
+
+            pastYearQuestion2077: `
+
+
+
+
+
+`,
+
+
+            pastYearQuestion2078: `
+
+<div class="container">
+    <h4 class="text-center">Tribhuvan University</h4>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <p class="text-center">2078</p>
+    <p class="text-center">
+        Bachelor Level / Sixth Semester / Science<br>
+        Computer Science and Information Technology ( CSC377 )<br>
+        ( E-Governance )
+    </p>
+    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+    <p><strong>Time:</strong> 3 Hours</p>
+
+    <p><em>Candidates are required to give their answers in their own words as far as practicable.</em></p>
+    <p><em>The figures in the margin indicate full marks.</em></p>
+
+    <h5 class="mt-4">Section A</h5>
+    <p><strong>Attempt any two questions.</strong></p>
+    
+    <ol>
+        <li>
+            Why do we need E-Governance? How can we use E-Governance to provide efficient services to citizens? Explain using a suitable example.
+        </li>
+        <li>
+            What is the E-Governance model? Explain the broadcasting/wider dissemination model and the critical flow model in detail.
+        </li>
+        <li>
+            Why do we need IT infrastructure to implement E-Governance? Explain the network and computing infrastructure needed to implement E-Governance.
+        </li>
+    </ol>
+
+    <h5 class="mt-4">Section B</h5>
+    <p><strong>Attempt any eight questions.</strong></p>
+
+    <ol>
+        <li>
+            Define E-Government. Explain E-Government as an Information System.
+        </li>
+        <li>
+            Why is it necessary to implement ICT in government? Explain.
+        </li>
+        <li>
+            What is the E-Government maturity model? Describe the various maturity levels.
+        </li>
+        <li>
+            How can we achieve good governance through E-Government models? Explain.
+        </li>
+        <li>
+            Define E-readiness. What is data system infrastructural preparedness and technological infrastructural preparedness?
+        </li>
+        <li>
+            What are different approaches to E-Governance security? Explain.
+        </li>
+        <li>
+            Explain the uses of data warehousing and data mining in health, education, and rural development.
+        </li>
+        <li>
+            How can we use human resource management software to support E-Government? Explain.
+        </li>
+        <li>
+            Write short notes on:
+            <ul>
+                <li>a) Electronic service delivery</li>
+                <li>b) IT in judiciary</li>
+            </ul>
+        </li>
+    </ol>
+</div>
+
+`,
+
+
+            pastYearQuestion2079: `
+
+            <div class="container">
+    <h4 class="text-center">Tribhuvan University</h4>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <p class="text-center">2079</p>
+    <p class="text-center">
+        Bachelor Level / Sixth Semester / Science<br>
+        Computer Science and Information Technology ( CSC377 )<br>
+        ( E-Governance )
+    </p>
+    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+    <p><strong>Time:</strong> 3 Hours</p>
+
+    <p><em>Candidates are required to give their answers in their own words as far as practicable.</em></p>
+    <p><em>The figures in the margin indicate full marks.</em></p>
+
+    <h5 class="mt-4">Section A</h5>
+    <p><strong>Attempt any two questions.</strong></p>
+    
+    <ol>
+        <li>
+            Why is it necessary to implement E-Governance to provide government services to citizens efficiently and effectively? Explain using a suitable example.
+        </li>
+        <li>
+            Why do we need E-Governance models? Explain the comparative analysis model, and the mobilization and lobbying model in detail.
+        </li>
+        <li>
+            Why is it necessary to have IT infrastructure to implement E-Government? Explain different IT infrastructures needed to implement E-Government.
+        </li>
+    </ol>
+
+    <h5 class="mt-4">Section B</h5>
+    <p><strong>Attempt any eight questions.</strong></p>
+
+    <ol>
+        <li>
+            “E-Governance is to provide SMART government.” Justify this statement.
+        </li>
+        <li>
+            What are the different stages of the E-Government life cycle? Explain.
+        </li>
+        <li>
+            What is the E-Government maturity model? Describe the various maturity levels.
+        </li>
+        <li>
+            How can we achieve good governance through E-Government models? Explain.
+        </li>
+        <li>
+            Define E-readiness. What is legal infrastructural preparedness?
+        </li>
+        <li>
+            What are the challenges to E-Governance security? Explain.
+        </li>
+        <li>
+            Explain the uses of data warehousing and data mining in agriculture.
+        </li>
+        <li>
+            Explain the E-Governance initiatives in Nepal.
+        </li>
+        <li>
+            Write short notes on:
+            <ul>
+                <li>a) E-government Security Architecture</li>
+                <li>b) E-governance implementation in land reform</li>
+            </ul>
+        </li>
+    </ol>
+</div>
+
+`,
+            pastYearQuestion2080: `
+<div class="container">
+    <h4 class="text-center">Tribhuvan University</h4>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <p class="text-center">2080</p>
+    <p class="text-center">
+        Bachelor Level / Sixth Semester / Science<br>
+        Computer Science and Information Technology ( CSC377 )<br>
+        ( E-Governance )
+    </p>
+    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+    <p><strong>Time:</strong> 3 Hours</p>
+
+    <p><em>Candidates are required to give their answers in their own words as far as practicable.</em></p>
+    <p><em>The figures in the margin indicate full marks.</em></p>
+
+    <h5 class="mt-4">Section A</h5>
+    <p><strong>Attempt any two questions.</strong></p>
+    
+    <ol>
+        <li>
+            Differentiate between e-governance and e-government. Explain the issues in e-governance implementations and how to solve these issues?
+        </li>
+        <li>
+            What do you mean by data warehousing and data mining? Explain the applications of data warehousing and data mining in census and prices of essential commodities.
+        </li>
+        <li>
+            Explain the broadcasting/wider dissemination model and comparative analysis model of e-governance with practical examples.
+        </li>
+    </ol>
+
+    <h5 class="mt-4">Section B</h5>
+    <p><strong>Attempt any eight questions.</strong></p>
+    
+    <ol>
+        <li>
+            Explain in brief about the scope and content of e-governance.
+        </li>
+        <li>
+            Discuss the important role of cyber law in Nepal.
+        </li>
+        <li>
+            What do you mean by maturity levels of e-governance?
+        </li>
+        <li>
+            Discuss the e-Readiness assessment of infrastructure preparedness.
+        </li>
+        <li>
+            Mention the existing scenario of e-governance in Nepal.
+        </li>
+        <li>
+            What are the different IT tools that are used to deliver services to citizens?
+        </li>
+        <li>
+            Discuss e-government security architecture.
+        </li>
+        <li>
+            Explain in brief about e-governance initiatives in Sri Lanka.
+        </li>
+        <li>
+            Write short notes on: (any two) <br>
+            a) Data system infrastructure <br>
+            b) Model of Digital Governance <br>
+            c) Security standards
+        </li>
+    </ol>
+</div>
+
+        
+
+         
+        `,
+
+            pastYearSolution: `<h2 class="text-left">  Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            <h4> Please use Menu </h4> <p> Need Help Watch Tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `,
+
+            pastYearSolution2075: `
+<h5>  Solution 2075 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe> 
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+`,
+
+            pastYearSolution2076: `
+<h5>  Solution 2076 </h5>   
+<hr>
+
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+`,
+
+            pastYearSolution2077: `
+<h5> 
+     Solution 2078 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+`,
+
+            pastYearSolution2078: `
+    <h5> 
+     Solution 2078 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+`,
+
+            pastYearSolution2079: `
+<h5> 
+     Solution 2079 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+
+`,
+
+            pastYearSolution2080: `
+<h5> 
+     Solution 2080 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+
+
+
+`,
+
+            refBooks: `<iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+
+            refBook1: `
+            <h5> </h5>   
+            <hr>
+            <iframe src="https://api.pageplace.de/preview/DT0400.9781847877208_A23446125/preview-9781847877208_A23446125.pdf" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+                <p>Sorry! PDF cannot be displayed.</p>
+            </iframe> 
+            <div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="https://api.pageplace.de/preview/DT0400.9781847877208_A23446125/preview-9781847877208_A23446125.pdf" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class="nav-link" 
+href="https://api.pageplace.de/preview/DT0400.9781847877208_A23446125/preview-9781847877208_A23446125.pdf" 
+download>
+Download Reference Book
+</a>
+</button>
+</div>
+
+
+`,
+
+            refBook2: ``,
+
+            refBook3: ``
+            ,
+
+            oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
+            // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
+            // notesNewSyllabus: `<h2>Notes - New 2079 Syllabus</h2><p>Here is the content for the notes of new 2079 syllabus.</p>`,
+            notesOldSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            notesNewSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+
+            notes: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            syllabus: `
+            <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            oldSyllabus: `
+            <div class="">
+    <div>
+        <h4 class="text-center">E-Governance</h4>
+        <p>Course Title: E-Governance</p>
+        <p>Course No: CSC366</p>
+        <p>Full Marks: 60 + 20 + 20</p>
+        <p>Pass Marks: 24 + 8 + 8</p>
+        <p>Credit Hrs: 3</p>
+        <p>Nature of the Course: Theory + Lab</p>
+        <p>Semester: VI</p>
+    </div>
+
+    <h5>Course Description:</h5>
+    <p>This course familiarizes students with different concepts of E-Government and E-Governance, 
+    different E-Governance models and infrastructure development, E-government security, and 
+    data warehousing and data mining for e-governance.</p>
+
+    <h5>Course Objectives:</h5>
+    <ul>
+        <li>To develop knowledge of e-governance and e-government</li>
+        <li>To know different e-governance models and infrastructure development</li>
+        <li>To implement security and use data warehousing and mining in e-governance</li>
+    </ul>
+
+    <h5>Course Detail:</h5>
+    
+    <h6>Unit 1: Introduction to E-Government and E-Governance (5 Hrs.)</h6>
+    <ol>
+        <li>Difference between E-Government and E-Governance; E-Government as Information System; Benefits of E-Government; E-Government Life Cycle; Online Service Delivery and Electronic Service Delivery; Evolution, Scope and Content of E-Governance; Present Global Trends of Growth in E-Governance</li>
+    </ol>
+
+    <h6>Unit 2: Models of E-Governance (10 Hrs.)</h6>
+    <ol>
+        <li>Introduction; Model of Digital Governance: Broadcasting / Wider Dissemination Model, Critical Flow Model, Comparative Analysis Model, Mobilization and Lobbying Model, Interactive – Service Model / Government-to-Citizen-to-Government Model (G2C2G); Evolution in E-Governance and Maturity Models: Five Maturity Levels; Characteristics of Maturity Levels; Towards Good Governance through E-Governance Models</li>
+    </ol>
+
+    <h6>Unit 3: E-Government Infrastructure Development (10 Hrs.)</h6>
+    <ol>
+        <li>Network Infrastructure; Computing Infrastructure; Data centers; E-Government Architecture; Interoperability Framework; Cloud Governance; E-readiness; Data System Infrastructure; Legal Infrastructural Preparedness; Institutional Infrastructural Preparedness; Human Infrastructural Preparedness; Technological Infrastructural Preparedness</li>
+    </ol>
+
+    <h6>Unit 4: Security for E-Government (5 Hrs.)</h6>
+    <ol>
+        <li>Challenges and Approach of E-government Security; Security Management Model; E-Government Security Architecture; Security Standards</li>
+    </ol>
+
+    <h6>Unit 5: Applications of Data Warehousing and Data Mining in Government (5 Hrs.)</h6>
+    <ol>
+        <li>Introduction; National Data Warehouses: Census Data, Prices of Essential Commodities; Other Areas for Data Warehousing and Data Mining: Agriculture, Rural Development, Health, Planning, Education, Commerce and Trade, Other Sectors</li>
+    </ol>
+
+    <h6>Unit 6: Case Studies (10 Hrs.)</h6>
+    <ol>
+        <li>E-Government Initiatives in Nepal, Cyber Laws, Implementation in the Land Reform, Human Resource Management Software, NICNET, Collectorate, Computer-aided Administration of Registration Department (CARD), Smart Nagarpalika, National Reservoir Level and Capacity Monitoring System, Computerization in Andra Pradesh, Ekal Seva Kendra, Sachivalaya Vahini, Bhoomi, IT in Judiciary, E-Khazana, DGFT, PRAJA, E-Seva, E-Panchyat, General Information Services of National Informatics Centre, E-Governance initiatives in USA, E-Governance in China, E-Governance in Brazil, and Sri Lanka</li>
+    </ol>
+
+    <h5>Laboratory Work:</h5>
+    <p>The laboratory work includes implementing e-governance models and systems using suitable platforms.</p>
+
+    <h5>Text / Reference books:</h5>
+    <ol>
+        <li>Richard Heeks, Implementing and Managing E-Government</li>
+        <li>C.S. R Prabhu, E-Governance: Concepts and Case Studies, Prentice Hall of India Pvt. Ltd.</li>
+        <li>J. Satyanarayana, E-Government, Prentice Hall of India Pvt. Ltd.</li>
+        <li>Backus, Michiel, E-Governance in Developing Countries, IICD Research Brief, No. 1, March 2001</li>
+    </ol>
+</div>
+
+`,
+            newSyllabus: `
+
+<div class="">
+    <div>
+        <h4 class="text-center">E-Governance</h4>
+        <p>Course Title: E-Governance</p>
+        <p>Course No: CSC377</p>
+        <p>Nature of the Course: Theory + Lab</p>
+        <p>Semester: VI</p>
+        <p>Full Marks: 60 + 20 + 20</p>
+        <p>Pass Marks: 24 + 8 + 8</p>
+        <p>Credit Hrs: 3</p>
+    </div>
+
+    <h5>Course Description:</h5>
+    <p>This course familiarizes students with different concepts of E-Government and E-Governance, 
+    different E-Governance models and infrastructure development, E-government security, and 
+    data warehousing and data mining for e-governance.</p>
+
+    <h5>Course Objectives:</h5>
+    <ul>
+        <li>To develop knowledge of e-governance and e-government</li>
+        <li>To know different e-governance models and infrastructure development</li>
+        <li>To implement security and use data warehousing and mining in e-governance</li>
+    </ul>
+
+    <h5>Course Detail:</h5>
+    
+    <h5>Unit 1: Introduction to E-Government and E-Governance (5 Hrs.)</h5>
+    <ol>
+        <li>Difference between E-Government and E-Governance; E-Government as Information System; Benefits of E-Government; E-Government Life Cycle; Online Service Delivery and Electronic Service Delivery; Evolution, Scope and Content of E-Governance; Present Global Trends of Growth in E-Governance</li>
+    </ol>
+
+    <h5>Unit 2: Models of E-Governance (10 Hrs.)</h5>
+    <ol>
+        <li>Introduction; Model of Digital Governance: Broadcasting / Wider Dissemination Model, Critical Flow Model, Comparative Analysis Model, Mobilization and Lobbying Model, Interactive – Service Model / Government-to-Citizen-to-Government Model (G2C2G); Evolution in E-Governance and Maturity Models: Five Maturity Levels; Characteristics of Maturity Levels; Towards Good Governance through E-Governance Models</li>
+    </ol>
+
+    <h5>Unit 3: E-Government Infrastructure Development (10 Hrs.)</h5>
+    <ol>
+        <li>Network Infrastructure; Computing Infrastructure; Data centers; E-Government Architecture; Interoperability Framework; Cloud Governance; E-readiness; Data System Infrastructure; Legal Infrastructural Preparedness; Institutional Infrastructural Preparedness; Human Infrastructural Preparedness; Technological Infrastructural Preparedness</li>
+    </ol>
+
+    <h5>Unit 4: Security for E-Government (5 Hrs.)</h5>
+    <ol>
+        <li>Challenges and Approach of E-government Security; Security Management Model; E-Government Security Architecture; Security Standards</li>
+    </ol>
+
+    <h5>Unit 5: Applications of Data Warehousing and Data Mining in Government (5 Hrs.)</h5>
+    <ol>
+        <li>Introduction; National Data Warehouses: Census Data, Prices of Essential Commodities; Other Areas for Data Warehousing and Data Mining: Agriculture, Rural Development, Health, Planning, Education, Commerce and Trade, Other Sectors</li>
+    </ol>
+
+    <h5>Unit 6: Case Studies (10 Hrs.)</h5>
+    <ol>
+        <li>E-Government Initiatives in Nepal, Cyber Laws, Implementation in the Land Reform, Human Resource Management Software, NICNET, Collectorate, Computer-aided Administration of Registration Department (CARD), Smart Nagarpalika, National Reservoir Level and Capacity Monitoring System, Computerization in Andra Pradesh, Ekal Seva Kendra, Sachivalaya Vahini, Bhoomi, IT in Judiciary, E-Khazana, DGFT, PRAJA, E-Seva, E-Panchyat, General Information Services of National Informatics, Centre E-Governance initiative in USA, E-Governance in China, E-Governance in Brazil and Sri Lanka</li>
+    </ol>
+
+    <h5>Laboratory Work:</h5>
+    <p>The laboratory work includes implementing e-governance models and systems using suitable platform.</p>
+
+    <h5>Text / Reference Books:</h5>
+    <ul>
+        <li>Richard Heeks, Implementing and Managing e-Government</li>
+        <li>C.S. R Prabhu, e-Governance: Concepts and Case studies, Prentice Hall of India Pvt. Ltd.</li>
+        <li>J. Satyanarayana, e-Government, Prentice Hall of India Pvt. Ltd.</li>
+        <li>Backus, Michiel, e-Governance in Developing Countries, IICD Research Brief, No. 1, March 2001</li>
+    </ul>
+</div>
+
+      `,
+
+
+        };
+
+
+        document.getElementById('refBooks').addEventListener('click', () => {
+            content.innerHTML = contents.refBooks;
+        });
+
+
+        document.getElementById('refBook1').addEventListener('click', () => {
+            content.innerHTML = contents.refBook1;
+        });
+
+
+        document.getElementById('refBook2').addEventListener('click', () => {
+            content.innerHTML = contents.refBook2;
+        });
+
+
+        document.getElementById('refBook3').addEventListener('click', () => {
+            content.innerHTML = contents.refBook3;
+        });
+
+        document.getElementById('refBook1').innerHTML = "Implementing and Managing eGovernment An International Text Richard Heek"
+        document.getElementById('refBook2').innerHTML = ""
+        document.getElementById('refBook3').innerHTML = ""
+
+
+        document.getElementById('questions').addEventListener('click', () => {
+            content.innerHTML = contents.questions;
+        });
+
+        document.getElementById('pastYearQuestion2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2075;
+        });
+
+        document.getElementById('pastYearQuestion2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2076;
+        });
+
+        document.getElementById('pastYearQuestion2077').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2077;
+        });
+
+
+        document.getElementById('pastYearQuestion2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2078;
+        });
+
+        document.getElementById('pastYearQuestion2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2079;
+        });
+
+
+        document.getElementById('pastYearQuestion2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2080;
+        });
+
+        document.getElementById('pastYearQuestion2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2074;
+        });
+
+        document.getElementById('pastYearSolution').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution;
+        });
+
+        document.getElementById('pastYearSolution2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2075;
+        });
+
+        document.getElementById('pastYearSolution2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2076;
+        });
+
+
+        document.getElementById('pastYearSolution2077').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2077;
+        });
+
+        document.getElementById('pastYearSolution2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2078;
+        });
+
+        document.getElementById('pastYearSolution2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2079;
+        });
+
+
+        document.getElementById('pastYearSolution2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2080;
+        });
+
+        document.getElementById('notes').addEventListener('click', () => {
+            content.innerHTML = contents.notes;
+        });
+
+        document.getElementById('syllabus').addEventListener('click', () => {
+            content.innerHTML = contents.syllabus;
+        });
+
+
+        document.getElementById("content").innerHTML = contents.oldSyllabus;
+
+        document.getElementById('oldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.oldSyllabus;
+        });
+
+        document.getElementById('newSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.newSyllabus;
+        });
+
+        document.getElementById('oldAppVersion').addEventListener('click', () => {
+            content.innerHTML = contents.oldAppVersion;
+        });
+
+        document.getElementById('notesOldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesOldSyllabus;
+        });
+
+        document.getElementById('notesNewSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesNewSyllabus;
+        });
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+
+        // Set current year in the footer
+        document.getElementById('oldSyllabusYear').innerHTML = "CSC 366";
+        document.getElementById('newSyllabusYear').innerHTML = "CSC 377";
+        document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
+        document.getElementById("navName").innerHTML = "E-Governance"
+        document.getElementById("titleInfo").innerHTML = "CSC366 E-Governance ~ CSIT Solution"
+        function showModal(src, alt) {
+            $('#modalImage').attr('src', src);
+            $('#imageModalLabel').text(alt);
+            $('#imageModal').modal('show');
+        }
+    </script>
+</body>
+
+</html>

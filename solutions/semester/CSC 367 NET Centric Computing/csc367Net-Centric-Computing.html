@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titleInfo"> </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../../../resources/favicon_io/favicon.ico" type="image/x-icon">
+    <style>
+        *,
+        .lead {
+            letter-spacing: 1px;
+        }
+
+        li a,
+        a,
+        .carousel-control-prev-icon,
+        .carousel-control-next {
+            color: rgb(0, 109, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
+        <div class="container-sm d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="./csc367Net-Centric-Computing.html">
+                    <img src="https://csit-solution.github.io/resources/img/logos/main/logocsit.jpg" alt="CSIT Logo"
+                        class="img-fluid rounded-circle" style="width: 50px;">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select Semester
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../../index.html">First</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Second</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Third</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fourth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fifth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Sixth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Seventh</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Eighth</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <section class="container" style="min-height: 70vh;">
+        <div class="row">
+            <div class="col-md-3  col-sm-12 border-right ">
+
+                <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
+                    <h5 id="navName"></h5>
+                    <li class="nav-item dropdown">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Questions
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2074">Question 2074</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2075">Question 2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2076">Question 2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2077">Question 2077 </a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2078">Question 2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2079">Question 2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2080">Question 2080</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Solution
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2075">Solution2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2076">Solution2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2077">Solution2077</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2078">Solution2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2079">Solution2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2080">Solution2080</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="notesOldSyllabus">Notes By Dilli Hang Rai</a></li>
+                            <li><a class="dropdown-item" href="#" id="notesNewSyllabus">Notes By XYZ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="refBooks" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Reference Books
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="refBook1">
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook2">
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook3">
+
+                                </a></li>
+                                <li><a class="dropdown-item" href="#" id="refBook4">
+
+                                </a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Syllabus
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="oldSyllabus">CSC <span
+                                        id="oldSyllabusYear"></span> Old Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="newSyllabus">CSC <span
+                                        id="newSyllabusYear"></span> New Syllabus</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="col-md-9  col-sm-12">
+                <div class="border rounded p-3" id="content">
+
+                </div>
+            </div>
+    </section>
+    <br>
+
+    </div>
+
+    <footer class="container">
+        <hr>
+        <br>
+        <p class="text-center lead">
+            All CopyRight Reserved &copy; 2023 - <span id="todayDateFoot"></span> CSIT Solution <br> Powered By: <a
+                href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
+                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to dynamically update content
+        const content = document.getElementById('content');
+
+        const contents = {
+
+            questions: `<h2 class="text-left"> Questions Collection </h2> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h4> Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+
+            pastYearQuestion2074: `
+            <div class="">
+    <div class="text-center">
+        <h4>Tribhuvan University</h4>
+        <h5>Institute of Science and Technology</h5>
+        <p>2074</p>
+        <h6>Bachelor Level / Sixth Semester / Science</h6>
+        <h6>Computer Science and Information Technology (CSC364)</h6>
+        <h6>(Software Engineering)</h6>
+        <p>Full Marks: 60 &nbsp;&nbsp;&nbsp; Pass Marks: 24 &nbsp;&nbsp;&nbsp; Time: 3 hours</p>
+    </div>
+    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+    <p><strong>The figures in the margin indicate full marks.</strong></p>
+    
+    <p><strong>Attempt any Ten questions. (10 x 6 = 60)</strong></p>
+
+    <ol>
+        <li>
+            <p>Differentiable between software engineering and system engineering. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Describe spiral model with its advantages and disadvantages. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is risk management? Explain risk management process. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is a software requirement? Explain software requirement process. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is rapid prototyping technique? Mention the types of rapid prototyping techniques and explain it. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Why is formal specification important for software development? Explain. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is client-server model? Explain the advantages and disadvantages of client-server model. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Draw use case diagram of credit card validation system. [Use your own assumptions]. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Describe the clean room software development process. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Compare and contrast between white box and black box testing. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is source code translation? Explain the program translation process with a diagram. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+    </ol>
+</div>
+
+
+`,
+
+            pastYearQuestion2075: `   
+
+`,
+
+            pastYearQuestion2076: ` 
+           <div class="container">
+    <h4 class="text-center">Tribhuwan University</h4>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <p class="text-center">2076</p>
+    <p class="text-center">
+        Bachelor Level / Sixth Semester / Science<br>
+        Computer Science and Information Technology (CSC378)<br>
+        NET Centric Computing
+    </p>
+    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+    <p><strong>Time:</strong> 3 Hours</p>
+    
+    <p><em>Candidates are required to give their answers in their own words as far as practicable.</em></p>
+    <p><em>The figures in the margin indicate full marks.</em></p>
+
+    <h5 class="mt-4">Questions:</h5>
+
+    <p><strong>Attempt all questions. (Total: 60 marks)</strong></p>
+    
+    <ol>
+        <li>
+            Answer the following questions in short.<br>
+            <ol type="a">
+                <li>ASP requirements</li>
+                <li>Client vs server-side script</li>
+                <li>ADO</li>
+                <li>VB Script</li>
+                <li>Error Handling</li>
+            </ol>
+        </li><br>
+        <li>
+            <strong>a.</strong> Differentiate between ASP and IIS.<br>
+            <strong>b.</strong> Explain the virtual directory properties.<br>
+        </li><br>
+        <li>
+            <strong>a.</strong> Explain about request object and session object.<br>
+            <strong>b.</strong> Differentiate between application object and server object.<br>
+        </li><br>
+        <li>
+            <strong>a.</strong> Explain about file access with ASP with an example.<br>
+            <strong>b.</strong> What do you mean by debugging ASP? Explain.<br>
+        </li><br>
+        <li>
+            <strong>a.</strong> Explain the sending and receiving e-mail with ASP with an example.<br>
+            <strong>b.</strong> Explain the components of ASP.<br>
+        </li><br>
+        <li>
+            <strong>a.</strong> Explain the client-side scripting with a practical example.<br>
+            <strong>b.</strong> What do you mean by Microsoft .NET framework? Explain with an example.<br>
+        </li>
+    </ol>
+</div>
+
+
+
+        `,
+
+
+            pastYearQuestion2077: `
+
+
+
+
+
+`,
+
+
+            pastYearQuestion2078: `
+<div class="container">
+    <h4 class="text-center">Tribhuwan University</h4>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <p class="text-center">2078</p>
+    <p class="text-center">
+        Bachelor Level / Sixth Semester / Science<br>
+        Computer Science and Information Technology ( CSC378 )<br>
+        NET Centric Computing
+    </p>
+    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+    <p><strong>Time:</strong> 3 Hours</p>
+    
+    <p><em>Candidates are required to give their answers in their own words as far as practicable.</em></p>
+    <p><em>The figures in the margin indicate full marks.</em></p>
+
+    <h5 class="mt-4">Long Answer Questions:</h5>
+
+    <h5>Group A</h5>
+    <p><strong>Attempt any two questions. (2*10=20)</strong></p>
+    
+    <ol>
+        <li>
+            Differentiate between struct and enum. Why do we need to handle exceptions? Illustrate with an example with your own customized exception.<br>
+        </li><br>
+        <li>
+            Explain the procedure for building, running, and deploying .NET core applications. Write a program to show the possibility of SQL injection attack.<br>
+        </li><br>
+        <li>
+            What are the advantages of stateless HTTP in an ASP.NET core application? Create a method to insert a record (3, “John”, 12000) onto the table Employee having fields EmployeeId(int), Name varchar(200), Salary(int) using Entity Framework.<br><br>
+        </li>
+    </ol>
+
+    <h5 class="mt-4">Short Answer Questions:</h5>
+
+    <h5>Group B</h5>
+    <p><strong>Attempt any eight questions. (8*5=40)</strong></p>
+    
+    <ol>
+        <li>
+            Define open redirect attacks. Discuss Docker and containerization.<br><br>
+        </li>
+        <li>
+            What are named and positional attribute parameters? Describe the .NET architecture design and principles.<br><br>
+        </li>
+        <li>
+            Explain the request and response message format with an example.<br><br>
+        </li>
+        <li>
+            Why do we need to validate forms? How can you use React for this?<br><br>
+        </li>
+        <li>
+            Define data model and data context. What does URL routing mean?<br><br>
+        </li>
+        <li>
+            Give an example to manage the session state.<br><br>
+        </li>
+        <li>
+            How can you prevent SQL injection attacks? Explain with an example.<br><br>
+        </li>
+        <li>
+            Explain the process to deploy a core application.<br><br>
+        </li>
+        <li>
+            Write short notes on (any two):<br>
+            a) LINQ<br>
+            b) Open Redirected Attack<br>
+            c) Query String<br>
+        </li>
+    </ol>
+</div>
+
+
+`,
+
+
+            pastYearQuestion2079: `
+
+            <div class="container">
+    <h4 class="text-center">Tribhuwan University</h4>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <p class="text-center">2079</p>
+    <p class="text-center">
+        Bachelor Level / Sixth Semester / Science<br>
+        Computer Science and Information Technology ( CSC378 )<br>
+        NET Centric Computing
+    </p>
+    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+    <p><strong>Time:</strong> 3 Hours</p>
+    
+    <p><em>Candidates are required to give their answers in their own words as far as practicable.</em></p>
+    <p><em>The figures in the margin indicate full marks.</em></p>
+
+    <h5 class="mt-4">Long Answer Questions:</h5>
+
+    <h5>Group A</h5>
+    <p><strong>Attempt any two questions. (2*10=20)</strong></p>
+    
+    <ol>
+        <li>
+            What is the purpose of a web form? Write a program to demonstrate the concept of collection and generics.<br>
+        </li><br>
+        <li>
+            Explain the uses of cookies. What types of vulnerabilities can occur in web applications? Show the case of a Cross-site Scripting attack.<br>
+        </li><br>
+        <li>
+            Describe any two hosting models for core applications. Design a client-side validation application using jQuery for taking input data from students in a Library Management System, assuming your own assumptions.<br><br>
+        </li>
+    </ol>
+
+    <h5 class="mt-4">Short Answer Questions:</h5>
+
+    <h5>Group B</h5>
+    <p><strong>Attempt any eight questions. (8*5=40)</strong></p>
+    
+    <ol>
+        <li>
+            How do you assign roles, claims, and policies? Explain with an example.<br><br>
+        </li>
+        <li>
+            What types of problems lead to SQL injection attacks? Discuss any two types of ASP.NET host models.<br><br>
+        </li>
+        <li>
+            What does a single page application mean? Discuss server-side strategies.<br><br>
+        </li>
+        <li>
+            Write an ADO.NET application to read the data from the existing table MOVIE(id, name, genre), where genre is “comedy”.<br><br>
+        </li>
+        <li>
+            Differentiate between .NET and ASP.NET frameworks. How do you test .NET core applications?<br><br>
+        </li>
+        <li>
+            Define HTTP. Explain the MVC pattern.<br><br>
+        </li>
+        <li>
+            What do dependency injection and IoC container mean? Explain.<br><br>
+        </li>
+        <li>
+            What is a tag helper? Discuss razor syntax with an example.<br><br>
+        </li>
+        <li>
+            Write short notes on (any two):<br>
+            1. Lambda Expression<br>
+            2. Containerization using Docker<br>
+            3. Delegates and Events<br>
+        </li>
+    </ol>
+</div>
+
+
+`,
+            pastYearQuestion2080: `
+
+        <div class="container">
+    <h4 class="text-center">Tribhuwan University</h4>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <p class="text-center">2080</p>
+    <p class="text-center">
+        Bachelor Level / Sixth Semester / Science<br>
+        Computer Science and Information Technology ( CSC378 )<br>
+        NET Centric Computing
+    </p>
+    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+    <p><strong>Time:</strong> 3 Hours</p>
+    
+    <p><em>Candidates are required to give their answers in their own words as far as practicable.</em></p>
+    <p><em>The figures in the margin indicate full marks.</em></p>
+
+    <h5 class="mt-4">Long Answer Questions:</h5>
+
+    <h5>Group A</h5>
+    <p><strong>Attempt any two questions. (2*10=20)</strong></p>
+    
+    <ol>
+        <li>
+            How do you cache the information of the client and what are its uses? Create a table named BAG(ID, Brand, Price, Date). Perform the following operations using Entity Framework Core.<br>
+            - Update the Price of those Books to 2000 which are published in 2022.<br>
+            - Delete the Book which was published in 1981.<br>
+            - Retrieve the Brand of Books having price greater than 500.<br>
+        </li><br>
+        <li>
+            How do you manage state on stateless HTTP? How do you validate forms using jQuery? Describe with your own assumptions.<br>
+        </li><br>
+        <li>
+            What are the needs for partial class and sealed class? How do you relate delegates with events? State the steps to deploy a .NET Core application.<br><br>
+        </li>
+    </ol>
+
+    <h5 class="mt-4">Short Answer Questions:</h5>
+
+    <h5>Group B</h5>
+    <p><strong>Attempt any eight questions. (8*5=40)</strong></p>
+    
+    <ol>
+        <li>
+            Describe the importance of the MVC pattern in designing web applications.<br><br>
+        </li>
+        <li>
+            How do you create a controller? Mention some requirements for rendering HTML.<br><br>
+        </li>
+        <li>
+            What is the role of the adapter class in ADO.NET? List some features of URL routing.<br><br>
+        </li>
+        <li>
+            Explain the chances of SQL injection attacks with a scenario.<br><br>
+        </li>
+        <li>
+            Define claim and policy in terms of authorization. How and when do you create hidden fields?<br><br>
+        </li>
+        <li>
+            Mention the two types of services managed by the IoC container and how they are registered.<br><br>
+        </li>
+        <li>
+            Differentiate between generic and non-generic collections. Write a simple program to create a generic class with a generic constructor, generic member variable, generic property, and generic method.<br><br>
+        </li>
+        <li>
+            What are tag helpers? What do tag helpers provide?<br><br>
+        </li>
+        <li>
+            Write short notes on (any two):<br>
+            a) Lambda Expression<br>
+            b) Cross-Site Request Forgery<br>
+            c) Single Page Application<br>
+        </li>
+    </ol>
+</div>
+
+
+         
+        `,
+
+            pastYearSolution: `<h2 class="text-left">  Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            <h4> Please use Menu </h4> <p> Need Help Watch Tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `,
+
+            pastYearSolution2075: `
+<h5>  Solution 2075 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe> 
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+`,
+
+            pastYearSolution2076: `
+<h5>  Solution 2076 </h5>   
+<hr>
+
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+`,
+
+            pastYearSolution2077: `
+<h5> 
+     Solution 2078 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+`,
+
+            pastYearSolution2078: `
+    <h5> 
+     Solution 2078 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+`,
+
+            pastYearSolution2079: `
+<h5> 
+     Solution 2079 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+
+`,
+
+            pastYearSolution2080: `
+<h5> 
+     Solution 2080 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+
+
+
+`,
+
+            refBooks: `<iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+
+            refBook1: `
+            <h5> C# 8.0 and .NET Core 3.0 – Modern Cross-Platform Development, Fourth Edition, by Mark J. Price, 2019</h5>   
+            <hr>
+            <iframe src="https://alek772.github.io/Books/Csharp%208.0%20and%20.NET%20Core%203.0%20%E2%80%93%20Modern%20Cross-Platform%20Development%204th%20Edition.pdf" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+                <p>Sorry! PDF cannot be displayed.</p>
+            </iframe> 
+            <div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="https://alek772.github.io/Books/Csharp%208.0%20and%20.NET%20Core%203.0%20%E2%80%93%20Modern%20Cross-Platform%20Development%204th%20Edition.pdf" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class="nav-link" 
+href="https://alek772.github.io/Books/Csharp%208.0%20and%20.NET%20Core%203.0%20%E2%80%93%20Modern%20Cross-Platform%20Development%204th%20Edition.pdf" 
+download>
+Download Reference Book
+</a>
+</button>
+</div>
+
+
+`,
+
+            refBook2: `
+             <h5> ASP.NET Core in Action, by Andrew Lock, 2018 </h5>   
+            <hr>
+            <iframe src="https://www.netinfo.click/books/prog/ASP.NET%20Core%20in%20Action.pdf" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+                <p>Sorry! PDF cannot be displayed.</p>
+            </iframe> 
+            <div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="https://www.netinfo.click/books/prog/ASP.NET%20Core%20in%20Action.pdf" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class="nav-link" 
+href="https://www.netinfo.click/books/prog/ASP.NET%20Core%20in%20Action.pdf" 
+download>
+Download Reference Book
+</a>
+</button>
+</div>
+
+            `,
+
+            refBook3: `
+             <h5>             Learning ASP.NET Core 2.0, Michel Bruchet, Jason De Oliveira, 2017 </h5>   
+            <hr>
+            <iframe src="" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+                <p>Sorry! PDF cannot be displayed.</p>
+            </iframe> 
+            <div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class="nav-link" 
+href="" 
+download>
+Download Reference Book
+</a>
+</button>
+</div>
+            ` 
+            ,     
+            
+            refBook4: `
+             <h5> Learn ASP.NET Core 3 - Second Edition, Kenneth Yamikani Fukizi, Jason De Oliveira, Michel Bruchet, 2019 </h5>   
+            <hr>
+            <iframe src="" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+                <p>Sorry! PDF cannot be displayed.</p>
+            </iframe> 
+            <div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class="nav-link" 
+href="" 
+download>
+Download Reference Book
+</a>
+</button>
+</div>
+            
+            `
+            ,
+
+            oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
+            // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
+            // notesNewSyllabus: `<h2>Notes - New 2079 Syllabus</h2><p>Here is the content for the notes of new 2079 syllabus.</p>`,
+            notesOldSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            notesNewSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+
+            notes: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            syllabus: `
+            <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            oldSyllabus: `
+            <div class="container">
+    <div >
+        <h4 class="text-center">NET Centric Computing</h4>
+        <p><strong>Course No:</strong> CSC367</p>
+        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+        <p><strong>Semester:</strong> VI</p>
+        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+        <p><strong>Credit Hrs:</strong> 3</p>
+    </div>
+
+    <h5>Course Description:</h5>
+    <p>This course covers the concepts of cross-platform web application development using the ASP.NET Core MVC framework with C# programming language.</p>
+
+    <h5>Course Objectives:</h5>
+    <ul>
+        <li>To understand the theoretical foundations and practical aspects of the ASP.NET Core web application framework and C# language features.</li>
+    </ul>
+
+    <h5>Course Contents:</h5>
+
+    <h6>Unit 1: Language Preliminaries (8 Hrs)</h6>
+    <ol>
+        <li>Introduction to .NET framework, Compilation and execution of .NET applications, Basic language constructs, Constructor, Properties, Arrays and Strings, Indexers, Inheritance, use of “base” keyword, Method hiding and overriding, applying polymorphism in code extensibility, structs and enums, abstract class, sealed class, interface, Delegate and Events, Partial class, Collections, Generics, File IO, LINQ Fundamentals: Lambda Expressions, Try statements and Exceptions, Attributes: Attribute Classes, Named and Positional Attribute Parameters, Attribute Targets, Specifying Multiple Attributes, Asynchronous Programming: Principle of Asynchrony, Async/Await patterns in C#</li>
+    </ol>
+
+    <h6>Unit 2: Introduction to ASP.NET (3 Hrs)</h6>
+    <ol>
+        <li>.NET and ASP.NET frameworks: .NET, .NET Core, Mono, ASP.NET Web Forms, ASP.NET MVC, ASP.NET Web API, ASP.NET Core, .NET Architecture and Design Principles, Compilation and Execution of .NET applications: CLI, MSIL and CLR, .NET Core in detail, .NET CLI: build, run, test and deploy .NET Core Applications</li>
+    </ol>
+
+    <h6>Unit 3: HTTP and ASP.NET Core (3 Hrs)</h6>
+    <ol>
+        <li>HTTP, Request and Response Message Format, Common web application architectures, MVC Pattern, ASP.NET Core Architecture Overview, Projects, and Conventions, ASP.NET and ASP.NET MVC</li>
+    </ol>
+
+    <h6>Unit 4: Creating ASP.NET Core MVC Applications (10 Hrs)</h6>
+    <ol>
+        <li>Setting up the Environment, Controllers and Actions: Create Controllers, Create Actions and Action Results Types, Rendering HTML with Views: Razor Syntax, Understanding Tag Helpers, Models: Binding and Validations, URL Routing and features, Web API Applications: API Controllers, JSON, Dependency Injection and IOC containers</li>
+    </ol>
+
+    <h6>Unit 5: Working with Database (6 Hrs)</h6>
+    <ol>
+        <li>ADO.NET basics: Connection, Command, Reader and Adapter classes, Entity Framework (EF) Core, Object-Relational Mapper (ORM), Adding EF Core to an application: Choosing database provider, data models and data context, Querying and Saving data to database: Create, read, update and delete records</li>
+    </ol>
+
+    <h6>Unit 6: State Management on ASP.NET Core Application (4 Hrs)</h6>
+    <ol>
+        <li>State Management on stateless HTTP, Server-side strategies: Session State, TempData, Using HttpContext, Cache, Client-side strategies: Cookies, Query Strings, Hidden Fields</li>
+    </ol>
+
+    <h6>Unit 7: Client-side Development in ASP.NET Core (4 Hrs)</h6>
+    <ol>
+        <li>Common client-side web technologies, JQuery, Forms and Validation, Single Page Application (SPA) Frameworks: Angular, React</li>
+    </ol>
+
+    <h6>Unit 8: Securing ASP.NET Core Applications (5 Hrs)</h6>
+    <ol>
+        <li>Authentication: ASP.NET Core Identity, Adding authentication to apps and identity service configurations, Authorization: Roles, Claims and Policies, Securing Controllers and Action Methods, Common Vulnerabilities: Cross-site Scripting attacks, SQL Injection attacks, Cross-site Request Forgery (CSRF), Open Redirect Attacks</li>
+    </ol>
+
+    <h6>Unit 9: Hosting and Deploying ASP.NET Core Applications (2 Hrs)</h6>
+    <ol>
+        <li>App Servers and Hosting models: IIS, Nginx, Apache, ASP.NET Core Module, Kestrel, Docker and Containerization, Publish to Azure cloud</li>
+    </ol>
+
+    <h5>Laboratory Works:</h5>
+    <p>The laboratory work includes writing programs covering most of the concepts from the above units using C# and .NET Core SDK (3.0 or above).</p>
+
+    <h5>Text / Reference Books:</h5>
+    <ol>
+        <li>C# 8.0 and .NET Core 3.0 – Modern Cross-Platform Development, Fourth Edition, by Mark J. Price, 2019</li>
+        <li>ASP.NET Core in Action, by Andrew Lock, 2018</li>
+        <li>Learning ASP.NET Core 2.0, Michel Bruchet, Jason De Oliveira, 2017</li>
+        <li>Learn ASP.NET Core 3 - Second Edition, Kenneth Yamikani Fukizi, Jason De Oliveira, Michel Bruchet, 2019</li>
+    </ol>
+</div>
+
+`,
+            newSyllabus: `
+<div class="">
+    <div>
+        <h4 class="text-center">NET Centric Computing</h4>
+        <p>Course No: CSC378</p>
+        <p>Nature of the Course: Theory + Lab</p>
+        <p>Semester: VI</p>
+        <p>Full Marks: 60 + 20 + 20</p>
+        <p>Pass Marks: 24 + 8 + 8</p>
+        <p>Credit Hrs: 3</p>
+    </div>
+
+    <h5>Course Description:</h5>
+    <p>This course covers the concepts of cross-platform web application development using the ASP.NET Core MVC framework with C# programming language.</p>
+
+    <h5>Course Objectives:</h5>
+    <ul>
+        <li>To understand the theoretical foundations and practical aspects of the ASP.NET Core web application framework and C# language features.</li>
+    </ul>
+
+    <h5>Course Contents:</h5>
+    <h6>Unit 1: Language Preliminaries (8 Hrs)</h6>
+    <ol>
+        <li>Introduction to .NET framework, Compilation and execution of .NET applications, Basic language constructs, Constructor, Properties, Arrays and Strings, Indexers, Inheritance, use of “base” keyword, Method hiding and overriding, applying polymorphism in code extensibility, structs and enums, abstract class, sealed class, interface, Delegate and Events, Partial class, Collections, Generics, File IO, LINQ Fundamentals: Lambda Expressions, Try statements and Exceptions, Attributes: Attribute Classes, Named and Positional Attribute Parameters, Attribute Targets, Specifying Multiple Attributes, Asynchronous Programming: Principle of Asynchrony, Async/Await patterns in C#</li>
+    </ol>
+
+    <h6>Unit 2: Introduction to ASP.NET (3 Hrs)</h6>
+    <ol>
+        <li>.NET and ASP.NET frameworks: .NET, .NET Core, Mono, ASP.NET Web Forms, ASP.NET MVC, ASP.NET Web API, ASP.NET Core, .NET Architecture and Design Principles, Compilation and Execution of .NET applications: CLI, MSIL and CLR, .NET Core in detail, .NET CLI: build, run, test and deploy .NET Core Applications</li>
+    </ol>
+
+    <h6>Unit 3: HTTP and ASP.NET Core (3 Hrs)</h6>
+    <ol>
+        <li>HTTP, Request and Response Message Format, Common web application architectures, MVC Pattern, ASP.NET Core Architecture Overview, Projects, and Conventions, ASP.NET and ASP.NET MVC</li>
+    </ol>
+
+    <h6>Unit 4: Creating ASP.NET Core MVC Applications (10 Hrs)</h6>
+    <ol>
+        <li>Setting up the Environment, Controllers and Actions: Create Controllers, Create Actions and Action Results Types, Rendering HTML with Views: Razor Syntax, Understanding Tag Helpers, Models: Binding and Validations, URL Routing and features, Web API Applications: API Controllers, JSON, Dependency Injection and IOC containers</li>
+    </ol>
+
+    <h6>Unit 5: Working with Database (6 Hrs)</h6>
+    <ol>
+        <li>ADO.NET basics: Connection, Command, Reader and Adapter classes, Entity Framework (EF) Core, Object-Relational Mapper (ORM), Adding EF Core to an application: Choosing database provider, data models and data context, Querying and Saving data to database: Create, read, update and delete records</li>
+    </ol>
+
+    <h6>Unit 6: State Management on ASP.NET Core Application (4 Hrs)</h6>
+    <ol>
+        <li>State Management on stateless HTTP, Server-side strategies: Session State, TempData, Using HttpContext, Cache, Client-side strategies: Cookies, Query Strings, Hidden Fields</li>
+    </ol>
+
+    <h6>Unit 7: Client-side Development in ASP.NET Core (4 Hrs)</h6>
+    <ol>
+        <li>Common client-side web technologies, JQuery, Forms and Validation, Single Page Application (SPA) Frameworks: Angular, React</li>
+    </ol>
+
+    <h6>Unit 8: Securing in ASP.NET Core Application (5 Hrs)</h6>
+    <ol>
+        <li>Authentication: ASP.NET Core Identity, Adding authentication to apps and identity service configurations, Authorization: Roles, Claims and Policies, Securing Controllers and Action Methods, Common Vulnerabilities: Cross-site Scripting attacks, SQL Injection attacks, Cross-site Request Forgery (CSRF), Open Redirect Attacks</li>
+    </ol>
+
+    <h6>Unit 9: Hosting and Deploying ASP.NET Core Application (2 Hrs)</h6>
+    <ol>
+        <li>App Servers and Hosting models: IIS, Nginx, Apache, ASP.NET Core Module, Kestrel, Docker and Containerization, Publish to Azure cloud</li>
+    </ol>
+
+    <h5>Laboratory Works:</h5>
+    <p>The laboratory work includes writing programs covering most of the concepts from the above units using C# and .NET Core SDK (3.0 or above).</p>
+
+    <h5>Text / Reference Books:</h5>
+    <ol>
+        <li>C# 8.0 and .NET Core 3.0 – Modern Cross-Platform Development, Fourth Edition, by Mark J. Price, 2019</li>
+        <li>ASP.NET Core in Action, by Andrew Lock, 2018</li>
+        <li>Learning ASP.NET Core 2.0, Michel Bruchet, Jason De Oliveira, 2017</li>
+        <li>Learn ASP.NET Core 3 - Second Edition, Kenneth Yamikani Fukizi, Jason De Oliveira, Michel Bruchet, 2019</li>
+    </ol>
+</div>
+
+
+      `,
+
+
+        };
+
+
+        document.getElementById('refBooks').addEventListener('click', () => {
+            content.innerHTML = contents.refBooks;
+        });
+
+
+        document.getElementById('refBook1').addEventListener('click', () => {
+            content.innerHTML = contents.refBook1;
+        });
+
+
+        document.getElementById('refBook2').addEventListener('click', () => {
+            content.innerHTML = contents.refBook2;
+        });
+
+
+        document.getElementById('refBook3').addEventListener('click', () => {
+            content.innerHTML = contents.refBook3;
+        });
+
+        document.getElementById('refBook1').innerHTML = "C# 8.0 and .NET Core 3.0 – Modern Cross-Platform Development, Fourth Edition, by Mark J. Price, 2019"
+        document.getElementById('refBook2').innerHTML = "ASP.NET Core in Action, by Andrew Lock, 2018"
+        document.getElementById('refBook3').innerHTML = " Learning ASP.NET Core 2.0, Michel Bruchet, Jason De Oliveira, 2017"
+        document.getElementById('refBook4').innerHTML = "Learn ASP.NET Core 3 - Second Edition, Kenneth Yamikani Fukizi, Jason De Oliveira, Michel Bruchet, 2019"
+
+
+        document.getElementById('questions').addEventListener('click', () => {
+            content.innerHTML = contents.questions;
+        });
+
+        document.getElementById('pastYearQuestion2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2075;
+        });
+
+        document.getElementById('pastYearQuestion2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2076;
+        });
+
+        document.getElementById('pastYearQuestion2077').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2077;
+        });
+
+
+        document.getElementById('pastYearQuestion2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2078;
+        });
+
+        document.getElementById('pastYearQuestion2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2079;
+        });
+
+
+        document.getElementById('pastYearQuestion2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2080;
+        });
+
+        document.getElementById('pastYearQuestion2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2074;
+        });
+
+        document.getElementById('pastYearSolution').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution;
+        });
+
+        document.getElementById('pastYearSolution2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2075;
+        });
+
+        document.getElementById('pastYearSolution2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2076;
+        });
+
+
+        document.getElementById('pastYearSolution2077').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2077;
+        });
+
+        document.getElementById('pastYearSolution2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2078;
+        });
+
+        document.getElementById('pastYearSolution2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2079;
+        });
+
+
+        document.getElementById('pastYearSolution2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2080;
+        });
+
+        document.getElementById('notes').addEventListener('click', () => {
+            content.innerHTML = contents.notes;
+        });
+
+        document.getElementById('syllabus').addEventListener('click', () => {
+            content.innerHTML = contents.syllabus;
+        });
+
+
+        document.getElementById("content").innerHTML = contents.oldSyllabus;
+
+        document.getElementById('oldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.oldSyllabus;
+        });
+
+        document.getElementById('newSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.newSyllabus;
+        });
+
+        document.getElementById('oldAppVersion').addEventListener('click', () => {
+            content.innerHTML = contents.oldAppVersion;
+        });
+
+        document.getElementById('notesOldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesOldSyllabus;
+        });
+
+        document.getElementById('notesNewSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesNewSyllabus;
+        });
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+
+        // Set current year in the footer
+        document.getElementById('oldSyllabusYear').innerHTML = "CSC 367";
+        document.getElementById('newSyllabusYear').innerHTML = "CSC 378";
+        document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
+        document.getElementById('navName').innerHTML = "NET Centric Computing"
+        document.getElementById("titleInfo").innerHTML = "CSC367 NET Centric Computing"
+        function showModal(src, alt) {
+            $('#modalImage').attr('src', src);
+            $('#imageModalLabel').text(alt);
+            $('#imageModal').modal('show');
+        }
+    </script>
+</body>
+
+</html>
