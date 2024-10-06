@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titleInfo"> </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../../resources/favicon_io/favicon.ico" type="image/x-icon">
+    <style>
+        *,
+        .lead {
+            letter-spacing: 1px;
+        }
+
+        li a,
+        a,
+        .carousel-control-prev-icon,
+        .carousel-control-next {
+            color: rgb(0, 109, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
+        <div class="container-sm d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="">
+                    <img src="../../../../resources/logos/main/csit-solutionlogo.png" alt="CSIT Logo"
+                        class="img-fluid rounded-circle" style="width: 50px;">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select Semester
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../../index.html">First</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Second</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Third</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fourth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fifth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Sixth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Seventh</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Eighth</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <section class="container" style="min-height: 70vh;">
+        <div class="row">
+            <div class="col-md-3  col-sm-12 border-right ">
+
+                <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
+                    <h5 id="navName"></h5>
+                    <li class="nav-item dropdown">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Questions
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2074">Question 2074</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2075">Question 2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2076">Question 2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2077">Question 2077 </a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2078">Question 2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2079">Question 2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2080">Question 2080</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Solution
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2075">Solution2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2076">Solution2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2077">Solution2077</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2078">Solution2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2079">Solution2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2080">Solution2080</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="notesOldSyllabus">Notes By Dilli Hang Rai</a></li>
+                            <li><a class="dropdown-item" href="#" id="notesNewSyllabus">Notes By XYZ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="refBooks" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Reference Books
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="refBook1">
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook2">
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook3">
+
+                                </a></li>
+
+                                <li><a class="dropdown-item" href="#" id="refBook4">
+
+                                </a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Syllabus
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="oldSyllabus">CSC <span
+                                        id="oldSyllabusYear"></span> Old Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="newSyllabus">CSC <span
+                                        id="newSyllabusYear"></span> New Syllabus</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="col-md-9  col-sm-12">
+                <div class="border rounded p-3" id="content">
+
+                </div>
+            </div>
+    </section>
+    <br>
+
+    </div>
+
+    <footer class="container">
+        <hr>
+        <br>
+        <p class="text-center lead">
+            All CopyRight Reserved &copy; 2023 - <span id="todayDateFoot"></span> CSIT Solution <br> Powered By: <a
+                href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
+                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to dynamically update content
+        const content = document.getElementById('content');
+
+        const contents = {
+
+            questions: `<h2 class="text-left"> Questions Collection </h2> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h4> Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+
+            pastYearQuestion2074: `
+            <div class="">
+    <div class="text-center">
+        <h4>Tribhuvan University</h4>
+        <h5>Institute of Science and Technology</h5>
+        <p>2074</p>
+        <h6>Bachelor Level / Sixth Semester / Science</h6>
+        <h6>Computer Science and Information Technology (CSC364)</h6>
+        <h6>(Software Engineering)</h6>
+        <p>Full Marks: 60 &nbsp;&nbsp;&nbsp; Pass Marks: 24 &nbsp;&nbsp;&nbsp; Time: 3 hours</p>
+    </div>
+    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+    <p><strong>The figures in the margin indicate full marks.</strong></p>
+    
+    <p><strong>Attempt any Ten questions. (10 x 6 = 60)</strong></p>
+
+    <ol>
+        <li>
+            <p>Differentiable between software engineering and system engineering. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Describe spiral model with its advantages and disadvantages. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is risk management? Explain risk management process. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is a software requirement? Explain software requirement process. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is rapid prototyping technique? Mention the types of rapid prototyping techniques and explain it. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Why is formal specification important for software development? Explain. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is client-server model? Explain the advantages and disadvantages of client-server model. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Draw use case diagram of credit card validation system. [Use your own assumptions]. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Describe the clean room software development process. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>Compare and contrast between white box and black box testing. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+        <li>
+            <p>What is source code translation? Explain the program translation process with a diagram. <span class="font-weight-bold">(6 marks)</span></p>
+        </li>
+    </ol>
+</div>
+
+
+`,
+
+            pastYearQuestion2075: `   
+
+`,
+
+            pastYearQuestion2076: ` 
+           
+
+
+        `,
+
+
+            pastYearQuestion2077: `
+
+
+
+
+
+`,
+
+
+            pastYearQuestion2078: `
+<h2 class='text-danger'> Not Available </h2>
+
+`,
+
+
+            pastYearQuestion2079: `
+`,
+            pastYearQuestion2080: `
+
+        
+
+         
+        `,
+
+            pastYearSolution: `<h2 class="text-left">  Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            <h4> Please use Menu </h4> <p> Need Help Watch Tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `,
+
+            pastYearSolution2075: `
+<h5>  Solution 2075 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe> 
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+`,
+
+            pastYearSolution2076: `
+<h5>  Solution 2076 </h5>   
+<hr>
+
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+`,
+
+            pastYearSolution2077: `
+<h5> 
+     Solution 2078 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+`,
+
+            pastYearSolution2078: `
+    <h5> 
+     Solution 2078 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+`,
+
+            pastYearSolution2079: `
+<h5> 
+     Solution 2079 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+
+`,
+
+            pastYearSolution2080: `
+<h5> 
+     Solution 2080 </h5>   
+<hr>
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="" download>
+Download Solution </a></button>
+
+</div>
+
+
+
+
+`,
+
+            refBooks: `<iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+
+            refBook1: `
+            <h5> </h5>   
+            <hr>
+            <iframe src="" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+                <p>Sorry! PDF cannot be displayed.</p>
+            </iframe> 
+            <div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class="nav-link" 
+href="" 
+download>
+Download Reference Book
+</a>
+</button>
+</div>
+
+
+`,
+
+            refBook2: ``,
+
+            refBook3: ``
+            ,
+
+            refBook4: ``
+            ,
+
+
+            oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
+            // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
+            // notesNewSyllabus: `<h2>Notes - New 2079 Syllabus</h2><p>Here is the content for the notes of new 2079 syllabus.</p>`,
+            notesOldSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            notesNewSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+
+            notes: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            syllabus: `
+            <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            oldSyllabus: `<div class="">
+    <div>
+        <h4 class="text-center">Artificial Intelligence</h4>
+        <p>Course No: CSC261</p>
+        <p>Nature of the Course: Theory + Lab</p>
+        <p>Semester: IV</p>
+        <p>Full Marks: 60 + 20 + 20</p>
+        <p>Pass Marks: 24 + 8 + 8</p>
+        <p>Credit Hrs: 3</p>
+    </div>
+
+    <h5>Course Description:</h5>
+    <p>This course introduces the ideas and techniques underlying the principles and design of artificial intelligent systems. It covers the basics and applications of AI, including the design of intelligent agents, problem solving, searching, knowledge representation systems, probabilistic reasoning, neural networks, machine learning, and natural language processing.</p>
+
+    <h5>Course Objectives:</h5>
+    <ul>
+        <li>Introduce fundamental concepts of Artificial Intelligence.</li>
+        <li>Learn about computer systems that exhibit intelligent behavior.</li>
+        <li>Design intelligent agents and identify AI problems.</li>
+        <li>Develop knowledge representation and expert systems.</li>
+        <li>Design neural networks for problem-solving.</li>
+        <li>Identify different machine learning paradigms and their applications.</li>
+    </ul>
+
+    <h5>Course Contents:</h5>
+    <h6>Unit I: Introduction (3 Hrs.)</h6>
+    <ol>
+        <li>Artificial Intelligence (AI), AI Perspectives: acting and thinking humanly, acting and thinking rationally</li>
+        <li>History of AI</li>
+        <li>Foundations of AI</li>
+        <li>Applications of AI</li>
+    </ol>
+
+    <h6>Unit II: Intelligent Agents (4 Hrs.)</h6>
+    <ol>
+        <li>Introduction of agents, Structure of Intelligent agent, Properties of Intelligent Agents</li>
+        <li>Configuration of Agents, PEAS description of Agents</li>
+        <li>Types of Agents: Simple Reflexive, Model Based, Goal Based, Utility Based</li>
+        <li>Environment Types: Deterministic, Stochastic, Static, Dynamic, Observable, Semi-observable, Single Agent, Multi-Agent</li>
+    </ol>
+
+    <h6>Unit III: Problem Solving by Searching (9 Hrs.)</h6>
+    <ol>
+        <li>Definition, Problem as a state space search, Problem formulation, Well-defined problems</li>
+        <li>Solving Problems by Searching, Search Strategies, Performance evaluation of search techniques</li>
+        <li>Uninformed Search: Depth First Search, Breadth First Search, Depth Limited Search, Iterative Deepening Search, Bidirectional Search</li>
+        <li>Informed Search: Greedy Best first search, A* search, Hill Climbing, Simulated Annealing</li>
+        <li>Game playing, Adversarial search techniques, Mini-max Search, Alpha-Beta Pruning</li>
+        <li>Constraint Satisfaction Problems</li>
+    </ol>
+
+    <h6>Unit IV: Knowledge Representation (14 Hrs.)</h6>
+    <ol>
+        <li>Definition and importance of Knowledge, Issues in Knowledge Representation, Knowledge Representation Systems</li>
+        <li>Types of Knowledge Representation Systems: Semantic Nets, Frames, Conceptual Dependencies, Scripts, Rule Based Systems, Propositional Logic, Predicate Logic</li>
+        <li>Propositional Logic(PL): Syntax, Semantics, Formal logic-connectives, truth tables, tautology, validity, well-formed-formula, Inference using Resolution, Backward Chaining and Forward Chaining</li>
+        <li>Predicate Logic: FOPL, Syntax, Semantics, Quantification, Inference with FOPL: By converting into PL (Existential and universal instantiation), Unification and lifting, Inference using resolution</li>
+        <li>Handling Uncertain Knowledge, Random Variables, Prior and Posterior Probability, Inference using Full Joint Distribution, Bayes' Rule and its use, Bayesian Networks, Reasoning in Belief Networks</li>
+        <li>Fuzzy Logic</li>
+    </ol>
+
+    <h6>Unit V: Machine Learning (9 Hrs.)</h6>
+    <ol>
+        <li>Introduction to Machine Learning, Concepts of Learning, Supervised, Unsupervised and Reinforcement Learning</li>
+        <li>Statistical-based Learning: Naive Bayes Model</li>
+        <li>Learning by Genetic Algorithm</li>
+        <li>Learning with Neural Networks: Introduction, Biological Neural Networks Vs. Artificial Neural Networks (ANN), Mathematical Model of ANN, Types of ANN: Feed-forward, Recurrent, Single Layered, Multi-Layered, Applications of Artificial Neural Networks, Learning by Training ANN, Supervised vs. Unsupervised Learning, Hebbian Learning, Perceptron Learning, Back-propagation Learning</li>
+    </ol>
+
+    <h6>Unit VI: Applications of AI (6 Hrs.)</h6>
+    <ol>
+        <li>Expert Systems, Development of Expert Systems</li>
+        <li>Natural Language Processing: Natural Language Understanding and Natural Language Generation, Steps of Natural Language Processing</li>
+        <li>Machine Vision Concepts</li>
+        <li>Robotics</li>
+    </ol>
+
+    <h5>Laboratory Works:</h5>
+    <p>The laboratory work consists of the design and implementation of intelligent agents and expert systems, searching techniques, knowledge representation systems, and machine learning techniques. Students are also advised to implement Neural Networks and Genetic Algorithms for solving practical problems of AI using LISP, PROLOG, or any other high-level language.</p>
+
+    <h5>Text Books:</h5>
+    <ol>
+        <li>Stuart Russell and Peter Norvig, <i>Artificial Intelligence: A Modern Approach</i>, Pearson</li>
+    </ol>
+
+    <h5>Reference Books:</h5>
+    <ol>
+        <li>E. Rich, K. Knight, Shivashankar B. Nair, <i>Artificial Intelligence</i>, Tata McGraw Hill</li>
+        <li>George F. Luger, <i>Artificial Intelligence: Structures and Strategies for Complex Problem Solving</i>, Benjamin/Cummings Publication</li>
+        <li>D. W. Patterson, <i>Artificial Intelligence and Expert Systems</i>, Prentice Hall</li>
+        <li>P. H. Winston, <i>Artificial Intelligence</i>, Addison Wesley</li>
+    </ol>
+</div>
+`,
+            newSyllabus: `
+
+
+      `,
+
+
+        };
+
+
+        document.getElementById('refBooks').addEventListener('click', () => {
+            content.innerHTML = contents.refBooks;
+        });
+
+
+        document.getElementById('refBook1').addEventListener('click', () => {
+            content.innerHTML = contents.refBook1;
+        });
+
+
+        document.getElementById('refBook2').addEventListener('click', () => {
+            content.innerHTML = contents.refBook2;
+        });
+
+
+        document.getElementById('refBook3').addEventListener('click', () => {
+            content.innerHTML = contents.refBook3;
+        });
+
+        document.getElementById('refBook4').addEventListener('click', () => {
+            content.innerHTML = contents.refBook4;
+        });
+
+        document.getElementById('refBook1').innerHTML = ""
+        document.getElementById('refBook2').innerHTML = ""
+        document.getElementById('refBook3').innerHTML = ""
+        document.getElementById('refBook4').innerHTML = ""
+
+        document.getElementById('questions').addEventListener('click', () => {
+            content.innerHTML = contents.questions;
+        });
+
+        document.getElementById('pastYearQuestion2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2075;
+        });
+
+        document.getElementById('pastYearQuestion2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2076;
+        });
+
+        document.getElementById('pastYearQuestion2077').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2077;
+        });
+
+
+        document.getElementById('pastYearQuestion2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2078;
+        });
+
+        document.getElementById('pastYearQuestion2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2079;
+        });
+
+
+        document.getElementById('pastYearQuestion2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2080;
+        });
+
+        document.getElementById('pastYearQuestion2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2074;
+        });
+
+        document.getElementById('pastYearSolution').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution;
+        });
+
+        document.getElementById('pastYearSolution2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2075;
+        });
+
+        document.getElementById('pastYearSolution2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2076;
+        });
+
+
+        document.getElementById('pastYearSolution2077').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2077;
+        });
+
+        document.getElementById('pastYearSolution2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2078;
+        });
+
+        document.getElementById('pastYearSolution2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2079;
+        });
+
+
+        document.getElementById('pastYearSolution2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2080;
+        });
+
+        document.getElementById('notes').addEventListener('click', () => {
+            content.innerHTML = contents.notes;
+        });
+
+        document.getElementById('syllabus').addEventListener('click', () => {
+            content.innerHTML = contents.syllabus;
+        });
+
+
+        document.getElementById("content").innerHTML = contents.oldSyllabus;
+
+        document.getElementById('oldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.oldSyllabus;
+        });
+
+        document.getElementById('newSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.newSyllabus;
+        });
+
+        document.getElementById('oldAppVersion').addEventListener('click', () => {
+            content.innerHTML = contents.oldAppVersion;
+        });
+
+        document.getElementById('notesOldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesOldSyllabus;
+        });
+
+        document.getElementById('notesNewSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesNewSyllabus;
+        });
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+
+        // Set current year in the footer
+        document.getElementById('oldSyllabusYear').innerHTML = "261";
+        document.getElementById('newSyllabusYear').innerHTML = "266";
+        document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
+        document.getElementById('navName').innerHTML = "Artificial Intelligence"
+        document.getElementById("titleInfo").innerHTML = "CSC 261 Artificial Intelligence"
+        function showModal(src, alt) {
+            $('#modalImage').attr('src', src);
+            $('#imageModalLabel').text(alt);
+            $('#imageModal').modal('show');
+        }
+    </script>
+</body>
+
+</html>
