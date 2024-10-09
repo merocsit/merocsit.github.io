@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC 372 Neural Networks ~ CSIT Solution </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../../../../resources/favicon_io/favicon.ico" type="image/x-icon">
+    <style>
+        *,
+        .lead {
+            letter-spacing: 1px;
+        }
+
+        li a,
+        a,
+        .carousel-control-prev-icon,
+        .carousel-control-next {
+            color: rgb(0, 109, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
+        <div class="container-sm d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="./csc372_Neural_Networks.html">
+                    <img src="https://csit-solution.github.io/resources/img/logos/main/logocsit.jpg" alt="CSIT Logo"
+                        class="img-fluid rounded-circle" style="width: 50px;">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select Semester
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../../../index.html">First</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Second</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Third</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Fourth</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Fifth</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Sixth</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Seventh</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Eighth</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../../../../../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <section class="container" style="min-height: 70vh;">
+        <div class="row">
+            <div class="col-md-3  col-sm-12 border-right ">
+                <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
+
+                    <li class="nav-item dropdown">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Questions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2068">ANN 2068</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2071">ANN 2071</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2073">ANN 2073</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2074">ANN 2074</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2075">ANN 2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2076">ANN 2076</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Solution
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="#" id="ModelSolution">ANN ModelSolution</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2068">ANN Solution 2068</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2071">ANN Solution 2071</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2073">ANN Solution 2073</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2074">ANN Solution 2074</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2075">ANN Solution 2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2076">ANN Solution 2076</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="refBooks" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Reference Books
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="refBook1">
+
+
+
+                                    Neural Networks and
+                                    Learning Machines
+                                    Third Edition
+                                    Simon Haykin
+                                    McMaster University
+                                    Hamilton, Ontario, Canada
+
+                                </a></li>
+
+                            <li><a class="dropdown-item" href="#" id="refBook2">
+
+
+                                    Christopher M. Bishop, Neural Networks for Pattern Recognition, Oxford University
+                                    Press, 2003
+                                </a></li>
+
+                            <li><a class="dropdown-item" href="#" id="refBook3">
+
+
+                                    Martin T. Hagan, Neural Network Design, 2nd Edition PWS pub co
+                                </a></li>
+
+
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="notesOldSyllabus">Notes By Dilli Hang Rai</a></li>
+                            <li><a class="dropdown-item" href="#" id="notesNewSyllabus">Notes By XYZ</a></li>
+                            <li><a class="dropdown-item" href="#" id="Neural_Network_Notes">Neural Networks Notes</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown">
+                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Syllabus
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="oldSyllabus">CSC 372 Old Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="newSyllabus">CSC 383 New Syllabus</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-9 col-sm-12">
+                <div id="content" class="border p-3 rounded">
+                    <!-- Dynamic content will be displayed here -->
+                    <div class="text-center">
+                        <strong style="font-size: 24px;">Neural Networks</strong>
+                    </div>
+                    <div class="mt-4">
+                        <p><strong>Course Title:</strong> Neural Networks</p>
+                        <p><strong>Course No:</strong> CSC372</p>
+                        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+                        <p><strong>Semester:</strong> VI</p>
+                        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+                        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+                        <p><strong>Credit Hrs:</strong> 3</p>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Course Description</strong>
+                        <p>The course introduces the underlying principles and design of Neural Networks. The course
+                            covers the basic concepts of Neural Networks including: its architecture, learning
+                            processes, single-layer and multilayer perceptrons followed by Recurrent Neural Networks.
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Course Objective</strong>
+                        <p>The course objective is to demonstrate the concepts of supervised learning and unsupervised
+                            learning in conjunction with different architectures of Neural Networks.</p>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Course Contents</strong>
+                        <div>
+                            <strong>Unit 1: Introduction to Neural Network (4 Hrs.)</strong>
+                            <ul>
+                                <li>Basics of neural networks and human brain</li>
+                                <li>Models of a neuron</li>
+                                <li>Neural Network viewed as Directed Graphs</li>
+                                <li>Feedback</li>
+                                <li>Network Architectures</li>
+                                <li>Knowledge Representation</li>
+                                <li>Learning Processes</li>
+                                <li>Learning Tasks</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 2: Rosenblatt’s Perceptron (3 Hrs.)</strong>
+                            <ul>
+                                <li>Introduction</li>
+                                <li>Perceptron</li>
+                                <li>The Perceptron Convergence Theorem</li>
+                                <li>Relation between the Perceptron and Bayes Classifier for a Gaussian Environment</li>
+                                <li>The Batch Perceptron Algorithm</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 3: Model Building through Regression (5 Hrs.)</strong>
+                            <ul>
+                                <li>Introduction</li>
+                                <li>Linear Regression Model: Preliminary Considerations</li>
+                                <li>Maximum a Posteriori Estimation of the Parameter Vector</li>
+                                <li>Relationship Between Regularized Least-Squares Estimation and MAP Estimation</li>
+                                <li>Computer Experiment: Pattern Classification</li>
+                                <li>The Minimum-Description-Length Principle</li>
+                                <li>Finite Sample-Size Considerations</li>
+                                <li>The Instrumental-Variables Method</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 4: The Least-Mean-Square Algorithm (5 Hrs.)</strong>
+                            <ul>
+                                <li>Introduction</li>
+                                <li>Filtering Structure of the LMS Algorithm</li>
+                                <li>Unconstrained Optimization: A Review</li>
+                                <li>The Wiener Filter</li>
+                                <li>The Least-Mean-Square Algorithm</li>
+                                <li>Markov Model Portraying the Deviation of the LMS Algorithm from the Wiener Filter
+                                </li>
+                                <li>The Langevin Equation: Characterization of Brownian Motion</li>
+                                <li>Kushner’s Direct-Averaging Method</li>
+                                <li>Statistical LMS Learning Theory for Small Learning-Rate Parameter</li>
+                                <li>Virtues and Limitations of the LMS Algorithm</li>
+                                <li>Learning-Rate Annealing Schedules</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 5: Multilayer Perceptron (8 Hrs.)</strong>
+                            <ul>
+                                <li>Introduction</li>
+                                <li>Batch Learning and On-Line Learning</li>
+                                <li>The Back-Propagation Algorithm</li>
+                                <li>XOR problem</li>
+                                <li>Heuristics for Making the Back-Propagation Algorithm Perform Better</li>
+                                <li>Back Propagation and Differentiation</li>
+                                <li>The Hessian and Its Role in On-Line Learning</li>
+                                <li>Optimal Annealing and Adaptive Control of the Learning Rate</li>
+                                <li>Generalization</li>
+                                <li>Approximations of Functions</li>
+                                <li>Cross Validation</li>
+                                <li>Complexity Regularization and Network Pruning</li>
+                                <li>Virtues and Limitations of Back-Propagation Learning</li>
+                                <li>Supervised Learning Viewed as an Optimization Problem</li>
+                                <li>Convolutional Networks</li>
+                                <li>Nonlinear Filtering</li>
+                                <li>Small-Scale Versus Large-Scale Learning Problems</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 6: Kernel Methods and Radial-Basis Function Networks (7 Hrs.)</strong>
+                            <ul>
+                                <li>Introduction</li>
+                                <li>Cover’s Theorem on the separability of Patterns</li>
+                                <li>The Interpolation Problem</li>
+                                <li>Radial-Basis-Function Networks</li>
+                                <li>K-Means Clustering</li>
+                                <li>Recursive Least-Squares Estimation of the Weight Vector</li>
+                                <li>Hybrid Learning Procedure for RBF Networks</li>
+                                <li>Kernel Regression and Its Relation to RBF Networks</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 7: Self-Organizing Maps (6 Hrs.)</strong>
+                            <ul>
+                                <li>Introduction</li>
+                                <li>Two Basic Feature-Mapping Models</li>
+                                <li>Self-Organizing Map</li>
+                                <li>Properties of the Feature Map</li>
+                                <li>Contextual Maps</li>
+                                <li>Hierarchical Vector Quantization</li>
+                                <li>Kernel Self-Organizing Map</li>
+                                <li>Relationship between Kernel SOM and Kullback-Leibler Divergence</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 8: Dynamic Driven Recurrent Networks (7 Hrs.)</strong>
+                            <ul>
+                                <li>Introduction</li>
+                                <li>Recurrent Network Architectures</li>
+                                <li>Universal Approximation Theorem</li>
+                                <li>Controllability and Observability</li>
+                                <li>Computational Power of Recurrent Networks</li>
+                                <li>Learning Algorithms</li>
+                                <li>Back Propagation through Time</li>
+                                <li>Real-Time Recurrent Learning</li>
+                                <li>Vanishing Gradients in Recurrent Networks</li>
+                                <li>Supervised Training Framework for Recurrent Networks Using Non-State Estimators</li>
+                                <li>Adaptivity Considerations</li>
+                                <li>Case Study: Model Reference Applied to Neurocontrol</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Laboratory Works</strong>
+                        <p>Practical should be focused on Single Layer Perceptron, Multilayer Perceptron, Supervised
+                            Learning, Unsupervised Learning, Recurrent Neural Network, Linear Prediction and Pattern
+                            Classification.</p>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Text Book</strong>
+                        <ul>
+                            <li>Simon Haykin, "Neural Networks and Learning Machines", 3rd Edition, Pearson.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <strong>References</strong>
+                        <ul>
+                            <li>Christopher M. Bishop, "Neural Networks for Pattern Recognition", Oxford University
+                                Press, 2003.</li>
+                            <li>Martin T. Hagan, "Neural Network Design", 2nd Edition, PWS Pub Co.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <br>
+
+    <footer class="container">
+        <hr>
+        <br>
+        <p class="text-center lead">
+            All CopyRight Reserved &copy; 2023 - <span id="todayDateFoot"></span> CSIT Solution <br> Powered By: <a
+                href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
+                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to dynamically update content
+        const content = document.getElementById('content');
+
+        const contents = {
+            pastYearSolution: `<h2 class="text-left"> Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            <h4> Please use Menu </h4> <p> Need Help Watch Tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `,
+
+            ModelSolution: `
+            <h5>Model Solution </h5>
+            <hr />
+            <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+                <p>Sorry! PDF cannot be displayed.</p>
+            </iframe>
+            <br>
+            <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+            `,
+            pastYearSolution2068: `<h4 class="text-danger"> Not Available </h4> `,
+            pastYearSolution2071: `<h4 class="text-danger"> Not Available </h4> `,
+            pastYearSolution2073: `<h4 class="text-danger"> Not Available </h4> `,
+            pastYearSolution2074: `<h4 class="text-danger"> Not Available </h4> `,
+            pastYearSolution2075: `<h4 class="text-danger"> Not Available </h4> `,
+            pastYearSolution2076: `<h4 class="text-danger"> Not Available </h4> `,
+
+            questions: `<h2 class="text-left"> Questions Collection </h2> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h4> Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            pastYearQuestion2068: `<h4 class="text-danger"> Not Available </h4> `,
+
+            pastYearQuestion2071: `<h4 class="text-danger"> Not Available </h4> `,
+
+            pastYearQuestion2073: `<h4 class="text-danger"> Not Available </h4> `,
+            pastYearQuestion2074: `<h4 class="text-danger"> Not Available </h4> `,
+
+            pastYearQuestion2075: `<h4 class="text-danger"> Not Available </h4> `,
+
+            pastYearQuestion2076: `<h4 class="text-danger"> Not Available </h4> `,
+
+            pastYearQuestion2080: `<h2 class="text-danger"> Not Available </h2>`,
+
+            refBooks: `<iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+
+refBook1: `
+<h5> 
+Neural Networks and
+Learning Machines
+Third Edition
+Simon Haykin
+McMaster University
+Hamilton, Ontario, Canada
+</h5>
+<hr>
+   <iframe src="./RefBooks/haykin.neural-networks.3ed.2009.pdf" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="./RefBooks/haykin.neural-networks.3ed.2009.pdf" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class="nav-link" 
+href="./RefBooks/haykin.neural-networks.3ed.2009.pdf" 
+download>
+Download Reference Book
+</a>
+</button>
+</div>
+`,
+
+refBook2: `
+
+<h5> 
+    Christopher M. Bishop, Neural Networks for Pattern Recognition, Oxford University 
+Press, 2003
+
+    </h5>
+<hr>
+   <iframe src="./RefBooks/Book-Bishop-Neural Networks for Pattern Recognition.pdf" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="./RefBooks/Book-Bishop-Neural Networks for Pattern Recognition.pdf" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+
+
+<a class="nav-link" href="./RefBooks/Book-Bishop-Neural Networks for Pattern Recognition.pdf" download>
+Download Reference Book
+</a>
+</button>
+</div>
+`,
+
+refBook3: `
+<h5> 
+Martin T. Hagan, Neural Network Design, 2nd Edition PWS pub co
+    </h5>
+<hr>
+   <iframe src="./RefBooks/NNDesign.pdf" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="./RefBooks/NNDesign.pdf" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class=" nav-link" 
+href="./RefBooks/NNDesign.pdf" 
+download>
+Download Reference Book
+</a>
+</button>
+</div>
+`,
+
+syllabus: ` <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+oldSyllabus: `
+                 
+<div class="mt-4">
+      <div class="text-center">
+        <strong style="font-size: 24px;">Neural Networks</strong>
+    </div>
+    <div class="mt-4">
+        <p><strong>Course Title:</strong> Neural Networks</p>
+        <p><strong>Course No:</strong> CSC372</p>
+        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+        <p><strong>Semester:</strong> VI</p>
+        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+        <p><strong>Credit Hrs:</strong> 3</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Description</strong>
+        <p>The course introduces the underlying principles and design of Neural Networks. The course covers the basic concepts of Neural Networks including: its architecture, learning processes, single-layer and multilayer perceptrons followed by Recurrent Neural Networks.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Objective</strong>
+        <p>The course objective is to demonstrate the concepts of supervised learning and unsupervised learning in conjunction with different architectures of Neural Networks.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Contents</strong>
+        <div>
+            <strong>Unit 1: Introduction to Neural Network (4 Hrs.)</strong>
+            <ul>
+                <li>Basics of neural networks and human brain</li>
+                <li>Models of a neuron</li>
+                <li>Neural Network viewed as Directed Graphs</li>
+                <li>Feedback</li>
+                <li>Network Architectures</li>
+                <li>Knowledge Representation</li>
+                <li>Learning Processes</li>
+                <li>Learning Tasks</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 2: Rosenblatt’s Perceptron (3 Hrs.)</strong>
+            <ul>
+                <li>Introduction</li>
+                <li>Perceptron</li>
+                <li>The Perceptron Convergence Theorem</li>
+                <li>Relation between the Perceptron and Bayes Classifier for a Gaussian Environment</li>
+                <li>The Batch Perceptron Algorithm</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 3: Model Building through Regression (5 Hrs.)</strong>
+            <ul>
+                <li>Introduction</li>
+                <li>Linear Regression Model: Preliminary Considerations</li>
+                <li>Maximum a Posteriori Estimation of the Parameter Vector</li>
+                <li>Relationship Between Regularized Least-Squares Estimation and MAP Estimation</li>
+                <li>Computer Experiment: Pattern Classification</li>
+                <li>The Minimum-Description-Length Principle</li>
+                <li>Finite Sample-Size Considerations</li>
+                <li>The Instrumental-Variables Method</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 4: The Least-Mean-Square Algorithm (5 Hrs.)</strong>
+            <ul>
+                <li>Introduction</li>
+                <li>Filtering Structure of the LMS Algorithm</li>
+                <li>Unconstrained Optimization: A Review</li>
+                <li>The Wiener Filter</li>
+                <li>The Least-Mean-Square Algorithm</li>
+                <li>Markov Model Portraying the Deviation of the LMS Algorithm from the Wiener Filter</li>
+                <li>The Langevin Equation: Characterization of Brownian Motion</li>
+                <li>Kushner’s Direct-Averaging Method</li>
+                <li>Statistical LMS Learning Theory for Small Learning-Rate Parameter</li>
+                <li>Virtues and Limitations of the LMS Algorithm</li>
+                <li>Learning-Rate Annealing Schedules</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 5: Multilayer Perceptron (8 Hrs.)</strong>
+            <ul>
+                <li>Introduction</li>
+                <li>Batch Learning and On-Line Learning</li>
+                <li>The Back-Propagation Algorithm</li>
+                <li>XOR problem</li>
+                <li>Heuristics for Making the Back-Propagation Algorithm Perform Better</li>
+                <li>Back Propagation and Differentiation</li>
+                <li>The Hessian and Its Role in On-Line Learning</li>
+                <li>Optimal Annealing and Adaptive Control of the Learning Rate</li>
+                <li>Generalization</li>
+                <li>Approximations of Functions</li>
+                <li>Cross Validation</li>
+                <li>Complexity Regularization and Network Pruning</li>
+                <li>Virtues and Limitations of Back-Propagation Learning</li>
+                <li>Supervised Learning Viewed as an Optimization Problem</li>
+                <li>Convolutional Networks</li>
+                <li>Nonlinear Filtering</li>
+                <li>Small-Scale Versus Large-Scale Learning Problems</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 6: Kernel Methods and Radial-Basis Function Networks (7 Hrs.)</strong>
+            <ul>
+                <li>Introduction</li>
+                <li>Cover’s Theorem on the separability of Patterns</li>
+                <li>The Interpolation Problem</li>
+                <li>Radial-Basis-Function Networks</li>
+                <li>K-Means Clustering</li>
+                <li>Recursive Least-Squares Estimation of the Weight Vector</li>
+                <li>Hybrid Learning Procedure for RBF Networks</li>
+                <li>Kernel Regression and Its Relation to RBF Networks</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 7: Self-Organizing Maps (6 Hrs.)</strong>
+            <ul>
+                <li>Introduction</li>
+                <li>Two Basic Feature-Mapping Models</li>
+                <li>Self-Organizing Map</li>
+                <li>Properties of the Feature Map</li>
+                <li>Contextual Maps</li>
+                <li>Hierarchical Vector Quantization</li>
+                <li>Kernel Self-Organizing Map</li>
+                <li>Relationship between Kernel SOM and Kullback-Leibler Divergence</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 8: Dynamic Driven Recurrent Networks (7 Hrs.)</strong>
+            <ul>
+                <li>Introduction</li>
+                <li>Recurrent Network Architectures</li>
+                <li>Universal Approximation Theorem</li>
+                <li>Controllability and Observability</li>
+                <li>Computational Power of Recurrent Networks</li>
+                <li>Learning Algorithms</li>
+                <li>Back Propagation through Time</li>
+                <li>Real-Time Recurrent Learning</li>
+                <li>Vanishing Gradients in Recurrent Networks</li>
+                <li>Supervised Training Framework for Recurrent Networks Using Non-State Estimators</li>
+                <li>Adaptivity Considerations</li>
+                <li>Case Study: Model Reference Applied to Neurocontrol</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mt-4">
+        <strong>Laboratory Works</strong>
+        <p>Practical should be focused on Single Layer Perceptron, Multilayer Perceptron, Supervised Learning, Unsupervised Learning, Recurrent Neural Network, Linear Prediction and Pattern Classification.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Text Book</strong>
+        <ul>
+            <li>Simon Haykin, "Neural Networks and Learning Machines", 3rd Edition, Pearson.</li>
+        </ul>
+    </div>
+    <div class="mt-4">
+        <strong>References</strong>
+        <ul>
+            <li>Christopher M. Bishop, "Neural Networks for Pattern Recognition", Oxford University Press, 2003.</li>
+            <li>Martin T. Hagan, "Neural Network Design", 2nd Edition, PWS Pub Co.</li>
+        </ul>
+    </div>
+
+    </div>
+
+    
+<div class="mt-4">
+<strong>Section A</strong>
+<p>Attempt any two questions. (2 × 10 = 20)</p>
+<ol>
+    <li>Differentiation between small scale and large scale learning problems. How can heuristic be implemented for making back propagation algorithm perform better? (4+6)</li><br>
+    <li>State Cover’s theorem on separability of problems. Explain hybrid learning technique for RBF network. (3+7)</li><br>
+    <li>What is vanishing gradient problem in recurrent networks? How can it be solved? Explain with necessary equations. (4+6)</li>
+</ol>
+
+<strong>Section B</strong>
+<p>Attempt any eight questions. (8 × 5 = 40)</p>
+<ol>
+    <li>Define neural network. Briefly explain the working mechanism of biological neural with its related functional units. (1+4)</li><br>
+    <li>What is a perceptron? Explain batch perceptron algorithm. (1+4)</li><br>
+    <li>Highlight the minimum-description length principle. Explain the instrumental-variables method. (1+4)</li><br>
+    <li>Explain LMS algorithm. How does it differ from Wiener filter? (4+1)</li><br>
+    <li>What are the properties of feature map? Explain Kernel Self-Organizing map. (1+4)</li><br>
+    <li>What is universal approximation theorem? How can real-time recurrent learning be achieved? (1+4)</li><br>
+    <li>Explain hybrid learning concept in RBF networks. (5)</li><br>
+    <li>Differentiates between batch learning and on-line learning. How is learning rate controlled by using optimal annealing? Explain the concept of network pruning. (1+2+2)</li><br>
+    <li>Write short notes on: (2 × 2.5 = 5)</li>
+    <ul>
+        <li>a. Convolutional networks</li>
+        <li>b. Cross-validation</li>
+    </ul>
+</ol>
+</div> `,
+
+newSyllabus: `
+    <div class="text-center">
+    <strong style="font-size: 24px;">Neural Networks</strong>
+    </div>
+    <div class="mt-4">
+        <p><strong>Course Title:</strong> Neural Networks</p>
+        <p><strong>Course No:</strong> CSC383</p>
+        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+        <p><strong>Credit Hours:</strong> 3</p>
+        <p><strong>Semester:</strong> VI</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Description</strong>
+        <p>This course introduces the principles and design of Neural Networks, covering fundamental concepts including architecture, learning processes, single-layer and multilayer perceptrons, and Recurrent Neural Networks.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Objectives</strong>
+        <ul>
+            <li>Demonstrate the concepts of supervised and unsupervised learning.</li>
+            <li>Explore different architectures of Neural Networks.</li>
+        </ul>
+    </div>
+    <div class="mt-4">
+        <strong>Course Contents</strong>
+        <div>
+            <strong>Unit 1: Introduction to Neural Networks (4 Hrs.)</strong>
+            <ul>
+                <li>Basics of neural networks and human brain</li>
+                <li>Models of a neuron</li>
+                <li>Neural Network viewed as Directed Graphs</li>
+                <li>Feedback and Network Architectures</li>
+                <li>Knowledge Representation</li>
+                <li>Learning Processes and Learning Tasks</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 2: Rosenblatt’s Perceptron (3 Hrs.)</strong>
+            <ul>
+                <li>Introduction to the Perceptron</li>
+                <li>The Perceptron Convergence Theorem</li>
+                <li>Relation between the Perceptron and Bayes Classifier for a Gaussian Environment</li>
+                <li>The Batch Perceptron Algorithm</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 3: Model Building through Regression (5 Hrs.)</strong>
+            <ul>
+                <li>Introduction to Linear Regression Model</li>
+                <li>Maximum a Posteriori Estimation of the Parameter Vector</li>
+                <li>Relationship Between Regularized Least-Squares Estimation and MAP Estimation</li>
+                <li>Computer Experiment: Pattern Classification</li>
+                <li>The Minimum-Description-Length Principle</li>
+                <li>Finite Sample-Size Considerations</li>
+                <li>The Instrumental-Variables Method</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 4: The Least-Mean-Square Algorithm (5 Hrs.)</strong>
+            <ul>
+                <li>Introduction to the LMS Algorithm</li>
+                <li>Filtering Structure of the LMS Algorithm</li>
+                <li>Unconstrained Optimization: A Review</li>
+                <li>The Wiener Filter and the Least-Mean-Square Algorithm</li>
+                <li>Statistical LMS Learning Theory for Small Learning-Rate Parameter</li>
+                <li>Virtues and Limitations of the LMS Algorithm</li>
+                <li>Learning-Rate Annealing Schedules</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 5: Multilayer Perceptron (8 Hrs.)</strong>
+            <ul>
+                <li>Introduction to Batch Learning and On-Line Learning</li>
+                <li>The Back-Propagation Algorithm and the XOR problem</li>
+                <li>Heuristics for Improving Back-Propagation Performance</li>
+                <li>Generalization and Cross Validation</li>
+                <li>Convolutional Networks</li>
+                <li>Small-Scale vs. Large-Scale Learning Problems</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 6: Kernel Methods and Radial-Basis Function Networks (7 Hrs.)</strong>
+            <ul>
+                <li>Cover’s Theorem on the separability of Patterns</li>
+                <li>Radial-Basis-Function Networks</li>
+                <li>K-Means Clustering</li>
+                <li>Kernel Regression and Its Relation to RBF Networks</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 7: Self-Organizing Maps (6 Hrs.)</strong>
+            <ul>
+                <li>Introduction to Self-Organizing Maps</li>
+                <li>Properties of the Feature Map</li>
+                <li>Kernel Self-Organizing Map</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 8: Dynamic Driven Recurrent Networks (7 Hrs.)</strong>
+            <ul>
+                <li>Introduction to Recurrent Network Architectures</li>
+                <li>Learning Algorithms: Back Propagation through Time, Real-Time Recurrent Learning</li>
+                <li>Vanishing Gradients in Recurrent Networks</li>
+                <li>Case Study: Model Reference Applied to Neurocontrol</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mt-4">
+        <strong>Laboratory Works</strong>
+        <p>Practical sessions will focus on:</p>
+        <ul>
+            <li>Single Layer Perceptron</li>
+            <li>Multilayer Perceptron</li>
+            <li>Supervised Learning</li>
+            <li>Unsupervised Learning</li>
+            <li>Recurrent Neural Networks</li>
+            <li>Linear Prediction and Pattern Classification</li>
+        </ul>
+    </div>
+    <div class="mt-4">
+        <strong>Textbook</strong>
+        <ul>
+            <li>Simon Haykin, "Neural Networks and Learning Machines", 3rd Edition, Pearson.</li>
+        </ul>
+    </div>
+    <div class="mt-4">
+        <strong>Reference Books</strong>
+        <ul>
+            <li>Christopher M. Bishop, "Neural Networks for Pattern Recognition", Oxford University Press, 2003.</li>
+            <li>Martin T. Hagan, "Neural Network Design", 2nd Edition, PWS Publishing Co.</li>
+        </ul>
+    </div>
+            `,
+            oldAppVersion: `
+            <h2>Old CSIT Solution App Version</h2>
+            <p>Here is the content for the old CSIT solution app version.</p>`, 
+            notes: `
+            <h5>Neural Network Notes</h5>
+            <hr />
+            <iframe src="#" width="100%" style="min-height: 100vh; overflow: auto;">
+                <p>Sorry! PDF cannot be displayed.</p>
+            </iframe>
+            <br />
+            <button class="btn btn-outline-success mobileView">
+                <a class="nav-link" href="" target="_blank"> View Solution in New Tab </a>
+            </button>
+            <button class="btn btn-outline-success mobileView">
+                <a class="nav-link" href="#" target="_blank"> Download Solution</a>
+            </button>
+            `,
+            notesOldSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! <br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            notesNewSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! <br> <span class="text-center text-success"> Coming Soon!! </span> </h2>`,
+            Neural_Network_Notes: 
+            `<h5> Neural Network Notes </h5>
+            <hr />
+            <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+                <p>Sorry! PDF cannot be displayed.</p>
+            </iframe>
+            <br>
+            <button class="btn btn-outline-success mobileView">
+                <a class="nav-link" href="" target="_blank">
+                    Download Solution</a>
+            </button>
+            `
+        };
+
+        document.getElementById('refBooks').addEventListener('click', () => {
+            content.innerHTML = contents.refBooks;
+        });
+        document.getElementById('refBook1').addEventListener('click', () => {
+            content.innerHTML = contents.refBook1;
+        });
+        document.getElementById('refBook2').addEventListener('click', () => {
+            content.innerHTML = contents.refBook2;
+        });
+        document.getElementById('refBook3').addEventListener('click', () => {
+            content.innerHTML = contents.refBook3;
+        });
+
+        document.getElementById('questions').addEventListener('click', () => {
+            content.innerHTML = contents.questions;
+        });
+
+        document.getElementById('pastYearQuestion2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2075;
+        });
+
+        document.getElementById('pastYearQuestion2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2076;
+        });
+
+        document.getElementById('pastYearQuestion2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2074;
+        });
+
+        document.getElementById('pastYearQuestion2071').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2071;
+        });
+        document.getElementById('pastYearQuestion2073').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2073;
+        });
+
+        document.getElementById('pastYearQuestion2068').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2068;
+        });
+
+        document.getElementById('pastYearSolution').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution;
+        });
+
+        document.getElementById('ModelSolution').addEventListener('click', () => {
+            content.innerHTML = contents.ModelSolution;
+        });
+
+
+        document.getElementById('pastYearSolution2068').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2068;
+        });
+
+        document.getElementById('pastYearSolution2071').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2071;
+        });
+
+        document.getElementById('pastYearSolution2073').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2073;
+        });
+
+        document.getElementById('pastYearSolution2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2074;
+        });
+
+
+        document.getElementById('pastYearSolution2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2075;
+        });
+
+        document.getElementById('pastYearSolution2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2076;
+        });
+
+        document.getElementById('notes').addEventListener('click', () => {
+            content.innerHTML = contents.notes;
+        });
+
+        document.getElementById('syllabus').addEventListener('click', () => {
+            content.innerHTML = contents.syllabus;
+        });
+
+        document.getElementById('oldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.oldSyllabus;
+        });
+
+        document.getElementById('newSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.newSyllabus;
+        });
+
+        document.getElementById('oldAppVersion').addEventListener('click', () => {
+            content.innerHTML = contents.oldAppVersion;
+        });
+
+        document.getElementById('notesOldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesOldSyllabus;
+        });
+
+        document.getElementById('notesNewSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesNewSyllabus;
+        });
+
+        document.getElementById('Neural_Network_Notes').addEventListener('click', () => {
+            content.innerHTML = contents.Neural_Network_Notes;
+        });
+
+
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+                // Set current year in the footer
+                document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
+                function showModal(src, alt) {
+                    $('#modalImage').attr('src', src);
+                    $('#imageModalLabel').text(alt);
+                    $('#imageModal').modal('show');
+                }
+    </script>
+</body>
+
+</html>
