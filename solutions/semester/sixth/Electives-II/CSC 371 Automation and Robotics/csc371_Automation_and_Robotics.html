@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSC 371 Automation and Robotics ~ CSIT Solution </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../../../../resources/favicon_io/favicon.ico" type="image/x-icon">
+    <style>
+        *,
+        .lead {
+            letter-spacing: 1px;
+        }
+
+        li a,
+        a,
+        .carousel-control-prev-icon,
+        .carousel-control-next {
+            color: rgb(0, 109, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
+        <div class="container-sm d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="./csc371_Automation_and_Robotics.html">
+                    <img src="../../../../../resources/img/logos/main/csit-solutionlogo.png" alt="CSIT Logo"
+                        class="img-fluid rounded-circle" style="width: 50px;">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select Semester
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../../../index.html">First</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Second</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Third</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Fourth</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Fifth</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Sixth</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Seventh</a></li>
+                                <li><a class="dropdown-item" href="../../../../../index.html">Eighth</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../../../../../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <section class="container" style="min-height: 70vh;">
+        <div class="row">
+            <div class="col-md-3  col-sm-12 border-right ">
+                <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
+
+                    <li class="nav-item dropdown">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Questions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2068">2068</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2071"> 2071</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2073">2073</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2074">2074</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2075">2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2076">2076</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Solution
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="#" id="ModelSolution">ModelSolution</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2068"> Solution 2068</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2071"> Solution 2071</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2073"> Solution 2073</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2074"> Solution 2074</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2075"> Solution 2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2076"> Solution 2076</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="refBooks" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Reference Books
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="refBook1">
+
+                                    Mikell P. Weiss G.M., Nagel R.N., Odraj N.G., Industrial Robotics, McGraw Hill
+                                </a></li>
+
+                            <li><a class="dropdown-item" href="#" id="refBook2">
+
+
+                                    Ghosh, Control in Robotics and Automation: Sensor Based Integration, Allied
+                                    Publishers
+
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="notesOldSyllabus">Notes By Dilli Hang Rai</a></li>
+                            <li><a class="dropdown-item" href="#" id="notesNewSyllabus">Notes By XYZ</a></li>
+                            <li><a class="dropdown-item" href="#" id="IPYouTubeNotes"> Notes</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown">
+                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Syllabus
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="oldSyllabus">CSC 371 Old Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="newSyllabus">CSC 382 New Syllabus</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-9 col-sm-12">
+                <div id="content" class="border p-3 rounded">
+                    <!-- Dynamic content will be displayed here -->
+
+                    <div class="text-center">
+                        <strong style="font-size: 24px;">Automation and Robotics</strong>
+                    </div>
+                    <div class="mt-4">
+                        <p><strong>Course Title:</strong> Automation and Robotics</p>
+                        <p><strong>Course No:</strong> CSC371</p>
+                        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+                        <p><strong>Semester:</strong> VI</p>
+                        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+                        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+                        <p><strong>Credit Hrs:</strong> 3</p>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Course Description</strong>
+                        <p>This course provides a detailed idea about the fields of robotics and its control mechanisms.
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Course Objectives</strong>
+                        <p>The main objective is to provide information on various parts of robots and an idea on fields
+                            of robotics. It also focuses on various kinematics and inverse kinematics of robots,
+                            trajectory planning of robots, and the study of control of robots for some specific
+                            applications.</p>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Course Contents</strong>
+                        <div>
+                            <strong>Unit 1: Introduction (8 Hrs.)</strong>
+                            <ul>
+                                <li>Definition and Origin of Robotics</li>
+                                <li>Types of Robotics</li>
+                                <li>Major Components</li>
+                                <li>Historical Development of Robots</li>
+                                <li>Robotic System and Robot Anatomy</li>
+                                <li>Degrees of Freedom</li>
+                                <li>Coordinate System and Its Types</li>
+                                <li>Asimov's Laws of Robotics</li>
+                                <li>Dynamic Stabilization of Robots</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 2: Power Sources and Sensors (8 Hrs.)</strong>
+                            <ul>
+                                <li>Hydraulic, Pneumatic, and Electric Drives</li>
+                                <li>Determination of HP of Motor and Gearing Ratio</li>
+                                <li>Variable Speed Arrangements</li>
+                                <li>Path Determination</li>
+                                <li>Micro Machines in Robotics</li>
+                                <li>Machine Vision</li>
+                                <li>Ranging, Laser, Acoustic, Magnetic, Fiber Optic, and Tactile Sensors</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 3: Manipulators, Actuators, and Grippers (8 Hrs.)</strong>
+                            <ul>
+                                <li>Manipulators: Classification</li>
+                                <li>Construction of Manipulators</li>
+                                <li>Manipulator Dynamics and Force Control</li>
+                                <li>Electronic and Pneumatic Manipulator Control</li>
+                                <li>End Effectors, Loads, and Forces</li>
+                                <li>Grippers: Design Considerations</li>
+                                <li>Robot Motion Control</li>
+                                <li>Position Sensing</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 4: Kinematics and Path Planning (8 Hrs.)</strong>
+                            <ul>
+                                <li>Solution of Inverse Kinematics Problem</li>
+                                <li>Multiple Solutions Jacobian</li>
+                                <li>Work Envelope</li>
+                                <li>Hill Climbing Techniques</li>
+                                <li>Robot Programming Languages</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 5: Process Control (8 Hrs.)</strong>
+                            <ul>
+                                <li>Process Control and Types</li>
+                                <li>On-Off Control Systems</li>
+                                <li>Proportional Control Systems</li>
+                                <li>Proportional Plus Integral (PI) Control Systems</li>
+                                <li>Three Mode Control (PID) Control Systems</li>
+                                <li>Process Control Tuning</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 6: Case Studies (5 Hrs.)</strong>
+                            <ul>
+                                <li>Multiple Robots</li>
+                                <li>Machine Interface</li>
+                                <li>Robots in Manufacturing and Non-Manufacturing Applications</li>
+                                <li>Robot Cell Design</li>
+                                <li>Selection of a Robot</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Laboratory Works</strong>
+                        <p>The laboratory work should focus on the implementation of sensors and the design of control
+                            systems. It should also deal with developing programs related to robot design and control
+                            using Python.</p>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Text Books</strong>
+                        <ul>
+                            <li>Mikell P. Weiss, G.M., Nagel R.N., Odraj N.G., <em>Industrial Robotics</em>, McGraw
+                                Hill.</li>
+                            <li>Ghosh, <em>Control in Robotics and Automation: Sensor Based Integration</em>, Allied
+                                Publishers.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <strong>References</strong>
+                        <ul>
+                            <li>Jain K.C. and Aggarwal B.E., <em>Robotics – Principles and Practice</em>, Khanna
+                                Publishers.</li>
+                            <li>Schuler, C.A. and McNamee, W.L. <em>Modern Industrial Electronics</em>,
+                                Macmillan/McGraw-Hill.</li>
+                            <li>Klafter R.D., Chimielewski T.A., Negin M., <em>Robotic Engineering – An Integrated
+                                    Approach</em>, Prentice Hall of India.</li>
+                            <li>Deb.S.R., <em>Robotics Technology and Flexible Automation</em>, John Wiley, USA 1992.
+                            </li>
+                            <li>Asfahl C.R., <em>Robots and Manufacturing Automation</em>, John Wiley, USA 1992.</li>
+                            <li>Mc Kerrow P.J., <em>Introduction to Robotics</em>, Addison Wesley, USA, 1991.</li>
+                            <li>Issac Asimov, <em>I, Robot</em>, Ballantine Books, New York, 1986.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <br>
+
+    <footer class="container">
+        <hr>
+        <br>
+        <p class="text-center lead">
+            All CopyRight Reserved &copy; 2023 - <span id="todayDateFoot"></span> CSIT Solution <br> Powered By: <a
+                href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
+                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to dynamically update content
+        const content = document.getElementById('content');
+
+        const contents = {
+
+
+
+
+            pastYearSolution: `<h2 class="text-left"> Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            <h4> Please use Menu </h4> <p> Need Help Watch Tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `,
+
+            ModelSolution: `
+<h5>Model Solution </h5>
+<hr />
+
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+
+`,
+            pastYearSolution2068: `
+<h5>Solution 2068 OLD SYLLBAUS CSC 363</h5>
+<hr />
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+
+`,
+
+            pastYearSolution2071: `
+<h5>Solution 2071 OLD SYLLBAUS CSC 363</h5>
+<hr />
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+
+`,
+
+            pastYearSolution2073: `
+<h5>Solution 2073 OLD SYLLBAUS CSC 363</h5>
+<hr />
+
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+
+`,
+
+            pastYearSolution2074: `
+<h5>Solution 2074 OLD SYLLBAUS CSC 363</h5>
+<hr />
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+
+`,
+
+            pastYearSolution2075: `
+<h5>Solution 2075 OLD SYLLBAUS CSC 363</h5>
+<hr />
+
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+
+
+
+
+`,
+            pastYearSolution2076: `
+<h5>Solution 2076 OLD SYLLBAUS CSC 321 </h5>
+<hr />
+<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+        <button class="btn btn-outline-success mobileView">
+            <a  class="nav-link" href="" target="_blank">
+            View Solution in New Tab </a></button>
+
+`,
+
+            questions: `<h2 class="text-left">  Subject Questions Collection </h2> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h4> Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            pastYearQuestion2068: `
+
+                <h2> Not Available </h2>
+
+            `,
+
+            pastYearQuestion2073: `
+                            <h2> Not Available </h2>
+`,
+            pastYearQuestion2074: `
+                            <h2> Not Available </h2>
+`,
+
+            pastYearQuestion2075: `                  <h2> Not Available </h2> `,
+
+            pastYearQuestion2076: ` 
+                <h2> Not Available </h2>
+
+
+        `,
+
+            pastYearQuestion2080: `
+                         <h2> Not Available </h2>
+        `,
+
+            refBooks: `<iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+
+            refBook1: `
+<h5> Mikell P. Weiss G.M., Nagel R.N., Odraj N.G., Industrial Robotics, McGraw Hill </h5>
+<hr>
+   <iframe src="https://www.rvstcc.ac.in/assets/img/pdf/ROBOTICS%20%20TEXT%20BOOK%20BY%20GROOVER.pdf" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+    
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="https://www.rvstcc.ac.in/assets/img/pdf/ROBOTICS%20%20TEXT%20BOOK%20BY%20GROOVER.pdf”, Pearson Edition, Latest Edition.-compressed final.pdf" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class=" nav-link" 
+href="https://www.rvstcc.ac.in/assets/img/pdf/ROBOTICS%20%20TEXT%20BOOK%20BY%20GROOVER.pdf”, Pearson Edition, Latest Edition.-compressed final.pdf" 
+download>
+Download Reference Book
+</a>
+</button>
+
+</div>
+
+`,
+
+            refBook2: `
+
+<h5> Ghosh, Control in Robotics and Automation: Sensor Based Integration, Allied 
+Publishers </h5>
+<hr>
+   <iframe src="https://www.google.com.np/books/edition/Control_in_Robotics_and_Automation/xsZfThcKyy8C?hl=en&gbpv=1&dq=Ghosh,+Control+in+Robotics+and+Automation:+Sensor+Based+Integration,+Allied++Publishers&printsec=frontcover" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+    
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="https://www.google.com.np/books/edition/Control_in_Robotics_and_Automation/xsZfThcKyy8C?hl=en&gbpv=1&dq=Ghosh,+Control+in+Robotics+and+Automation:+Sensor+Based+Integration,+Allied++Publishers&printsec=frontcover”, target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class=" nav-link" 
+href="https://www.google.com.np/books/edition/Control_in_Robotics_and_Automation/xsZfThcKyy8C?hl=en&gbpv=1&dq=Ghosh,+Control+in+Robotics+and+Automation:+Sensor+Based+Integration,+Allied++Publishers&printsec=frontcover”, Pearson Edition, Latest Edition.-compressed final.pdf" 
+download>
+Download Reference Book
+</a>
+</button>
+
+</div>
+
+
+`,
+
+            refBook3: `
+
+<h5>   </h5>
+<hr>
+   <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    
+<p>Sorry! PDF cannot be displayed. 
+" type="application/pdf</p>
+</iframe>
+<br>
+<div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="”, Pearson Edition, Latest Edition.-compressed final.pdf" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class=" nav-link" 
+href="”, Pearson Edition, Latest Edition.-compressed final.pdf" 
+download>
+Download Reference Book
+</a>
+</button>
+
+</div>
+
+
+`,
+
+
+            refBook4: `
+
+<h5>   </h5>
+<hr>
+   <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+    
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class=" nav-link" 
+href="" 
+download>
+Download Reference Book
+</a>
+</button>
+
+</div>
+
+
+`,
+
+
+            syllabus: `
+            <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            oldSyllabus: `
+            
+             <div class="text-center">
+        <strong style="font-size: 24px;">Automation and Robotics</strong>
+    </div>
+    <div class="mt-4">
+        <p><strong>Course Title:</strong> Automation and Robotics</p>
+        <p><strong>Course No:</strong> CSC371</p>
+        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+        <p><strong>Semester:</strong> VI</p>
+        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+        <p><strong>Credit Hrs:</strong> 3</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Description</strong>
+        <p>This course provides a detailed idea about the fields of robotics and its control mechanisms.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Objectives</strong>
+        <p>The main objective is to provide information on various parts of robots and an idea on fields of robotics. It also focuses on various kinematics and inverse kinematics of robots, trajectory planning of robots, and the study of control of robots for some specific applications.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Contents</strong>
+        <div>
+            <strong>Unit 1: Introduction (8 Hrs.)</strong>
+            <ul>
+                <li>Definition and Origin of Robotics</li>
+                <li>Types of Robotics</li>
+                <li>Major Components</li>
+                <li>Historical Development of Robots</li>
+                <li>Robotic System and Robot Anatomy</li>
+                <li>Degrees of Freedom</li>
+                <li>Coordinate System and Its Types</li>
+                <li>Asimov's Laws of Robotics</li>
+                <li>Dynamic Stabilization of Robots</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 2: Power Sources and Sensors (8 Hrs.)</strong>
+            <ul>
+                <li>Hydraulic, Pneumatic, and Electric Drives</li>
+                <li>Determination of HP of Motor and Gearing Ratio</li>
+                <li>Variable Speed Arrangements</li>
+                <li>Path Determination</li>
+                <li>Micro Machines in Robotics</li>
+                <li>Machine Vision</li>
+                <li>Ranging, Laser, Acoustic, Magnetic, Fiber Optic, and Tactile Sensors</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 3: Manipulators, Actuators, and Grippers (8 Hrs.)</strong>
+            <ul>
+                <li>Manipulators: Classification</li>
+                <li>Construction of Manipulators</li>
+                <li>Manipulator Dynamics and Force Control</li>
+                <li>Electronic and Pneumatic Manipulator Control</li>
+                <li>End Effectors, Loads, and Forces</li>
+                <li>Grippers: Design Considerations</li>
+                <li>Robot Motion Control</li>
+                <li>Position Sensing</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 4: Kinematics and Path Planning (8 Hrs.)</strong>
+            <ul>
+                <li>Solution of Inverse Kinematics Problem</li>
+                <li>Multiple Solutions Jacobian</li>
+                <li>Work Envelope</li>
+                <li>Hill Climbing Techniques</li>
+                <li>Robot Programming Languages</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 5: Process Control (8 Hrs.)</strong>
+            <ul>
+                <li>Process Control and Types</li>
+                <li>On-Off Control Systems</li>
+                <li>Proportional Control Systems</li>
+                <li>Proportional Plus Integral (PI) Control Systems</li>
+                <li>Three Mode Control (PID) Control Systems</li>
+                <li>Process Control Tuning</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 6: Case Studies (5 Hrs.)</strong>
+            <ul>
+                <li>Multiple Robots</li>
+                <li>Machine Interface</li>
+                <li>Robots in Manufacturing and Non-Manufacturing Applications</li>
+                <li>Robot Cell Design</li>
+                <li>Selection of a Robot</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mt-4">
+        <strong>Laboratory Works</strong>
+        <p>The laboratory work should focus on the implementation of sensors and the design of control systems. It should also deal with developing programs related to robot design and control using Python.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Text Books</strong>
+        <ul>
+            <li>Mikell P. Weiss, G.M., Nagel R.N., Odraj N.G., <em>Industrial Robotics</em>, McGraw Hill.</li>
+            <li>Ghosh, <em>Control in Robotics and Automation: Sensor Based Integration</em>, Allied Publishers.</li>
+        </ul>
+    </div>
+    <div class="mt-4">
+        <strong>References</strong>
+        <ul>
+            <li>Jain K.C. and Aggarwal B.E., <em>Robotics – Principles and Practice</em>, Khanna Publishers.</li>
+            <li>Schuler, C.A. and McNamee, W.L. <em>Modern Industrial Electronics</em>, Macmillan/McGraw-Hill.</li>
+            <li>Klafter R.D., Chimielewski T.A., Negin M., <em>Robotic Engineering – An Integrated Approach</em>, Prentice Hall of India.</li>
+            <li>Deb.S.R., <em>Robotics Technology and Flexible Automation</em>, John Wiley, USA 1992.</li>
+            <li>Asfahl C.R., <em>Robots and Manufacturing Automation</em>, John Wiley, USA 1992.</li>
+            <li>Mc Kerrow P.J., <em>Introduction to Robotics</em>, Addison Wesley, USA, 1991.</li>
+            <li>Issac Asimov, <em>I, Robot</em>, Ballantine Books, New York, 1986.</li>
+        </ul>
+    </div>
+            `,
+            newSyllabus: `
+            
+            
+                <div class="text-center">
+        <strong style="font-size: 24px;">Automation and Robotics</strong>
+    </div>
+    <div class="mt-4">
+        <p><strong>Course Title:</strong> Automation and Robotics</p>
+        <p><strong>Course No:</strong> CSC382</p>
+        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+        <p><strong>Semester:</strong> VI</p>
+        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+        <p><strong>Credit Hrs:</strong> 3</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Description</strong>
+        <p>This course provides the detailed idea about fields of robotics and its control mechanisms.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Objective</strong>
+        <p>The main objective is to provide information on various parts of robots and ideas on fields of robotics. It also focuses on various kinematics and inverse kinematics of robots, trajectory planning of robots, and the study of the control of robots for some specific applications.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Contents</strong>
+        <div>
+            <strong>Unit 1: Introduction (8 Hrs.)</strong>
+            <ul>
+                <li>Definition and Origin of Robotics</li>
+                <li>Types of Robotics</li>
+                <li>Major Components</li>
+                <li>Historical Development of Robots</li>
+                <li>Robotic System and Robot Anatomy</li>
+                <li>Degrees of Freedom</li>
+                <li>Coordinate System and its Types</li>
+                <li>Asimov's Laws of Robotics</li>
+                <li>Dynamic Stabilization of Robots</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 2: Power Sources and Sensors (8 Hrs.)</strong>
+            <ul>
+                <li>Hydraulic, Pneumatic, and Electric Drives</li>
+                <li>Determination of HP of Motor and Gearing Ratio</li>
+                <li>Variable Speed Arrangements</li>
+                <li>Path Determination</li>
+                <li>Micro Machines in Robotics</li>
+                <li>Machine Vision</li>
+                <li>Ranging, Laser, Acoustic, Magnetic, Fiber Optic, and Tactile Sensors</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 3: Manipulators, Actuators, and Grippers (8 Hrs.)</strong>
+            <ul>
+                <li>Manipulators</li>
+                <li>Classification</li>
+                <li>Construction of Manipulators</li>
+                <li>Manipulator Dynamics and Force Control</li>
+                <li>Electronic and Pneumatic Manipulator Control</li>
+                <li>End Effectors</li>
+                <li>Loads and Forces</li>
+                <li>Grippers and Design Considerations</li>
+                <li>Robot Motion Control</li>
+                <li>Position Sensing</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 4: Kinematics and Path Planning (8 Hrs.)</strong>
+            <ul>
+                <li>Solution of Inverse Kinematics Problem</li>
+                <li>Multiple Solution Jacobian Work Envelope</li>
+                <li>Hill Climbing Techniques</li>
+                <li>Robot Programming Languages</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 5: Process Control (8 Hrs.)</strong>
+            <ul>
+                <li>Process Control and Types</li>
+                <li>On-Off Control Systems</li>
+                <li>Proportional Control Systems</li>
+                <li>Proportional Plus Integral (PI) Control Systems</li>
+                <li>Three Mode Control (PID) Control Systems</li>
+                <li>Process Control Tuning</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 6: Case Studies (5 Hrs.)</strong>
+            <ul>
+                <li>Multiple Robots</li>
+                <li>Machine Interface</li>
+                <li>Robots in Manufacturing and Non-Manufacturing Applications</li>
+                <li>Robot Cell Design</li>
+                <li>Selection of a Robot</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mt-4">
+        <strong>Laboratory Works</strong>
+        <p>The laboratory work should focus on the implementation of sensors and the design of control systems. It should also deal with developing programs related to robot design and control using Python.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Text Books</strong>
+        <ul>
+            <li>Mikell P. Weiss, G.M. Nagel, R.N. Odraj, "Industrial Robotics", McGraw Hill.</li>
+            <li>Ghosh, "Control in Robotics and Automation: Sensor Based Integration", Allied Publishers.</li>
+        </ul>
+    </div>
+    <div class="mt-4">
+        <strong>References</strong>
+        <ul>
+            <li>Jain K.C. and Aggarwal B.E., "Robotics – Principles and Practice", Khanna Publishers.</li>
+            <li>Schuler C.A. and McNamee W.L., "Modern Industrial Electronics", Macmillan/McGraw-Hill.</li>
+            <li>Klafter R.D., Chimielewski T.A., Negin M., "Robotic Engineering – An Integrated Approach", Prentice Hall of India.</li>
+            <li>Deb.S.R., "Robotics Technology and Flexible Automation", John Wiley, USA 1992.</li>
+            <li>Asfahl C.R., "Robots and Manufacturing Automation", John Wiley, USA 1992.</li>
+            <li>Mc Kerrow P.J., "Introduction to Robotics", Addison Wesley, USA, 1991.</li>
+            <li>Issac Asimov, "I Robot", Ballantine Books, New York, 1986.</li>
+        </ul>
+    </div>
+            `
+
+
+        };
+
+
+
+
+
+        document.getElementById('refBooks').addEventListener('click', () => {
+            content.innerHTML = contents.refBooks;
+        });
+        document.getElementById('refBook1').addEventListener('click', () => {
+            content.innerHTML = contents.refBook1;
+        });
+
+        document.getElementById('refBook2').addEventListener('click', () => {
+            content.innerHTML = contents.refBook2;
+        });
+
+
+
+        document.getElementById('questions').addEventListener('click', () => {
+            content.innerHTML = contents.questions;
+        });
+
+        document.getElementById('pastYearQuestion2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2075;
+        });
+
+        document.getElementById('pastYearQuestion2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2076;
+        });
+
+        document.getElementById('pastYearQuestion2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2074;
+        });
+
+        document.getElementById('pastYearQuestion2071').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2071;
+        });
+        document.getElementById('pastYearQuestion2073').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2073;
+        });
+
+        document.getElementById('pastYearQuestion2068').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2068;
+        });
+
+        document.getElementById('pastYearSolution').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution;
+        });
+
+        document.getElementById('ModelSolution').addEventListener('click', () => {
+            content.innerHTML = contents.ModelSolution;
+        });
+
+
+        document.getElementById('pastYearSolution2068').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2068;
+        });
+
+        document.getElementById('pastYearSolution2071').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2071;
+        });
+
+        document.getElementById('pastYearSolution2073').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2073;
+        });
+
+        document.getElementById('pastYearSolution2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2074;
+        });
+
+
+        document.getElementById('pastYearSolution2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2075;
+        });
+
+        document.getElementById('pastYearSolution2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2076;
+        });
+
+        document.getElementById('notes').addEventListener('click', () => {
+            content.innerHTML = contents.notes;
+        });
+
+        document.getElementById('syllabus').addEventListener('click', () => {
+            content.innerHTML = contents.syllabus;
+        });
+
+        document.getElementById('oldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.oldSyllabus;
+        });
+
+        document.getElementById('newSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.newSyllabus;
+        });
+
+        document.getElementById('oldAppVersion').addEventListener('click', () => {
+            content.innerHTML = contents.oldAppVersion;
+        });
+
+        document.getElementById('notesOldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesOldSyllabus;
+        });
+
+        document.getElementById('notesNewSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesNewSyllabus;
+        });
+
+        document.getElementById('IPYouTubeNotes').addEventListener('click', () => {
+            content.innerHTML = contents.IPYouTubeNotes;
+        });
+
+
+
+        // Set current year in the footer
+        document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showModal(src, alt) {
+            $('#modalImage').attr('src', src);
+            $('#imageModalLabel').text(alt);
+            $('#imageModal').modal('show');
+        }
+    </script>
+</body>
+
+</html>
