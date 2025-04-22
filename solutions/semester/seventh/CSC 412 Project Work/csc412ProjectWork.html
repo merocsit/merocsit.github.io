@@ -72,7 +72,7 @@
             <div class="col-md-3  col-sm-12 border-right ">
 
                 <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
-                    <h5 id="navName"></h5>
+                    <h3 id="navName"></h3>
                     <li class="nav-item dropdown">
                         <a id="questions" class="nav-link dropdown-toggle d-none" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -187,15 +187,15 @@
 
         const contents = {
 
-            questions: `<h2 class="text-left"> Questions Collection </h2> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h4> Please Use Menu </h4> <p> Need help watch tutorial </p>
+            questions: `<h6 class="text-left"> Questions Collection </h6> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h6> Please Use Menu </h6> <p> Need help watch tutorial </p>
             <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
 
 
             pastYearQuestion2074: `
             <div class="">
     <div class="text-center">
-        <h4>Tribhuvan University</h4>
-        <h5>Institute of Science and Technology</h5>
+        <h6>Tribhuvan University</h6>
+        <h3>Institute of Science and Technology</h3>
         <p>2074</p>
         <h6>Bachelor Level / Sixth Semester / Science</h6>
         <h6>Computer Science and Information Technology (CSC364)</h6>
@@ -268,7 +268,7 @@
 
 
             pastYearQuestion2078: `
-<h2 class='text-danger'> Not Available </h2>
+<h6 class='text-danger'> Not Available </h6>
 
 `,
 
@@ -282,13 +282,13 @@
          
         `,
 
-            pastYearSolution: `<h2 class="text-left">  Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
-            <h4> Please use Menu </h4> <p> Need Help Watch Tutorial </p>
+            pastYearSolution: `<h6 class="text-left">  Questions Solutions Collection </h6> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            <h6> Please use Menu </h6> <p> Need Help Watch Tutorial </p>
             <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             `,
 
             pastYearSolution2075: `
-<h5>  Solution 2075 </h5>   
+<h3>  Solution 2075 </h3>   
 <hr>
 <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
@@ -304,7 +304,7 @@ Download Solution </a></button>
 `,
 
             pastYearSolution2076: `
-<h5>  Solution 2076 </h5>   
+<h3>  Solution 2076 </h3>   
 <hr>
 
 <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
@@ -324,8 +324,8 @@ Download Solution </a></button>
 `,
 
             pastYearSolution2077: `
-<h5> 
-     Solution 2078 </h5>   
+<h3> 
+     Solution 2078 </h3>   
 <hr>
 <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
@@ -345,8 +345,8 @@ Download Solution </a></button>
 `,
 
             pastYearSolution2078: `
-    <h5> 
-     Solution 2078 </h5>   
+    <h3> 
+     Solution 2078 </h3>   
 <hr>
 <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
@@ -366,8 +366,8 @@ Download Solution </a></button>
 `,
 
             pastYearSolution2079: `
-<h5> 
-     Solution 2079 </h5>   
+<h3> 
+     Solution 2079 </h3>   
 <hr>
 <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
@@ -387,8 +387,8 @@ Download Solution </a></button>
 `,
 
             pastYearSolution2080: `
-<h5> 
-     Solution 2080 </h5>   
+<h3> 
+     Solution 2080 </h3>   
 <hr>
 <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
@@ -413,7 +413,7 @@ Download Solution </a></button>
             refBooks: `<iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 
             refBook1: `
-            <h5> </h5>   
+            <h3> </h3>   
             <hr>
             <iframe src="" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
                 <p>Sorry! PDF cannot be displayed.</p>
@@ -444,208 +444,344 @@ Download Reference Book
             ,
 
 
-            oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
-            // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
-            // notesNewSyllabus: `<h2>Notes - New 2079 Syllabus</h2><p>Here is the content for the notes of new 2079 syllabus.</p>`,
-            notesOldSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
-            notesNewSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            oldAppVersion: `<h6>Old CSIT Solution App Version</h6><p>Here is the content for the old CSIT solution app version.</p>`,
+            // notesOldSyllabus: `<h6>Notes - Old 2074 Syllabus</h6><p>Here is the content for the notes of old 2074 syllabus.</p>`,
+            // notesNewSyllabus: `<h6>Notes - New 2079 Syllabus</h6><p>Here is the content for the notes of new 2079 syllabus.</p>`,
+            notesOldSyllabus: `<h6 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h6>`,
+            notesNewSyllabus: `<h6 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h6>`,
 
-            notes: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            notes: `<h6 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h6>`,
             syllabus: `
-            <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <h6> Select Your Syllabus. Please Use Menu </h6> <p> Need help watch tutorial </p>
             <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
 
-            oldSyllabus: `<div class="">
-    <div>
-        <h4 class="text-center">Project Work</h4>
-        <p>Course Title: Project Work</p>
-        <p>Course No: CSC412</p>
-        <p>Full Marks: 80 + 20</p>
-        <p>Pass Marks: 32+ 8</p>
-        <p>Nature of the Course: Project</p>
-        <p>Credit Hrs: 3</p>
-        <p>Semester: VII</p>
-    </div>
+            oldSyllabus: `
 
-    <h5>Course Description:</h5>
+                <h2>Project Work</h2>
+    <p><strong>Course Title:</strong> Project Work</p>
+    <p><strong>Full Marks:</strong> 80 + 20</p>
+    <p><strong>Course No:</strong> CSC412</p>
+    <p><strong>Pass Marks:</strong> 32 + 8</p>
+    <p><strong>Nature of the Course:</strong> Project</p>
+    <p><strong>Credit Hrs:</strong> 3</p>
+    <p><strong>Semester:</strong> VII</p>
+    <h6>Course Description</h6>
     <p>This course covers theoretical and practical concepts needed to develop a real-world software system. The course focuses on enabling students with the skills related to software development. The course includes practicing the abilities pertaining to the planning, analysis, design, implementation, and testing of software applications.</p>
+    <h6>Course Objectives</h6>
+    <p>The objective of this course is to develop theoretical and practical skills needed to develop real-world software applications using different software development tools and techniques.</p>
+    <h6>Course Details</h6>
+    <h6>Nature of Project</h6>
+    <p>The project work should include the development of an application/system software. Students are highly recommended to implement relevant algorithms, theories, and concepts that they have learned. The project should be practiced by following analysis, design, implementation, and testing phases. The project can be done in a group with at most three members in each group. For the implementation of the project, students can choose appropriate language technologies as per comfort and skills. While implementing the project, students should be able to write their own program modules rather than relying on predefined APIs or Plugins except in some unavoidable circumstances.</p>
+    <h6>Phases of Project</h6>
+    <ol>
+        <li><strong>Proposal Submission and Presentation:</strong> Students must submit and present project proposal on 3rd to 4th week of start of the seventh semester.</li>
+        <li><strong>Mid-Term:</strong> Students must submit progress report and defend midterm progress of their project work on the 10th to 11th week of the seventh semester.</li>
+        <li><strong>Final Submission:</strong> Students must submit and defend the project work during the last week of the seventh semester but before final board examination. The final defense will include a viva voice followed by a demonstration of the project. The final defense will be conducted by an evaluation committee with an external from the university. Students must have to submit the project final report to their respective department of college/campus before at least 10 days of final defense date.
+        submitted in standard format as prescribed. The hard/soft copy of report should be made 
+available to the external before a week of presentation date.
+        </li>
+    </ol>
 
-    <h5>Course Objectives:</h5>
+      <h6>Provision of Supervision</h6>
+    <p>The supervisor should be a regular faculty of the campus/college. The role of the supervisor is to provide appropriate guidance to the students throughout the project. A supervisor can supervise at most three groups of the project in a section. The supervisor should rigorously supervise, monitor, provide feedback, and evaluate the project groups under his/her supervision.</p>
+
+    <h6>Evaluation Scheme</h6>
+    <h6>1. Proposal Defense - 10% Marks of 100</h6>
     <ul>
-        <li>To develop theoretical and practical skills needed to develop real-world software applications using different software development tools and techniques.</li>
+        <li>2 Marks - Head/Program Coordinator</li>
+        <li>6 Marks - Supervisor</li>
+        <li>2 Marks - Internal Examiner</li>
     </ul>
 
-    <h5>Course Details:</h5>
-    <h6>Nature of Project:</h6>
-    <p>The project work should include the development of an application/system software. Students are highly recommended to implement relevant algorithms, theories, and concepts that they have learned. The project should follow the analysis, design, implementation, and testing phases.</p>
-    <p>The project can be done in a group of at most three members. Students should write their own program modules, relying on predefined APIs only in unavoidable circumstances.</p>
-
-    <h6>Phases of Project:</h6>
+    <h6>2. Midterm - 20% Marks of 100</h6>
     <ul>
-        <li><strong>Proposal Submission and Presentation:</strong> Submit and present the project proposal in the 3rd to 4th week of the seventh semester.</li>
-        <li><strong>Mid-Term:</strong> Submit a progress report and defend the project in the 10th to 11th week.</li>
-        <li><strong>Final Submission:</strong> Submit and defend the project in the last week of the semester before final board exams.</li>
+        <li>3 Marks - Head/Program Coordinator</li>
+        <li>14 Marks - Supervisor</li>
+        <li>3 Marks - Internal Examiner</li>
     </ul>
 
-    <h6>Evaluation Scheme:</h6>
+    <h6>3. Final Defense - 70% Marks of 100</h6>
     <ul>
-        <li><strong>Proposal Defense:</strong> 10% of the total marks (2 Marks Head/Program Coordinator + 6 Marks Supervisor + 2 Marks Internal Examiner).</li>
-        <li><strong>Midterm:</strong> 20% of the total marks (3 Marks Head/Program Coordinator + 14 Marks Supervisor + 3 Marks Internal Examiner).</li>
-        <li><strong>Final Defense:</strong> 70% of the total marks (5 Marks Head/Program Coordinator + 40 Marks Supervisor + 5 Marks Internal Examiner + 20 Marks External Examiner).</li>
+        <li>5 Marks - Head/Program Coordinator</li>
+        <li>40 Marks - Supervisor</li>
+        <li>5 Marks - Internal Examiner</li>
+        <li>20 Marks - External Examiner</li>
     </ul>
 
-    <h6>Roles and Responsibilities:</h6>
+    <h6>Evaluation Committee and Evaluation Criteria</h6>
+    <h6>a. Evaluation Committee</h6>
     <ul>
-        <li><strong>HOD/Coordinator:</strong> Coordinates with supervisor, internal examiner, external examiner, and students.</li>
-        <li><strong>Project Supervisor:</strong> Provides guidance, feedback, and monitors the project progress.</li>
-        <li><strong>Internal Examiner:</strong> Evaluates the project during different phases.</li>
-        <li><strong>External Examiner:</strong> Evaluates the project during the final defense.</li>
-        <li><strong>Student:</strong> Develops the project, prepares the report, and defends the project during evaluation phases.</li>
+        <li>HOD/Coordinator of the campus/college</li>
+        <li>Project Supervisor (Regular faculty of the campus/college)</li>
+        <li>Internal Examiner (Regular faculty of the campus/college)</li>
+        <li>External Examiner (Allocated from university at the final defense)</li>
     </ul>
 
-    <h5>Report Contents:</h5>
-    <h6>Prescribed Content Flow for Project Proposal:</h6>
+    <h6>b. Marks Allocation</h6>
+    <ul>
+        <li>Head / Program Coordinator – 10</li>
+        <li>Project Supervisor – 60</li>
+        <li>Internal Examiner – 10</li>
+        <li>External Examiner – 20</li>
+    </ul>
+    <p><strong>Total – 100</strong></p>
+
+    <h6>c. Focus of the Evaluation</h6>
+    <ul>
+        <li>Presentation Skills</li>
+        <li>Level of Work and Understanding (Level of Analysis, Design, Implementation, Testing, Result Analysis done for the project)</li>
+        <li>Project Report</li>
+        <li>Viva/Question Answer</li>
+        <li>Demonstration of the project</li>
+        <li>Teamwork and Contribution</li>
+    </ul>
+
+
+     <h6>Roles and Responsibilities</h6>
+    
+    <h6>HOD/Coordinator</h6>
+    <p>The role of HOD/Coordinator is to coordinate with supervisor, internal examiner, external examiner, and students. The HOD/Coordinator should monitor the students' project progress in coordination with the respective supervisors. The HOD/Coordinator is responsible for arranging the proposal defense, midterm, and final defense. The HOD/Coordinator should participate and evaluate proposal defense, midterm, and final defense.</p>
+
+    <h6>Project Supervisor</h6>
+    <p>The role of project supervisor is to supervise students' project throughout the semester. The supervisor should rigorously provide feedback and guide the students. The supervisor is to participate and evaluate proposal defense, midterm, and final defense. The supervisor should monitor the progress of projects under supervision.</p>
+
+    <h6>Internal Examiner</h6>
+    <p>The role of internal examiner is to evaluate the students' project during different evaluation phases of the project. The internal examiner should participate and evaluate proposal defense, midterm, and final defense.</p>
+
+    <h6>External Examiner</h6>
+    <p>The role of external examiner is to evaluate the students' project during the final defense evaluation. The examiner should participate and evaluate the viva voce and demonstration session during the final defense.</p>
+
+    <h6>Student</h6>
+    <p>The role and responsibilities of students include development of the project, project report preparation, and defending the project work throughout each evaluation phase. Despite the project work being group work, each student should have equal role and responsibilities in the project. Each student will be evaluated individually, so the student should be able to demonstrate his/her contribution in the project work individually. Students should maintain a log of visits with their supervisors at different dates during their work. The log should include technical feedback from their supervisors.</p>
+
+    <h6>Report Contents</h6>
+    <h6>1. Prescribed Content Flow for the Project Proposal</h6>
     <ol>
         <li>Introduction</li>
         <li>Problem Statement</li>
         <li>Objectives</li>
-        <li>Methodology</li>
+        <li>Methodology
+            <ol>
+                <li>Requirement Identification
+                    <ul>
+                        <li>Study of Existing System / Literature Review</li>
+                        <li>Requirement Analysis</li>
+                    </ul>
+                </li>
+                <li>Feasibility Study
+                    <ul>
+                        <li>Technical</li>
+                        <li>Operational</li>
+                        <li>Economic</li>
+                        <li>Schedule (Gantt chart showing the project timeline)</li>
+                    </ul>
+                </li>
+                <li>High-Level Design of System
+                    <ul>
+                        <li>Methodology of the proposed system / Flow Charts / Working Mechanism of Proposed System / Description of Algorithms</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
         <li>Expected Outcome</li>
         <li>References</li>
     </ol>
 
-    <h6>Prescribed Content Flow for the Project Report:</h6>
+
+       <h6>Prescribed Content Flow for the Project Report</h6>
     <ol>
         <li>Cover & Title Page</li>
-        <li>Certificate Page</li>
+        <li>Certificate Page
+            <ul>
+                <li>Supervisor Recommendation</li>
+                <li>Head / Program Coordinator, Supervisor, Internal and External Examiners' Approval Letter</li>
+            </ul>
+        </li>
         <li>Acknowledgement</li>
         <li>Abstract Page</li>
         <li>Table of Contents</li>
+        <li>List of Abbreviations, List of Figures, List of Tables</li>
         <li>Main Report</li>
         <li>References</li>
+        <li>Bibliography (if any)</li>
+        <li>Appendices
+            <ul>
+                <li>Screenshots + Snippets of major source code components</li>
+                <li>Log of visits to supervisor</li>
+            </ul>
+        </li>
     </ol>
 
-    <h6>Chapter Structure for the Report:</h6>
-    <ol>
-        <li><strong>Chapter 1: Introduction</strong></li>
-        <li><strong>Chapter 2: Background Study and Literature Review</strong></li>
-        <li><strong>Chapter 3: System Analysis</strong></li>
-        <li><strong>Chapter 4: System Design</strong></li>
-        <li><strong>Chapter 5: Implementation and Testing</strong></li>
-        <li><strong>Chapter 6: Conclusion and Future Recommendations</strong></li>
-    </ol>
+    <h6>Prescribed Chapters in the Main Report</h6>
 
-    <h5>Citation and Referencing:</h5>
-    <p>References should follow the IEEE standard and should be cited within the document appropriately.</p>
-
-    <h5>Report Format Standards:</h5>
-    <ul>
-        <li><strong>Page Numbering:</strong> Roman numerals for preliminary pages and numeric for the main report.</li>
-        <li><strong>Font Style:</strong> Times New Roman, 12pt for paragraphs, and appropriate font sizes for headings.</li>
-        <li><strong>Margins:</strong> Top=2.54 cm, Bottom=2.54 cm, Left=3.17 cm, Right=2.54 cm.</li>
-    </ul>
-
-    <h5>Final Report Submission:</h5>
-    <p>The final report must be submitted in three copies (College Library, Self, Dean Office) with the specified binding style.</p>
-</div>
-
-`,
-            newSyllabus: `
-<div class="">
-    <div>
-        <h4 class="text-center">Project Work</h4>
-        <p>Course Title: Project Work</p>
-        <p>Course No: CSC412</p>
-        <p>Full Marks: 80 + 20</p>
-        <p>Pass Marks: 32+ 8</p>
-        <p>Nature of the Course: Project</p>
-        <p>Credit Hrs: 3</p>
-        <p>Semester: VII</p>
-    </div>
-
-    <h5>Course Description:</h5>
-    <p>This course covers theoretical and practical concepts needed to develop a real-world software system. The course focuses on enabling students with the skills related to software development. The course includes practicing the abilities pertaining to the planning, analysis, design, implementation, and testing of software applications.</p>
-
-    <h5>Course Objectives:</h5>
-    <ul>
-        <li>To develop theoretical and practical skills needed to develop real-world software applications using different software development tools and techniques.</li>
-    </ul>
-
-    <h5>Course Details:</h5>
-    <h6>Nature of Project:</h6>
-    <p>The project work should include the development of an application/system software. Students are highly recommended to implement relevant algorithms, theories, and concepts that they have learned. The project should follow the analysis, design, implementation, and testing phases.</p>
-    <p>The project can be done in a group of at most three members. Students should write their own program modules, relying on predefined APIs only in unavoidable circumstances.</p>
-
-    <h6>Phases of Project:</h6>
-    <ul>
-        <li><strong>Proposal Submission and Presentation:</strong> Submit and present the project proposal in the 3rd to 4th week of the seventh semester.</li>
-        <li><strong>Mid-Term:</strong> Submit a progress report and defend the project in the 10th to 11th week.</li>
-        <li><strong>Final Submission:</strong> Submit and defend the project in the last week of the semester before final board exams.</li>
-    </ul>
-
-    <h6>Evaluation Scheme:</h6>
-    <ul>
-        <li><strong>Proposal Defense:</strong> 10% of the total marks (2 Marks Head/Program Coordinator + 6 Marks Supervisor + 2 Marks Internal Examiner).</li>
-        <li><strong>Midterm:</strong> 20% of the total marks (3 Marks Head/Program Coordinator + 14 Marks Supervisor + 3 Marks Internal Examiner).</li>
-        <li><strong>Final Defense:</strong> 70% of the total marks (5 Marks Head/Program Coordinator + 40 Marks Supervisor + 5 Marks Internal Examiner + 20 Marks External Examiner).</li>
-    </ul>
-
-    <h6>Roles and Responsibilities:</h6>
-    <ul>
-        <li><strong>HOD/Coordinator:</strong> Coordinates with supervisor, internal examiner, external examiner, and students.</li>
-        <li><strong>Project Supervisor:</strong> Provides guidance, feedback, and monitors the project progress.</li>
-        <li><strong>Internal Examiner:</strong> Evaluates the project during different phases.</li>
-        <li><strong>External Examiner:</strong> Evaluates the project during the final defense.</li>
-        <li><strong>Student:</strong> Develops the project, prepares the report, and defends the project during evaluation phases.</li>
-    </ul>
-
-    <h5>Report Contents:</h5>
-    <h6>Prescribed Content Flow for Project Proposal:</h6>
+    <h6>Chapter 1: Introduction</h6>
     <ol>
         <li>Introduction</li>
         <li>Problem Statement</li>
         <li>Objectives</li>
-        <li>Methodology</li>
-        <li>Expected Outcome</li>
-        <li>References</li>
+        <li>Scope and Limitation</li>
+        <li>Development Methodology</li>
+        <li>Report Organization</li>
     </ol>
 
-    <h6>Prescribed Content Flow for the Project Report:</h6>
+    <h6>Chapter 2: Background Study and Literature Review</h6>
     <ol>
-        <li>Cover & Title Page</li>
-        <li>Certificate Page</li>
-        <li>Acknowledgement</li>
-        <li>Abstract Page</li>
-        <li>Table of Contents</li>
-        <li>Main Report</li>
-        <li>References</li>
+        <li>Background Study (Description of fundamental theories, general concepts and terminologies related to the project)</li>
+        <li>Literature Review (Review of the similar/relevant projects, theories and results by other researchers)</li>
     </ol>
 
-    <h6>Chapter Structure for the Report:</h6>
+    <h6>Chapter 3: System Analysis</h6>
     <ol>
-        <li><strong>Chapter 1: Introduction</strong></li>
-        <li><strong>Chapter 2: Background Study and Literature Review</strong></li>
-        <li><strong>Chapter 3: System Analysis</strong></li>
-        <li><strong>Chapter 4: System Design</strong></li>
-        <li><strong>Chapter 5: Implementation and Testing</strong></li>
-        <li><strong>Chapter 6: Conclusion and Future Recommendations</strong></li>
+        <li>System Analysis</li>
+        <li>Requirement Analysis
+            <ul>
+                <li>Functional Requirements (Illustrated using use case diagram/use case descriptions)</li>
+                <li>Non-Functional Requirements</li>
+            </ul>
+        </li>
+        <li>Feasibility Analysis
+            <ul>
+                <li>Technical</li>
+                <li>Operational</li>
+                <li>Economic</li>
+                <li>Schedule</li>
+            </ul>
+        </li>
+        <li>Analysis (May be Structured or Object Oriented)
+            <ul>
+                <li>If structured approach:
+                    <ul>
+                        <li>Data modelling using ER Diagrams</li>
+                        <li>Process modelling using DFD</li>
+                    </ul>
+                </li>
+                <li>If object oriented approach:
+                    <ul>
+                        <li>Object modelling using Class and Object Diagrams</li>
+                        <li>Dynamic modelling using State and Sequence Diagrams</li>
+                        <li>Process modelling using Activity Diagrams</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
     </ol>
 
-    <h5>Citation and Referencing:</h5>
-    <p>References should follow the IEEE standard and should be cited within the document appropriately.</p>
+    <h6>Chapter 4: System Design</h6>
+    <ol>
+        <li>Design (May be Structured or Object Oriented as per the approach followed in analysis chapter)
+            <ul>
+                <li>If structured approach:
+                    <ul>
+                        <li>Database Design: Transformation of ER to relations and normalizations</li>
+                        <li>Forms and Report Design</li>
+                        <li>Interface and Dialogue Design</li>
+                    </ul>
+                </li>
+                <li>If object oriented approach:
+                    <ul>
+                        <li>Refinement of Class, Object, State, Sequence, and Activity diagrams</li>
+                        <li>Component Diagrams</li>
+                        <li>Deployment Diagrams</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Algorithm Details</li>
+    </ol>
 
-    <h5>Report Format Standards:</h5>
+    <h6>Chapter 5: Implementation and Testing</h6>
+    <ol>
+        <li>Implementation
+            <ul>
+                <li>Tools Used (CASE tools, Programming languages, Database platforms)</li>
+                <li>Implementation Details of Modules (Description of classes/procedures/functions/methods/algorithms)</li>
+            </ul>
+        </li>
+        <li>Testing
+            <ul>
+                <li>Test Cases for Unit Testing</li>
+                <li>Test Cases for System Testing</li>
+            </ul>
+        </li>
+        <li>Result Analysis</li>
+    </ol>
+
+    <h6>Chapter 6: Conclusion and Future Recommendations</h6>
+    <ol>
+        <li>Conclusion</li>
+        <li>Future Recommendations</li>
+    </ol>
+
+    <h6>Report Writing Guidelines</h6>
+
+    <h6>Students' Focus While Writing the Chapters</h6>
+    <p>While writing the chapters mentioned above, students should avoid basic definitions. Instead, they should aim to:</p>
     <ul>
-        <li><strong>Page Numbering:</strong> Roman numerals for preliminary pages and numeric for the main report.</li>
-        <li><strong>Font Style:</strong> Times New Roman, 12pt for paragraphs, and appropriate font sizes for headings.</li>
-        <li><strong>Margins:</strong> Top=2.54 cm, Bottom=2.54 cm, Left=3.17 cm, Right=2.54 cm.</li>
+        <li>Relate and contextualize the concepts within the framework of their project work.</li>
     </ul>
 
-    <h5>Final Report Submission:</h5>
-    <p>The final report must be submitted in three copies (College Library, Self, Dean Office) with the specified binding style.</p>
-</div>
+    <h6>Citation and Referencing</h6>
+    <p>The listing of references should be included in the <strong>References</strong> section. The references contain the list of articles, books, URLs, etc., that are cited in the document. Books, articles, and other resources studied during the project but not cited in the document should be listed in the <strong>Bibliography</strong> section.</p>
+    <p>The citation and referencing should follow the <strong>IEEE Referencing Standard</strong>. This standard can be found online for more details. The in-text citations should also follow the IEEE style.</p>
 
+    <h6>Report Format Standards</h6>
 
+    <h6>A. Page Number</h6>
+    <ul>
+        <li>The pages from the certificate page to the list of tables/figures/abbreviations/approvals should be numbered in Roman numerals starting from <strong>i</strong>.</li>
+        <li>The pages from Chapter 1 onwards should be numbered in Arabic numerals starting from <strong>1</strong>.</li>
+        <li>The page numbers should be inserted at the bottom, aligned at the center.</li>
+    </ul>
+
+    <h6>B. Page Size and Margin</h6>
+    <ul>
+        <li>The paper size must correspond to A4.</li>
+        <li>The margins must be set as:
+            <ul>
+                <li>Top: 1 inch (2.54 cm)</li>
+                <li>Bottom: 1 inch (2.54 cm)</li>
+                <li>Left: 1.25 inches (3.17 cm)</li>
+                <li>Right: 1 inch (2.54 cm)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h6>C. Paragraph Style</h6>
+    <ul>
+        <li>All paragraphs should be justified.</li>
+        <li>Paragraphs should have a line spacing of <strong>1.5</strong>.</li>
+    </ul>
+
+    <h6>D. Text Font of Document</h6>
+    <ul>
+        <li>The contents of the document should be in <strong>Times New Roman</strong> font.</li>
+        <li>The font size for paragraphs should be <strong>12</strong>.</li>
+    </ul>
+
+    <h6>E. Section Headings</h6>
+    <ul>
+        <li>The font size for chapter headings should be <strong>16</strong>.</li>
+        <li>The font size for section headings should be <strong>14</strong>.</li>
+        <li>The font size for sub-section headings should be <strong>12</strong>.</li>
+        <li>All headings should be in <strong>bold face</strong>.</li>
+    </ul>
+
+    <h6>F. Figures and Tables</h6>
+    <ul>
+        <li>The position of figures and tables should be aligned at the center.</li>
+        <li>The figure captions should be centered below the figure, and table captions should be centered above the table.</li>
+        <li>All captions should be in <strong>bold face</strong> with a font size of <strong>12</strong>.</li>
+    </ul>
+
+    <h6>Final Report Binding and Submission</h6>
+    <ul>
+        <li><strong>No of Copies:</strong> 3 (College Library + Self + Dean Office)</li>
+        <li><strong>Look and Feel:</strong> Golden Embracing with Black Binding</li>
+        <li>A final approved signed copy of the report should be submitted to the <strong>Dean Office</strong>, Exam Section, Institute of Science and Technology, Tribhuvan University.</li>
+    </ul>
+
+    <h6>Text Book</h6>
+    <p><strong>None</strong></p>
       `,
 
 
