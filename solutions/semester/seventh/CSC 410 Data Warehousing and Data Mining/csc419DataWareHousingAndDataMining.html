@@ -71,7 +71,7 @@
             <div class="col-md-3  col-sm-12 border-right ">
 
                 <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
-                    <h5 id="navName"></h5>
+                    <h6 id="navName"></h6>
                     <li class="nav-item dropdown">
                         <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -189,8 +189,8 @@
             questions: `
             <div class="">
     <div class="text-center">
-        <h4>Tribhuvan University</h4>
-        <h5>Institute of Science and Technology</h5>
+        <h6>Tribhuvan University</h6>
+        <h6>Institute of Science and Technology</h6>
         <p>Dwdm Model Set</p>
         <h6>Bachelor Level / Seventh-Semester / Science</h6>
         <h6>Computer Science and Information Technology (CSC410)</h6>
@@ -200,7 +200,7 @@
     <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
     <p><strong>The figures in the margin indicate full marks.</strong></p>
 
-    <h5>Group A</h5>
+    <h6>Group A</h6>
     <p><strong>Attempt any TWO questions.</strong></p>
 
     <ol>
@@ -216,7 +216,7 @@
         </li>
     </ol>
 
-    <h5>Group B</h5>
+    <h6>Group B</h6>
     <p><strong>Attempt any EIGHT questions.</strong></p>
 
     <ol>
@@ -257,68 +257,342 @@ T5 {B, D, E, K}</pre>
 `,
 
             pastYearQuestion2074: `
-            <div class="">
-    <div class="text-center">
-        <h4>Tribhuvan University</h4>
-        <h5>Institute of Science and Technology</h5>
-        <p>2074</p>
-        <h6>Bachelor Level / Sixth Semester / Science</h6>
-        <h6>Computer Science and Information Technology (CSC364)</h6>
-        <h6>(Software Engineering)</h6>
-        <p>Full Marks: 60 &nbsp;&nbsp;&nbsp; Pass Marks: 24 &nbsp;&nbsp;&nbsp; Time: 3 hours</p>
-    </div>
-    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
-    <p><strong>The figures in the margin indicate full marks.</strong></p>
-    
-    <p><strong>Attempt any Ten questions. (10 x 6 = 60)</strong></p>
+     <div class="container mt-4">
+        <h6 class="text-center mb-4">
+Tribhuwan University <BR>
+Institute of Science and Technology <BR>
+2074 <BR>
+Bachelor Level / Seventh Semester / Science <BR>
+Computer Science and Information Technology ( CSC410 ) <BR>
+( Data Warehousing and Data Mining ) <BR>
+Full Marks: 60 <BR>
+Pass Marks: 24 <BR>
+Time: 3 hours <BR>
+Candidates are required to give their answers in their own words as far as practicable. <BR>
+The figures in the margin indicate full marks. <BR>
+        </h6>
 
-    <ol>
-        <li>
-            <p>Differentiable between software engineering and system engineering. <span class="font-weight-bold">(6 marks)</span></p>
-        </li>
-        <li>
-            <p>Describe spiral model with its advantages and disadvantages. <span class="font-weight-bold">(6 marks)</span></p>
-        </li>
-        <li>
-            <p>What is risk management? Explain risk management process. <span class="font-weight-bold">(6 marks)</span></p>
-        </li>
-        <li>
-            <p>What is a software requirement? Explain software requirement process. <span class="font-weight-bold">(6 marks)</span></p>
-        </li>
-        <li>
-            <p>What is rapid prototyping technique? Mention the types of rapid prototyping techniques and explain it. <span class="font-weight-bold">(6 marks)</span></p>
-        </li>
-        <li>
-            <p>Why is formal specification important for software development? Explain. <span class="font-weight-bold">(6 marks)</span></p>
-        </li>
-        <li>
-            <p>What is client-server model? Explain the advantages and disadvantages of client-server model. <span class="font-weight-bold">(6 marks)</span></p>
-        </li>
-        <li>
-            <p>Draw use case diagram of credit card validation system. [Use your own assumptions]. <span class="font-weight-bold">(6 marks)</span></p>
-        </li>
-        <li>
-            <p>Describe the clean room software development process. <span class="font-weight-bold">(6 marks)</span></p>
-        </li>
-        <li>
-            <p>Compare and contrast between white box and black box testing. <span class="font-weight-bold">(6 marks)</span></p>
-        </li>
-        <li>
-            <p>What is source code translation? Explain the program translation process with a diagram. <span class="font-weight-bold">(6 marks)</span></p>
-        </li>
-    </ol>
-</div>
+        <!-- Group A -->
+        <div class="mb-5">
+            <h6 class="text-center fw-bold">Group - A</h6>
+            <p class="text-center"><strong>Attempt any two Questions (10 x 2 = 20)</strong></p>
+
+            <div class="mb-4">
+                <h6 class="fw-bold">1. Apriori Algorithm</h6>
+                <p>You are given the transaction data shown below from a fast food restaurant. There are 9 distinct transactions (order 1 to order 9). There are a total of 5 meals (M1 to M5) involved in transactions.</p>
+                <p><strong>Meal Items:</strong></p>
+                <ul>
+                    <li>Order 1: M1, M2, M5</li>
+                    <li>Order 2: M2, M4</li>
+                    <li>Order 3: M2, M3</li>
+                    <li>Order 4: M1, M2, M4</li>
+                    <li>Order 5: M1, M3</li>
+                    <li>Order 6: M2, M3</li>
+                    <li>Order 7: M1, M3</li>
+                    <li>Order 8: M1, M2, M3, M5</li>
+                    <li>Order 9: M1, M2, M3</li>
+                </ul>
+                <p><strong>Minimum support = 2, Minimum confidence = 0.7</strong></p>
+                <p><strong>Apply the Apriori algorithm to the database to identify frequent k-itemsets and find all strong association rules.</strong></p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold">2. Data Preprocessing</h6>
+                <p>Why do we need to preprocess the data before running the algorithm? What are the processes for this? Explain. Give some examples of noise that must be removed in data while extracting the pattern.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold">3. Classification Approach</h6>
+                <p>List the two steps used in classification approach with its issues. Is this right decision to use neural network always as a classifier? Give your opinion. Discuss the working mechanism of back propagation classification algorithm.</p>
+                <p class="fst-italic"></p>
+            </div>
+        </div>
+
+        <!-- Group B -->
+        <div>
+            <h6 class="text-center fw-bold">Group - B</h6>
+            <p class="text-center"><strong>Attempt any eight Questions (8 x 5 = 40)</strong></p>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">4. Data Mining Primitives</h6>
+                <p>List and describe the five primitives for specifying a data mining task.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">5. Types of Data in Data Mining</h6>
+                <p>Describe the types of data used in data mining.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">6. Operational Database vs Data Warehouse</h6>
+                <p>Explain the similarities and dissimilarities between operational database and data warehouse.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">7. OLAP Operations</h6>
+                <p>List the types of OLAP operations with example.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">8. K-means vs K-medoids</h6>
+                <p>Illustrate the strength and weakness of k-mean in comparison with k-medoids algorithm.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">9. Data Cube Computation</h6>
+                <p>Why data cube computation is essential task in data mining? Describe general strategy in data cube computation.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">10. Components of a Data Warehouse</h6>
+                <p>Describe the different components of a data warehouse.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">11. Dimension Table and Fact Table</h6>
+                <p>Define dimension table and fact table. What makes the necessity of multidimensional data model?</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">12. Bayesian Classification</h6>
+                <p>Discuss the approach behind Bayesian classification. Why smoothing technique is necessary in Bayesian classification?</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">13. Short Notes</h6>
+                <p>Write short notes on (any two):</p>
+                <ul>
+                    <li>a) Concept hierarchy</li>
+                    <li>b) Data mining Query Language</li>
+                    <li>c) Text mining</li>
+                    <li>d) ROLAP vs MOLAP</li>
+                </ul>
+                <p class="fst-italic"></p>
+            </div>
+        </div>
+    </div>
 
 
 `,
 
-            pastYearQuestion2075: `   
+            pastYearQuestion2075: `
+                <div class="container mt-4">
+        <h6 class="text-center mb-4">Tribhuwan University</h6>
+        <h6 class="text-center mb-4">Institute of Science and Technology</h6>
+        <h6 class="text-center mb-4">2075</h6>
+        <h6 class="text-center mb-4">Bachelor Level / Seventh Semester / Science</h6>
+        <h6 class="text-center mb-4">Computer Science and Information Technology ( CSC410 )</h6>
+        <h6 class="text-center mb-4">Data Warehousing and Data Mining</h6>
+        <h6 class="text-center mb-4">Full Marks: 60 | Pass Marks: 24 | Time: 3 hours</h6>
+        <p class="text-center"><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+
+        <!-- Group A -->
+        <div class="mb-5">
+            <h6 class="text-center fw-bold">Group - A</h6>
+            <p class="text-center"><strong>Attempt any two Questions. (10 x 2 = 20)</strong></p>
+
+            <div class="mb-4">
+                <h6 class="fw-bold">1. Issues of Multimedia Mining and Back Propagation</h6>
+                <p>List some issues of multimedia mining. Describe how back propagation is used in classification.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold">2. Bitmap and Join Indexing</h6>
+                <p>Describe how bitmap and join indexing are used to represent OLAP data. Explain the different components of data warehouse.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold">3. Association Rules and Apriori Algorithm</h6>
+                <p>Give any two types of association rules with example. Trace the results of using the Apriori algorithm on the grocery store example with support threshold 2 and confidence threshold 60%. Show the candidate and frequent itemsets for each database scan. Enumerate all the final frequent itemsets. Also, indicate the association rules that are generated.</p>
+                <p><strong>Transaction Data:</strong></p>
+                <p><strong>Transaction_ID Items:</strong></p>
+                <ul>
+                    <li>T1: HotDogs, Buns, Ketchup</li>
+                    <li>T2: HotDogs, Buns</li>
+                    <li>T3: HotDogs, Coke, Chips</li>
+                    <li>T4: Chips, Coke</li>
+                    <li>T5: Chips, Ketchup</li>
+                    <li>T6: HotDogs, Coke, Chips</li>
+                </ul>
+                <p class="fst-italic"></p>
+            </div>
+        </div>
+
+        <!-- Group B -->
+        <div>
+            <h6 class="text-center fw-bold">Group - B</h6>
+            <p class="text-center"><strong>Attempt any eight Questions. (8 x 5 = 40)</strong></p>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">4. Cluster Analysis in Data Mining</h6>
+                <p>What is the purpose of cluster analysis in data mining? Explain.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">5. KDD vs Data Mining</h6>
+                <p>How does KDD differ with data mining? Describe the stages of data mining.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">6. OLAP Operations</h6>
+                <p>Explain OLAP operations with examples.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">7. Data Mining Query Language Primitives</h6>
+                <p>Explain the primitives of data mining query language.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">8. Data Warehouse Schemas</h6>
+                <p>How different schemas are used to model data warehouse? Explain.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">9. Pre-computation of Data Cube</h6>
+                <p>Describe the significance of pre-computation of data cube.</p>
+                <p class="fst-italic"></p>
+            </div>
+        </div>
+    </div>   
 
 `,
 
             pastYearQuestion2076: ` 
            
+    <div class="container mt-4">
+        <h6 class="text-center mb-4">Tribhuwan University</h6>
+        <h6 class="text-center mb-4">Institute of Science and Technology</h6>
+        <h6 class="text-center mb-4">2076</h6>
+        <h6 class="text-center mb-4">Bachelor Level / Seventh Semester / Science</h6>
+        <h6 class="text-center mb-4">Computer Science and Information Technology ( CSC410 )</h6>
+        <h6 class="text-center mb-4">Data Warehousing and Data Mining</h6>
+        <h6 class="text-center mb-4">Full Marks: 60 | Pass Marks: 24 | Time: 3 hours</h6>
+        <p class="text-center"><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
 
+        <!-- Group A -->
+        <div class="mb-5">
+            <h6 class="text-center fw-bold">Group A</h6>
+            <p class="text-center"><strong>Attempt any two Questions. (10 x 2 = 20)</strong></p>
+
+            <div class="mb-4">
+                <h6 class="fw-bold">1. Types of Web Mining and K-means Sensitivity</h6>
+                <p>Discuss the types of web mining. Explain why K-means is sensitive to outlier and how does K-Medoid minimize this issue.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold">2. Pattern and Information in Data Mining</h6>
+                <p>Do pattern and information refer to same aspect? Justify. Differentiate between data warehouse and operational database.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold">3. Apriori Algorithm Problems</h6>
+                <p>List the problems of Apriori algorithm with its possible solutions. Consider the following transaction dataset.</p>
+                <p><strong>Transaction Data:</strong></p>
+                <p><strong>Transaction_ID Items:</strong></p>
+                <ul>
+                    <li>T1: {K, A, D, B}</li>
+                    <li>T2: {D, A, C, E, B}</li>
+                    <li>T3: {C, A, B, E}</li>
+                    <li>T4: {B, A, D}</li>
+                </ul>
+                <p>What association rules can be found in this set, if the minimum support is 3 and the minimum confidence is 80%?</p>
+                <p class="fst-italic"></p>
+            </div>
+        </div>
+
+        <!-- Group B -->
+        <div>
+            <h6 class="text-center fw-bold">Group B</h6>
+            <p class="text-center"><strong>Attempt any eight Questions. (8 x 5 = 40)</strong></p>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">4. Role of Classification in Data Mining</h6>
+                <p>How classification plays significance role in data mining? Explain.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">5. Usefulness of Data Mining</h6>
+                <p>Are the information given by data mining always useful? What are the issues in data warehousing and data mining?</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">6. Characteristics of Data Warehouse</h6>
+                <p>Explain the four characteristics of data warehouse.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">7. Optimization Techniques in Data Cube Computation</h6>
+                <p>Explain the optimization techniques in data cube computation.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">8. Multidimensional Data Model</h6>
+                <p>How multidimensional data model helps in retrieving information? Explain with suitable example.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">9. OLAP Servers: ROLAP, MOLAP, and HOLAP</h6>
+                <p>Compare the OLAP servers, ROLAP, MOLAP and HOLAP.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">10. Data Mining Query Language</h6>
+                <p>Give a syntax and example of data mining query language.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">11. KDD vs Data Mining</h6>
+                <p>Differentiate between KDD and data mining.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">12. Data Warehouse Tuning</h6>
+                <p>What does data warehouse tuning mean? Describe the parameters.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">13. Short Notes</h6>
+                <p>Write short notes on (Any Two):</p>
+                <ul>
+                    <li>a. Evolution analysis</li>
+                    <li>b. Decision trees</li>
+                    <li>c. Text mining</li>
+                    <li>d. Classification using Regression</li>
+                </ul>
+                <p class="fst-italic"></p>
+            </div>
+        </div>
+    </div>
 
         `,
 
@@ -326,7 +600,141 @@ T5 {B, D, E, K}</pre>
             pastYearQuestion2077: `
 
 
+ <div class="container mt-4">
+        <h4 class="text-center mb-4">Tribhuwan University</h4>
+        <h5 class="text-center mb-4">Institute of Science and Technology</h5>
+        <h6 class="text-center mb-4">Model</h6>
+        <h6 class="text-center mb-4">Bachelor Level / Seventh Semester / Science</h6>
+        <h6 class="text-center mb-4">Computer Science and Information Technology ( CSC410 )</h6>
+        <h6 class="text-center mb-4">Data Warehousing and Data Mining</h6>
+        <h6 class="text-center mb-4">Full Marks: 60 | Pass Marks: 24 | Time: 3 hours</h6>
+        <p class="text-center"><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
 
+        <!-- Group-A -->
+        <div class="mb-5">
+            <h5 class="text-center fw-bold">Group-A</h5>
+            <p class="text-center"><strong>Long Answer Questions (Attempt any Two questions) [2x10=20]</strong></p>
+
+            <div class="mb-4">
+                <h6 class="fw-bold">1. Data Warehouse Design and OLAP Operations</h6>
+                <p>Suppose that a data warehouse for Big University consists of the following four dimensions: student, course, semester, and instructor, and two measures count and avg-grade. When at the lowest conceptual level (e.g., for a given student, course, semester, and instructor combination), the avg-grade measure stores the actual course grade of the student. At higher conceptual levels, avg-grade stores the average grade for the given combination.</p>
+                <ul>
+                    <li>a) Draw a snowflake schema diagram for the data warehouse.</li>
+                    <li>b) Starting with the base cuboid [student, course, semester, instructor], what specific OLAP operations (e.g., roll-up from semester to year) should one perform in order to list the average grade of CS courses for each Big University Student.</li>
+                    <li>c) If each dimension has five levels (including all), such as “student < major < status < university < all”, how many cuboids will this cube contain (including the base and apex cuboids)?</li>
+                </ul>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold">2. Apriori Algorithm</h6>
+                <p>A= {A1, A2, A3, A4, A5, A6}, Assume σ = 35%. Use Apriori algorithm to get the desired solution.</p>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>A1</th>
+                            <th>A2</th>
+                            <th>A3</th>
+                            <th>A4</th>
+                            <th>A5</th>
+                            <th>A6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+                        <tr><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+                        <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+                        <tr><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+                        <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+                        <tr><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+                        <tr><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+                        <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+                        <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+                        <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                    </tbody>
+                </table>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold">3. Data Preprocessing for Data Mining</h6>
+                <p>What kind of data preprocessing do we need before applying data mining algorithm to any data set? Explain mining method to handle noisy data with example.</p>
+                <p class="fst-italic"></p>
+            </div>
+        </div>
+
+        <!-- Group-B -->
+        <div>
+            <h5 class="text-center fw-bold">Group-B</h5>
+            <p class="text-center"><strong>Short Answer Questions (Attempt any Eight questions) [8x5=40]</strong></p>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">4. Frequent Item Set Generation Process</h6>
+                <p>Explain the use of frequent item set generation process.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">5. Data Marts and Data Cubes</h6>
+                <p>Differentiate between data marts and data cubes.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">6. OLAP Operations</h6>
+                <p>Explain OLAP operations with example.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">7. Drawbacks of ID3 Algorithm</h6>
+                <p>List the drawbacks of ID3 algorithm with overfitting and its remedy techniques.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">8. K-means Clustering Algorithm</h6>
+                <p>Write the algorithm for K-means clustering. Compare it with k-nearest neighbor algorithm.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">9. Text Mining</h6>
+                <p>What is text mining? Explain the text indexing techniques.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">10. Genetic Algorithm</h6>
+                <p>Describe genetic algorithm using as problem solving technique in data mining.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">11. WWW Mining</h6>
+                <p>What do you mean by WWW mining? Explain WWW mining techniques.</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">12. DMQL and Star Schema</h6>
+                <p>What is DMQL? How do you define Star Schema using DMQL?</p>
+                <p class="fst-italic"></p>
+            </div>
+
+            <div class="mb-3">
+                <h6 class="fw-bold">13. Short Notes</h6>
+                <p>Write short notes on (Any Two):</p>
+                <ul>
+                    <li>a) Text Database Mining</li>
+                    <li>b) Back propagation Algorithm</li>
+                    <li>c) Regression</li>
+                    <li>d) HOLAP</li>
+                </ul>
+                <p class="fst-italic"></p>
+            </div>
+        </div>
+    </div>
 
 
 `,
@@ -335,8 +743,8 @@ T5 {B, D, E, K}</pre>
             pastYearQuestion2078: `
 <div class="">
     <div class="text-center">
-        <h4>Tribhuvan University</h4>
-        <h5>Institute of Science and Technology</h5>
+        <h6>Tribhuvan University</h6>
+        <h6>Institute of Science and Technology</h6>
         <p>2078</p>
         <h6>Bachelor Level / Seventh-Semester / Science</h6>
         <h6>Computer Science and Information Technology (CSC410)</h6>
@@ -346,7 +754,7 @@ T5 {B, D, E, K}</pre>
     <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
     <p><strong>The figures in the margin indicate full marks.</strong></p>
 
-    <h5>Section A</h5>
+    <h6>Section A</h6>
     <p><strong>Attempt any two questions.</strong></p>
 
     <ol>
@@ -361,7 +769,7 @@ T5 {B, D, E, K}</pre>
         </li>
     </ol>
 
-    <h5>Section B</h5>
+    <h6>Section B</h6>
     <p><strong>Attempt any eight questions.</strong></p>
 
     <ol>
@@ -408,8 +816,8 @@ Yes        Yes      Yes   Pass</pre>
             pastYearQuestion2079: `
             <div class="">
     <div class="text-center">
-        <h4>Tribhuvan University</h4>
-        <h5>Institute of Science and Technology</h5>
+        <h6>Tribhuvan University</h6>
+        <h6>Institute of Science and Technology</h6>
         <p>2079</p>
         <h6>Bachelor Level / Seventh-Semester / Science</h6>
         <h6>Computer Science and Information Technology (CSC410)</h6>
@@ -419,7 +827,7 @@ Yes        Yes      Yes   Pass</pre>
     <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
     <p><strong>The figures in the margin indicate full marks.</strong></p>
 
-    <h5>Section A</h5>
+    <h6>Section A</h6>
     <p><strong>Attempt any two questions.</strong></p>
 
     <ol>
@@ -443,7 +851,7 @@ Yes        Yes      Yes   Pass</pre>
         </li>
     </ol>
 
-    <h5>Section B</h5>
+    <h6>Section B</h6>
     <p><strong>Attempt any eight questions.</strong></p>
 
     <ol>
@@ -486,8 +894,8 @@ Yes        Yes      Yes   Pass</pre>
             pastYearQuestion2080: `
 <div class="">
     <div class="text-center">
-        <h4>Tribhuvan University</h4>
-        <h5>Institute of Science and Technology</h5>
+        <h6>Tribhuvan University</h6>
+        <h6>Institute of Science and Technology</h6>
         <p>2080</p>
         <h6>Bachelor Level / Seventh-Semester / Science</h6>
         <h6>Computer Science and Information Technology (CSC410)</h6>
@@ -497,7 +905,7 @@ Yes        Yes      Yes   Pass</pre>
     <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
     <p><strong>The figures in the margin indicate full marks.</strong></p>
 
-    <h5>SECTION A</h5>
+    <h6>SECTION A</h6>
     <p><strong>Attempt any TWO questions.</strong></p>
 
     <ol>
@@ -519,7 +927,7 @@ Yes        Yes      Yes   Pass</pre>
         </li>
     </ol>
 
-    <h5>SECTION B</h5>
+    <h6>SECTION B</h6>
     <p><strong>Attempt any EIGHT questions.</strong></p>
 
     <ol>
@@ -564,13 +972,13 @@ Yes        Yes      Yes   Pass</pre>
          
         `,
 
-            pastYearSolution: `<h2 class="text-left">  Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
-            <h4> Please use Menu </h4> <p> Need Help Watch Tutorial </p>
+            pastYearSolution: `<h6 class="text-left">  Questions Solutions Collection </h6> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            <h6> Please use Menu </h6> <p> Need Help Watch Tutorial </p>
             <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             `,
 
             pastYearSolution2075: `
-<h5>  Solution 2075 </h5>   
+<h6>  Solution 2075 </h6>   
 <hr>
 <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
@@ -586,7 +994,7 @@ Download Solution </a></button>
 `,
 
             pastYearSolution2076: `
-<h5>  Solution 2076 </h5>   
+<h6>  Solution 2076 </h6>   
 <hr>
 
 <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
@@ -606,8 +1014,8 @@ Download Solution </a></button>
 `,
 
             pastYearSolution2077: `
-<h5> 
-     Solution 2078 </h5>   
+<h6> 
+     Solution 2078 </h6>   
 <hr>
 <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
@@ -627,8 +1035,8 @@ Download Solution </a></button>
 `,
 
             pastYearSolution2078: `
-    <h5> 
-     Solution 2078 </h5>   
+    <h6> 
+     Solution 2078 </h6>   
 <hr>
 <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
@@ -648,8 +1056,8 @@ Download Solution </a></button>
 `,
 
             pastYearSolution2079: `
-<h5> 
-     Solution 2079 </h5>   
+<h6> 
+     Solution 2079 </h6>   
 <hr>
 <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
@@ -669,8 +1077,8 @@ Download Solution </a></button>
 `,
 
             pastYearSolution2080: `
-<h5> 
-     Solution 2080 </h5>   
+<h6> 
+     Solution 2080 </h6>   
 <hr>
 <iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
@@ -695,7 +1103,7 @@ Download Solution </a></button>
             refBooks: `<iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 
             refBook1: `
-            <h5> </h5>   
+            <h6> </h6>   
             <hr>
             <iframe src="" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
                 <p>Sorry! PDF cannot be displayed.</p>
@@ -726,34 +1134,34 @@ Download Reference Book
             ,
 
 
-            oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
-            // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
-            // notesNewSyllabus: `<h2>Notes - New 2079 Syllabus</h2><p>Here is the content for the notes of new 2079 syllabus.</p>`,
-            notesOldSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
-            notesNewSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            oldAppVersion: `<h6>Old CSIT Solution App Version</h6><p>Here is the content for the old CSIT solution app version.</p>`,
+            // notesOldSyllabus: `<h6>Notes - Old 2074 Syllabus</h6><p>Here is the content for the notes of old 2074 syllabus.</p>`,
+            // notesNewSyllabus: `<h6>Notes - New 2079 Syllabus</h6><p>Here is the content for the notes of new 2079 syllabus.</p>`,
+            notesOldSyllabus: `<h6 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h6>`,
+            notesNewSyllabus: `<h6 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h6>`,
 
-            notes: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            notes: `<h6 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h6>`,
             syllabus: `
-            <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <h6> Select Your Syllabus. Please Use Menu </h6> <p> Need help watch tutorial </p>
             <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
 
             oldSyllabus: `<div class="course-description">
-    <h4 class="text-center">Tribhuvan University</h4>
-    <h4 class="text-center">Institute of Science and Technology</h4>
-    <h5 class="text-center">Course Title: Data Warehousing and Data Mining</h5>
+    <h6 class="text-center">Tribhuvan University</h6>
+    <h6 class="text-center">Institute of Science and Technology</h6>
+    <h6 class="text-center">Course Title: Data Warehousing and Data Mining</h6>
     <p><strong>Course No:</strong> CSC410</p>
     <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
     <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
     <p><strong>Nature of the Course:</strong> Theory + Lab</p>
     <p><strong>Credit Hrs:</strong> 3</p>
     <p><strong>Semester:</strong> VII</p>
-    <h5>Course Description:</h5>
+    <h6>Course Description:</h6>
     <p>This course introduces advanced aspects of data warehousing and data mining, encompassing the principles, research results, and commercial application of the current technologies.</p>
 
-    <h5>Course Objective:</h5>
+    <h6>Course Objective:</h6>
     <p>The main objective of this course is to provide knowledge of different data mining techniques and data warehousing.</p>
 
-    <h5>Course Contents:</h5>
+    <h6>Course Contents:</h6>
     
     <h6>Unit 1: Introduction to Data Warehousing (5 Hrs.)</h6>
     <ul>
@@ -864,13 +1272,13 @@ Download Reference Book
         <li>Web mining (Web content mining, Web structure mining, Web usage mining)</li>
     </ul>
 
-    <h5>Laboratory Works:</h5>
+    <h6>Laboratory Works:</h6>
     <p>The laboratory should contain all the features mentioned in the course, which should include data preprocessing and cleaning, implementing classification, clustering, association algorithms in any programming language, and data visualization through data mining tools.</p>
 
-    <h5>Text Book:</h5>
+    <h6>Text Book:</h6>
     <p>1. <em>Data Mining: Concepts and Techniques, 3rd ed.</em> by Jiawei Han, Micheline Kamber, and Jian Pei. Morgan Kaufmann Series in Data Management Systems Morgan Kaufmann Publishers, July 2011.</p>
 
-    <h5>Reference Books:</h5>
+    <h6>Reference Books:</h6>
     <ul>
         <li><em>Introduction to Data Mining, 2nd ed.</em> by Pang-Ning Tan, Michael Steinbach, Anuj Karpatne, Vipin Kumar. Pearson Publisher, 2019.</li>
         <li><em>Mining of Massive Datasets</em> by Jure Leskovec, Anand Rajaraman, Jeffrey D. Ullman, 2014.</li>
@@ -880,22 +1288,22 @@ Download Reference Book
 `,
             newSyllabus: `
 <div class="course-description">
-    <h4 class="text-center">Tribhuvan University</h4>
-    <h4 class="text-center">Institute of Science and Technology</h4>
-    <h5 class="text-center">Course Title: Data Warehousing and Data Mining</h5>
+    <h6 class="text-center">Tribhuvan University</h6>
+    <h6 class="text-center">Institute of Science and Technology</h6>
+    <h6 class="text-center">Course Title: Data Warehousing and Data Mining</h6>
     <p><strong>Course No:</strong> CSC410</p>
     <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
     <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
     <p><strong>Nature of the Course:</strong> Theory + Lab</p>
     <p><strong>Credit Hrs:</strong> 3</p>
     <p><strong>Semester:</strong> VII</p>
-    <h5>Course Description:</h5>
+    <h6>Course Description:</h6>
     <p>This course introduces advanced aspects of data warehousing and data mining, encompassing the principles, research results, and commercial application of the current technologies.</p>
 
-    <h5>Course Objective:</h5>
+    <h6>Course Objective:</h6>
     <p>The main objective of this course is to provide knowledge of different data mining techniques and data warehousing.</p>
 
-    <h5>Course Contents:</h5>
+    <h6>Course Contents:</h6>
     
     <h6>Unit 1: Introduction to Data Warehousing (5 Hrs.)</h6>
     <ul>
@@ -1006,13 +1414,13 @@ Download Reference Book
         <li>Web mining (Web content mining, Web structure mining, Web usage mining)</li>
     </ul>
 
-    <h5>Laboratory Works:</h5>
+    <h6>Laboratory Works:</h6>
     <p>The laboratory should contain all the features mentioned in the course, which should include data preprocessing and cleaning, implementing classification, clustering, association algorithms in any programming language, and data visualization through data mining tools.</p>
 
-    <h5>Text Book:</h5>
+    <h6>Text Book:</h6>
     <p>1. <em>Data Mining: Concepts and Techniques, 3rd ed.</em> by Jiawei Han, Micheline Kamber, and Jian Pei. Morgan Kaufmann Series in Data Management Systems Morgan Kaufmann Publishers, July 2011.</p>
 
-    <h5>Reference Books:</h5>
+    <h6>Reference Books:</h6>
     <ul>
         <li><em>Introduction to Data Mining, 2nd ed.</em> by Pang-Ning Tan, Michael Steinbach, Anuj Karpatne, Vipin Kumar. Pearson Publisher, 2019.</li>
         <li><em>Mining of Massive Datasets</em> by Jure Leskovec, Anand Rajaraman, Jeffrey D. Ullman, 2014.</li>
