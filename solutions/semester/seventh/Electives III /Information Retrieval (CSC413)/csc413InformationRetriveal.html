@@ -98,6 +98,8 @@
                             Past Year Solution
                         </a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearSolutionModel">Model Solution </a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2074">Model Solution </a></li>
                             <li><a class="dropdown-item" href="#" id="pastYearSolution2075">Solution2075</a></li>
                             <li><a class="dropdown-item" href="#" id="pastYearSolution2076">Solution2076</a></li>
                             <li><a class="dropdown-item" href="#" id="pastYearSolution2077">Solution2077</a></li>
@@ -475,19 +477,54 @@
             <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             `,
 
-            pastYearSolution2075: `
+
+
+           
+            pastYearSolutionModel: `
 <h5>  Solution 2075 </h5>   
 <hr>
-<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+<iframe src=" https://docs.google.com/document/d/1tI3e_bXAtJhskxuvjHptFCkqNGHHZW33m2oYAYuLQzA" width="100%" style="min-height: 100vh; overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
 </iframe> 
 
 <button class="btn btn-outline-success mobileView">
-<a  class="nav-link" href="" target="_blank">
+<a  class="nav-link" href=" https://docs.google.com/document/d/1tI3e_bXAtJhskxuvjHptFCkqNGHHZW33m2oYAYuLQzA" target="_blank">
 View Solution in New Tab </a></button>
 
 <button class="btn btn-outline-success mobileView">
-<a  class="nav-link" href="" download>
+<a  class="nav-link" href=" https://docs.google.com/document/d/1tI3e_bXAtJhskxuvjHptFCkqNGHHZW33m2oYAYuLQzA" download>
+Download Solution </a></button>
+`,
+
+                        pastYearSolution2074: `
+<h5>  Solution 2075 </h5>   
+<hr>
+<iframe src="https://docs.google.com/document/d/1PpVJC7ivCQlx74q4u6SM3D1vXdIdQ7pzQhHi1pOKsXo" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe> 
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1PpVJC7ivCQlx74q4u6SM3D1vXdIdQ7pzQhHi1pOKsXo" target="_blank">
+View Solution in New Tab </a></button>
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1PpVJC7ivCQlx74q4u6SM3D1vXdIdQ7pzQhHi1pOKsXo" download>
+Download Solution </a></button>
+`,
+
+                                    pastYearSolution2075: `
+<h5>  Solution 2075 </h5>   
+<hr>
+<iframe src="#" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe> 
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="#" target="_blank">
+View Solution in New Tab </a></button>
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="#" download>
 Download Solution </a></button>
 `,
 
@@ -495,17 +532,17 @@ Download Solution </a></button>
 <h5>  Solution 2076 </h5>   
 <hr>
 
-<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
+<iframe src="https://docs.google.com/document/d/1KbBdEJYJyMw_yibzx-U8l4cuTJSCQ0Udha5qV2acQ_w" width="100%" style="min-height: 100vh; overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
 </iframe>
 <br>
 <button class="btn btn-outline-success mobileView">
-<a  class="nav-link" href="" target="_blank">
+<a  class="nav-link" href="https://docs.google.com/document/d/1KbBdEJYJyMw_yibzx-U8l4cuTJSCQ0Udha5qV2acQ_w" target="_blank">
 View Solution in New Tab </a></button>
 
 
 <button class="btn btn-outline-success mobileView">
-<a  class="nav-link" href="" download>
+<a  class="nav-link" href="https://docs.google.com/document/d/1KbBdEJYJyMw_yibzx-U8l4cuTJSCQ0Udha5qV2acQ_w" download>
 Download Solution </a></button>
 
 </div>
@@ -977,6 +1014,15 @@ Download Reference Book
             content.innerHTML = contents.pastYearSolution;
         });
 
+        document.getElementById('pastYearSolutionModel').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolutionModel;
+        });
+        
+
+        document.getElementById('pastYearSolution2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2074;
+        });
+        
         document.getElementById('pastYearSolution2075').addEventListener('click', () => {
             content.innerHTML = contents.pastYearSolution2075;
         });
