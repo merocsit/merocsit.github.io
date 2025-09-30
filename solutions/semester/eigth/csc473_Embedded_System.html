@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titleInfo"></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../../../resources/favicon_io/favicon.ico" type="image/x-icon">
+    <style>
+        *,
+        .lead {
+            letter-spacing: 1px;
+        }
+
+        li a,
+        a,
+        .carousel-control-prev-icon,
+        .carousel-control-next {
+            color: rgb(0, 109, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
+        <div class="container-sm d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="">
+                    <img src="https://merocsit.github.io/resources/img/logos/main/logocsit.jpg" alt="CSIT Logo"
+                        class="img-fluid rounded-circle" style="width: 50px;">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select Semester
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../../index.html">First</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Second</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Third</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fourth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fifth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Sixth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Seventh</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Eighth</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <section class="container" style="min-height: 70vh;">
+        <div class="row">
+            <div class="col-md-3  col-sm-12 border-right ">
+
+                <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
+                    <h5 id="navName"></h5>
+                    <li class="nav-item dropdown">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Questions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2069">Question 2069</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2070">Question 2070</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2071">Question 2071</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2072">Question 2072</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2073">Question 2073</a></li>
+
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2074">Question 2074</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2075">Question 2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2076">Question 2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2077">Question 2077 </a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2079">Question 2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2080">Question 2080</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2081">Question 2081</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Solution
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2074">Solution2074</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2075">Solution2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2076">Solution2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2077">Solution2077</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2078">Solution2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2079">Solution2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2080">Solution2080</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2081">Solution2081</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="notesOldSyllabus">Notes By Dilli Hang Rai</a></li>
+                            <li><a class="dropdown-item" href="#" id="notesNewSyllabus">Notes By XYZ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="refBooks" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Reference Books
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="refBook1">
+
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook2">
+
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook3">
+
+
+                                </a></li>
+
+                            <li><a class="dropdown-item" href="#" id="refBook4">
+
+
+                                </a></li>
+
+                            <li><a class="dropdown-item" href="#" id="refBook1">
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook2">
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook3">
+
+                                </a></li>
+
+                            <li><a class="dropdown-item" href="#" id="refBook4">
+
+                                </a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Syllabus
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="oldSyllabus">CSC <span
+                                        id="oldSyllabusYear"></span> Old Syllabus</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+
+<div class="col-md-9 col-sm-12">
+    <div class="border rounded p-3" id="content">
+        <div class="course-info">
+            <div class="text-center">
+                <h3>Embedded Systems Programming</h3>
+                <p><strong>Course Title:</strong> CSC473 Embedded Systems Programming</p>
+            </div>
+
+            <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+            <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+            <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+            <p><strong>Credit Hours:</strong> 3</p>
+            <p><strong>Semester:</strong> VIII</p>
+
+            <h4>Course Description:</h4>
+            <p>The course covers ARM based embedded system overview – assembly level programming, efficient C programming and embedded OS.</p>
+
+            <h4>Course Objective:</h4>
+            <p>The main objective of this course is to introduce the underlying principle of embedded system programming in assembly language and C language for ARM based embedded processor.</p>
+
+            <h4>Course Contents:</h4>
+
+            <h5>Unit 1: ARM Embedded System (4 Hrs.)</h5>
+            <ul>
+                <li>Introduction to Embedded Systems, Introduction to RISC Design Philosophy, The ARM Design Philosophy, Embedded System Hardware, Embedded System Software</li>
+            </ul>
+
+            <h5>Unit 2: ARM Processor Fundamentals (4 Hrs.)</h5>
+            <ul>
+                <li>The Acron RISC Machine, The ARM Programmer’s Model, ARM Development Tools, Registers, Current Program Status Register, Pipeline, Exceptions, Interrupts, Vector Table, ARM Processor Families</li>
+            </ul>
+
+            <h5>Unit 3: Introduction to ARM Instruction Set (8 Hrs.)</h5>
+            <ul>
+                <li>Data Processing Instructions, Branch Instructions, Load – Store instructions, Software Interrupt Instructions, Program Status Register Instructions, Loading Constraints, Conditional Execution</li>
+            </ul>
+
+            <h5>Unit 4: Thumb Instruction Set (8 Hrs.)</h5>
+            <ul>
+                <li>The Thumb bit in the CPSR, The Thumb Programmer’s Model, Thumb Branch Instructions, Thumb Software Interrupt Instructions, Thumb Data Processing Instructions, Thumb Single Register Data Transfer Instructions, Thumb Multiple Register Data Transfer Instructions, Thumb Breakdown Instruction, Thumb Implementation, Thumb Application</li>
+            </ul>
+
+            <h5>Unit 5: Efficient C Programming for ARM (8 Hrs.)</h5>
+            <ul>
+                <li>Basic Data Types, Expressions, Conditional Statements, Loops, Function Calls, Procedures, Use of Memory, Pointer Aliasing, Bit Field</li>
+            </ul>
+
+            <h5>Unit 6: Writing and Optimizing ARM Assembly Code (8 Hrs.)</h5>
+            <ul>
+                <li>Writing Assembly Code, Profiling and Cycle Counting, Instruction Scheduling, Register Allocation, Conditional Execution, Looping Constructs, Bit Manipulation, Efficient Switches, Handling Unaligned Data</li>
+            </ul>
+
+            <h5>Unit 7: Firmware and Embedded OS (5 Hrs.)</h5>
+            <ul>
+                <li>Firmware and Bootloader, Fundamental Components of Embedded OS, Embedded Linux, Android OS</li>
+            </ul>
+
+            <h4>Laboratory Works:</h4>
+            <p>Programming in C and Assembly (KEIL and PROTEUS), GPIO Programming (LED, LCD, Keypad, Buzzer)</p>
+
+            <h4>Text Book:</h4>
+            <ol>
+                <li>Andrew N. Sloss, Dominic Symes, Chris Wright, <em>ARM System Developer’s Guide: Designing and Optimizing System Software</em>, Latest Edition, Morgan Kaufmann Publisher, An imprint of Elsevier</li>
+            </ol>
+
+            <h4>Reference Books:</h4>
+            <ol>
+                <li>Steve Furber, <em>ARM System – on – Chip Architecture</em>, Second Edition, Pearson Education Limited</li>
+                <li>Warwick A. Smith, <em>C Programming for Embedded Microcontrollers</em></li>
+            </ol>
+        </div>
+    </div>
+</div>
+    </section>
+    <br>
+
+    </div>
+
+    <footer class="container">
+        <hr>
+        <br>
+        <p class="text-center lead">
+            All CopyRight Reserved &copy; 2023 - <span id="todayDateFoot"></span> CSIT Solution <br> Powered By: <a
+                href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
+                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to dynamically update content
+        const content = document.getElementById('content');
+
+        const contents = {
+
+            questions: `
+            <div class="container my-4">
+    <h5 class="text-center">Tribhuwan University</h5>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <h6 class="text-center">Model</h6>
+    <h6 class="text-center">Bachelor Level / Eighth Semester / Science</h6>
+    <h6 class="text-center">Computer Science and Information Technology (CSC461)</h6>
+    <h6 class="text-center">Advanced Database</h6>
+    <h6 class="text-center">Full Marks: 60</h6>
+    <h6 class="text-center">Pass Marks: 24</h6>
+    <h6 class="text-center">Time: 3 hours</h6>
+    <p class="text-muted text-center">Candidates are required to give their answers in their own words as far as practicable.</p>
+    <p class="text-muted text-center">The figures in the margin indicate full marks. Attempt all Questions.</p>
+
+    <div class="my-4">
+        <div class="mb-4">
+            <p>1. Explain the following terms: (10)</p>
+            <ul>
+                <li>a. Spatial database</li>
+                <li>b. ECA model</li>
+                <li>c. Federated DBMS</li>
+                <li>d. Well-formed and valid XML document</li>
+                <li>e. GIS</li>
+                <li>f. Classification and clustering</li>
+            </ul>
+        </div>
+
+        <div class="mb-4">
+            <p>2. How does a category differ from a regular shared subclass? What is a category used for? Illustrate your answer with suitable examples. <br><strong>OR</strong> Describe the steps of the algorithm for object database design by EER-to-OO mapping. (10)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>3. What is the difference between persistent and transient objects? How persistence is handled in typical OO database systems? (10)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>4. Describe different implementation issues with object relational database system. (10)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>5. Discuss the different techniques for executing an equijoin of two files located at different sites. What main factors affect the cost of data transfer? <br><strong>OR</strong> What are the main differences between designing a relational database and an object database? (10)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>6. Differentiate between attributes and elements in XML? List some of the important attributes used in specifying elements in XML schema. <br><strong>OR</strong> What is the difference between structured and unstructured complex object? Differentiate identical versus equal objects with examples. (10)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>7. Explain mobile computing architecture with suitable diagram. (10)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>8. What are the differences and similarities between objects and literals in the ODMG Object Model? (10)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>9. What is a data warehouse? How does it differ from a database? <br><strong>OR</strong> Describe multimedia database and what are the different types of multimedia data that are available in current systems? (10)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>10. Describe the main reasons for and potential advantages for distributed database. What additional functions does it have over centralized DBMS? (10)</p>
+        </div>
+    </div>
+</div>
+`,
+
+            pastYearQuestion2069: `
+<div class="container my-4">
+    <h5 class="text-center">Tribhuvan University</h5>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <h6 class="text-center">2069</h6>
+    <h6 class="text-center">Bachelor Level / Seventh Semester / Science</h6>
+    <h6 class="text-center">Computer Science and Information Technology (CSC-401)</h6>
+    <h6 class="text-center">Advanced Database Management System</h6>
+    <h6 class="text-center">Full Marks: 60</h6>
+    <h6 class="text-center">Pass Marks: 24</h6>
+    <h6 class="text-center">Time: 3 Hours</h6>
+    <p class="text-muted text-center">Candidates are required to give their answers in their own words as far as practicable.</p>
+    <p class="text-muted text-center">The figures in the margin indicate full marks.</p>
+
+    <div class="my-4">
+        <h4 class="font-weight-bold">Questions</h4>
+
+        <div class="mb-4">
+            <p>1. Explain the following terms:</p>
+            <ul>
+                <li>a) Data mining</li>
+                <li>b) ECA model</li>
+                <li>c) Spatial database</li>
+                <li>d) Specialization and generalization in an ERR model</li>
+                <li>e) XML and HTML</li>
+                <li>f) GIS</li>
+            </ul>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>2. How can you convert an ERR design to relational design? Discuss with suitable example.</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>3. What is OID? How persistent objects are maintained in OO Database?</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>4. Discuss the relative advantages of centralized and distributed database.</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>5. Describe different implementation issues with object relational database system.</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>6. Discuss the different techniques for executing equijoin of two files located at different sites. What main factors affect the cost of data transfer?</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>7. Differentiate between attributes and elements in XML? List some of the important attributes used in specifying elements in XML schema.</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>8. Distinguish object-oriented database and object relational databases.</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>9. What is a data warehouse? How does it differ from a database?</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>10. Explain mobile computing architecture with suitable diagram.</p>
+            <p>6 marks</p>
+        </div>
+    </div>
+</div>
+`,
+
+
+            pastYearQuestion2070: `
+<div class="container my-4">
+    <h5 class="text-center">Tribhuvan University</h5>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <h6 class="text-center">2070</h6>
+    <h6 class="text-center">Bachelor Level / Seventh Semester / Science</h6>
+    <h6 class="text-center">Computer Science and Information Technology (CSC-401)</h6>
+    <h6 class="text-center">Advanced Database Management System</h6>
+    <h6 class="text-center">Full Marks: 60</h6>
+    <h6 class="text-center">Pass Marks: 24</h6>
+    <h6 class="text-center">Time: 3 Hours</h6>
+    <p class="text-muted text-center">Candidates are required to give their answers in their own words as far as practicable.</p>
+    <p class="text-muted text-center">The figures in the margin indicate full marks.</p>
+
+    <div class="my-4">
+        <h4 class="font-weight-bold">Questions</h4>
+
+        <div class="mb-4">
+            <p>1. Explain the following terms:</p>
+            <ul>
+                <li>a) Extent</li>
+                <li>b) Temporal Database</li>
+                <li>c) Degree of homogeneity of DBMS</li>
+                <li>d) X Path</li>
+                <li>e) Classification and clustering</li>
+                <li>f) OLAP</li>
+            </ul>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>2. Draw an ER Diagram for a hospital with a set of patients and set of doctors associated with each patient, a log of various tests and examinations conducted.</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>3. What is the difference between an object and a ..... in the object-oriented data model (OOBM)?</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>4. What are the main differences between designing a relational database and an object database?</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>5. Discuss some applications of active database. How do spatial databases differ from regular database?</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>6. Write a schema that provides tags for a person’s first name, last name, weight, and shoesize. Weight and shoe size tags should have attributes to designate measuring systems.</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>7. Distinguish between structured and unstructured complex objects.</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>8. What is data warehouse? List the characteristics of data warehouse.</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>9. What are the advantages and disadvantages of extending the relational data model by means of ORDBMS?</p>
+            <p>6 marks</p>
+        </div>
+
+        <div class="mb-4">
+            <p>10. Enumerate the limitations of conventional database compared to multimedia database.</p>
+            <p>6 marks</p>
+        </div>
+    </div>
+</div>
+`,
+            pastYearQuestion2074: `
+              <div class="container my-4">
+    <h5 class="text-center">Tribhuwan University</h5>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <h6 class="text-center">2074</h6>
+    <h6 class="text-center">Bachelor Level / Eighth Semester / Science</h6>
+    <h6 class="text-center">Computer Science and Information Technology (CSC461)</h6>
+    <h6 class="text-center">Advanced Database</h6>
+    <h6 class="text-center">Full Marks: 60</h6>
+    <h6 class="text-center">Pass Marks: 24</h6>
+    <h6 class="text-center">Time: 3 hours</h6>
+    <p class="text-muted text-center">Candidates are required to give their answers in their own words as far as practicable.</p>
+
+    <div class="my-4">
+        <h4 class="font-weight-bold">Questions</h4>
+
+        <div class="mb-4">
+            <p>1. Explain the following terms: (7.5 marks)</p>
+            <ul>
+                <li>a) Data replication</li>
+                <li>b) UMI</li>
+                <li>c) SOL: 2003</li>
+                <li>d) Xpath</li>
+                <li>e) SOAP</li>
+                <li>f) Clustering</li>
+            </ul>
+        </div>
+
+        <div class="mb-4">
+            <p>2. What is mobile computing? Explain its architecture. (7.5 marks)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>3. Explain the process of EER to relational mapping with example. (7.5 marks)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>4. Discuss the concept of encapsulation, and tell how it is used to create abstract data types. (7.5 marks)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>5. What are the differences between structured and unstructured complex objects? Explain. (7.5 marks)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>6. What is temporal database? Explain the terms date, time, timestamp, interval, and period. (7.5 marks)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>7. What is data warehouse? Explain the architecture for the functionality of data warehouse. (7.5 marks)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>8. What is multimedia database? What are the nature of multimedia database and applications? (7.5 marks)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>9. What is data mining? Discuss association rule mining with example. (5 marks)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>10. What is GIS? What are GIS data operations? (5 marks)</p>
+        </div>
+    </div>
+</div>
+
+`,
+
+            pastYearQuestion2071: ` 
+<div class="container my-4">
+    <h5 class="text-center">Tribhuvan University</h5>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <h6 class="text-center">2071</h6>
+    <h6 class="text-center">Bachelor Level / Seventh Semester / Science</h6>
+    <h6 class="text-center">Computer Science and Information Technology (CSC-401)</h6>
+    <h6 class="text-center">Advanced Database Management System</h6>
+    <h6 class="text-center">Full Marks: 60</h6>
+    <h6 class="text-center">Pass Marks: 24</h6>
+    <h6 class="text-center">Time: 3 Hours</h6>
+    <p class="text-muted text-center">Candidates are required to give their answers in their own words as far as practicable.</p>
+
+    <div class="my-4">
+        <h4 class="font-weight-bold">Questions</h4>
+
+        <div class="mb-4">
+            <p>1. Explain the following terms:</p>
+            <ul>
+                <li>a) Data Warehouse</li>
+                <li>b) Distribution Transparency</li>
+                <li>c) X Query</li>
+                <li>d) Distribution transaction</li>
+                <li>e) Knowledge base</li>
+                <li>f) Classification and clustering</li>
+            </ul>
+        </div>
+
+        <div class="mb-4">
+            <p>2. Distinguish multiple inheritance and selective inheritance in OO concepts.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>3. Define state of an object. Distinguish between persistent and transient objects.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>4. Discuss how time is represented in temporal databases and compare the different time dimensions.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>5. What is the difference between structured and unstructured complex object? Differentiate identical versus equal objects with examples.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>6. What are the advantages and disadvantages of OODBMS?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>7. What are the differences and similarities between objects and literals in the ODMG object model?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>8. Describe the main reasons for the potential advantage for distributed database. What additional functions does it have over centralized DBMS?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>9. Describe the characteristics of mobile computing environment in detail.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>10. Differentiate between XML schema and XML DTD with suitable example.</p>
+        </div>
+    </div>
+</div>
+
+`,
+
+            pastYearQuestion2072: ` 
+<div class="container my-4">
+    <h5 class="text-center">Tribhuvan University</h5>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <h6 class="text-center">2072</h6>
+    <h6 class="text-center">Bachelor Level / Seventh Semester / Science</h6>
+    <h6 class="text-center">Computer Science and Information Technology (CSC-401)</h6>
+    <h6 class="text-center">Advanced Database Management System</h6>
+    <h6 class="text-center">Full Marks: 60</h6>
+    <h6 class="text-center">Pass Marks: 24</h6>
+    <h6 class="text-center">Time: 3 Hours</h6>
+    <p class="text-muted text-center">Candidates are required to give their answers in their own words as far as practicable.</p>
+
+    <div class="my-4">
+        <h4 class="font-weight-bold">Questions</h4>
+
+        <div class="mb-4">
+            <p>1) Explain the following terms:</p>
+            <ul>
+                <li>a) Database performance tuning</li>
+                <li>b) UML</li>
+                <li>c) Subclass vs Superclass</li>
+                <li>d) X Query</li>
+                <li>e) Calendars</li>
+                <li>f) Active Database</li>
+            </ul>
+        </div>
+
+        <div class="mb-4">
+            <p>2) What are query optimization techniques? Explain.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>3) Differentiate between specialization and generalization with example.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>4) How do single inheritance, multiple inheritance and selective inheritance differ?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>5) What are the differences between structured and unstructured complex objects? Explain.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>6) What are the object relational features that have been included in SQL-99?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>7) Discuss how time is represented in temporal database and compare different time dimensions.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>8) What are the difference and similarities between objects and literals in the ODMG Object Model?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>9) Describe multimedia database and what are the different types of multimedia data that are available in current systems?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>10) Explain XML schema and XML DTD.</p>
+        </div>
+    </div>
+</div>
+` ,
+            pastYearQuestion2076: ` 
+               <div class="container my-4">
+        <h5 class="text-center">Bachelor Level / Seventh Semester / Science</h5>
+        <h5 class="text-center">Computer Science and Information Technology (CSC409)</h5>
+        <h6 class="text-center">Advanced Java Programming</h6>
+        <h6 class="text-center">Full Marks: 60</h6>
+        <h6 class="text-center">Pass Marks: 24</h6>
+        <h6 class="text-center">Time: 3 hours</h6>
+        <p class="text-muted text-center">Candidates are required to give their answers in their own words as far as practicable.</p>
+        <p class="text-muted text-center">The figures in the margin indicate full marks.</p>
+
+        <div class="my-4">
+            <h5 class="font-weight-bold">Attempt any two questions. (2x10=20)</h5>
+
+            <div class="mb-4">
+                <p>1. What is exception handling? Discuss the use of each keyword (try, catch, throw, throws and finally) with suitable Java program.</p>
+                <p class="font-weight-bold"></p>
+            </div>
+
+            <div class="mb-4">
+                <p>2. Write a Java program to find the sum of two numbers using swing components. Use text fields for input and output. Your program displays output if you press any key on the keyboard. Use key adapter to handle events.</p>
+                <p class="font-weight-bold"></p>
+            </div>
+
+            <div class="mb-4">
+                <p>3. Define servlet. Discuss the life cycle of a servlet. Differentiate servlet with JSP. Write a simple JSP file to display 'IOST' 20 times.</p>
+                <p class="font-weight-bold"></p>
+            </div>
+        </div>
+
+        <div class="my-4">
+            <h5 class="font-weight-bold">Group B</h5>
+            <h6>Attempt any eight questions. (8x5=40)</h6>
+
+            <div class="mb-4">
+                <p>4. Define class. How do you create a class in Java? Differentiate class with interface.</p>
+                <p class="font-weight-bold"></p>
+            </div>
+
+            <div class="mb-4">
+                <p>5. Write a simple Java program that reads a file named "Test.txt" and displays its contents.</p>
+                <p class="font-weight-bold"></p>
+            </div>
+
+            <div class="mb-4">
+                <p>6. Why do we need layout management? What is GridBag layout?</p>
+                <p class="font-weight-bold"></p>
+            </div>
+
+            <div class="mb-4">
+                <p>7. Discuss MVC design pattern with example.</p>
+                <p class="font-weight-bold"></p>
+            </div>
+
+            <div class="mb-4">
+                <p>8. What are the benefits of using JDBC? What is prepared statement?</p>
+                <p class="font-weight-bold"></p>
+            </div>
+
+            <div class="mb-4">
+                <p>9. Write Java programs using TCP sockets that communicate with each other in a computer network.</p>
+                <p class="font-weight-bold"></p>
+            </div>
+
+            <div class="mb-4">
+                <p>10. Define Java Bean. How is it different from other Java programs? What is design pattern?</p>
+                <p class="font-weight-bold"></p>
+            </div>
+
+            <div class="mb-4">
+                <p>11. How do you handle HTTP request (GET) using servlet?</p>
+                <p class="font-weight-bold"></p>
+            </div>
+
+            <div class="mb-4">
+                <p>12. What are different layers of RMI architecture? Explain.</p>
+                <p class="font-weight-bold"></p>
+            </div>
+
+            <div class="mb-4">
+                <p>13. Write short notes on:</p>
+                <ul>
+                    <li>Servlet API</li>
+                    <li>RMI vs CORBA</li>
+                </ul>
+                <p class="font-weight-bold"></p>
+            </div>
+        </div>
+    </div>
+        `,
+
+            pastYearQuestion2073: `
+        <div class="container my-4">
+    <h5 class="text-center">Tribhuvan University</h5>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <h6 class="text-center">2073</h6>
+    <h6 class="text-center">Bachelor Level / Seventh Semester / Science</h6>
+    <h6 class="text-center">Computer Science and Information Technology (CSC-401)</h6>
+    <h6 class="text-center">Advanced Database Management System</h6>
+    <h6 class="text-center">Full Marks: 60</h6>
+    <h6 class="text-center">Pass Marks: 24</h6>
+    <h6 class="text-center">Time: 3 Hours</h6>
+    <p class="text-muted text-center">Candidates are required to give their answers in their own words as far as practicable.</p>
+
+    <div class="my-4">
+        <h4 class="font-weight-bold">Questions</h4>
+
+        <div class="mb-4">
+            <p>1. Discuss different constraints of specialization and generalization.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>2. Draw an ER diagram for a hospital with a set of patients and a set of doctors. Associate with each patient a log of various tests and examinations conducted.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>3. Define encapsulation. How is it used to create abstract data types?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>4. What is versioning? Why is it important? What is the difference between versions and configurations?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>5. What is object relational database? Discuss object relational features of SQL.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>6. Define active database. Discuss some applications of active databases.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>7. What is the difference between valid time, transaction time, and bitemporal relations?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>8. What is data mining? Discuss data mining as a part of knowledge discovery process.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>9. What is data warehouse? Discuss the typical functionality of data warehouse.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>10. What is mobile database? Discuss the characteristics of mobile environments.</p>
+        </div>
+    </div>
+</div> `,
+
+            pastYearQuestion2075: `
+        <div class="container my-4">
+    <h5 class="text-center">Tribhuwan University</h5>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <h6 class="text-center">2075</h6>
+    <h6 class="text-center">Bachelor Level / Eighth Semester / Science</h6>
+    <h6 class="text-center">Computer Science and Information Technology (CSC461)</h6>
+    <h6 class="text-center">Advanced Database</h6>
+    <h6 class="text-center">Full Marks: 60</h6>
+    <h6 class="text-center">Pass Marks: 24</h6>
+    <h6 class="text-center">Time: 3 hours</h6>
+    <p class="text-muted text-center">Candidates are required to give their answers in their own words as far as practicable.</p>
+    <p class="text-muted text-center">The figures in the margin indicate full marks. Attempt all questions. (10 x 6=60)</p>
+
+    <div class="my-4">
+        <div class="mb-4">
+            <p>1. How do you increase performance of the database? Explain any one database performance tuning technique with example. (2+4)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>2. What is query processing? How is it different from query optimization? Discuss heuristic query optimization. (1+2+3)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>3. What are the benefits of using distributed databases? Discuss different types of distributed database systems. (3+3)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>4. What are the benefits of using object oriented databases over relational databases? Discuss different type of constructors used in object oriented databases. (2+4)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>5. Discuss different implementation issues related with object relational database. (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>6. Define GIS. Discuss different data modeling and representation for GIS data. (1+5)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>7. Define multimedia database. Discuss benefits of multimedia databases. How do you query image database? (1+2+3)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>8. Discuss data warehouse and its functionality. Discuss association rule mining with example. (3+3)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>9. What is web service? Discuss SOAP in detail. (2+4)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>10. Write short notes on: (2x3)</p>
+            <ul>
+                <li>a) Integrity constraint</li>
+                <li>b) Mobile database</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+         `,
+            pastYearQuestion2076: `
+         <div class="container my-4">
+    <h5 class="text-center">Tribhuwan University</h5>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <h6 class="text-center">2076</h6>
+    <h6 class="text-center">Bachelor Level / Eighth Semester / Science</h6>
+    <h6 class="text-center">Computer Science and Information Technology (CSC461)</h6>
+    <h6 class="text-center">Advanced Database</h6>
+    <h6 class="text-center">Full Marks: 60</h6>
+    <h6 class="text-center">Pass Marks: 24</h6>
+    <h6 class="text-center">Time: 3 hours</h6>
+    <p class="text-muted text-center">Candidates are required to give their answers in their own words as far as practicable.</p>
+    <p class="text-muted text-center">The figures in the margin indicate full marks. Attempt all questions. (10 x 6=60)</p>
+
+    <div class="my-4">
+        <div class="mb-4">
+            <p>1. What is query processing? How is it different from query optimization? Discuss cost estimation for relational algebra expressions. (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>2. What is data fragmentation? Discuss horizontal and vertical fragmentation in detail. (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>3. Why do we need extended ER modeling? Discuss class/subclass relationship with example. (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>4. How do object relational database support multi-valued and composite attributes? Discuss with example. (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>5. What are the uses of active database? Discuss active database with example. (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>6. Discuss mobile computing architecture. Discuss mobile data management in detail. (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>7. Why do we need temporal database? Discuss valid time, transaction time and bi-temporal relations. (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>8. Discuss benefits and applications of data mining. How is classification different from clustering? (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>9. What is web service? Discuss SOAP in detail. (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>10. Write short notes on: Deductive database, ODMG. (6)</p>
+        </div>
+    </div>
+</div>
+ `,
+            pastYearQuestion2077: `<div class="container my-4">
+    <h5 class="text-center">Tribhuwan University</h5>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <h6 class="text-center">2077</h6>
+    <h6 class="text-center">Bachelor Level / Eighth Semester / Science</h6>
+    <h6 class="text-center">Computer Science and Information Technology (CSC461)</h6>
+    <h6 class="text-center">Advanced Database</h6>
+    <h6 class="text-center">Full Marks: 60</h6>
+    <h6 class="text-center">Pass Marks: 24</h6>
+    <h6 class="text-center">Time: 3 hours</h6>
+    <p class="text-muted text-center">Candidates are required to give their answers in their own words as far as practicable.</p>
+    <p class="text-muted text-center">The figures in the margin indicate full marks. Attempt all questions. (10 x 6 = 60)</p>
+
+    <div class="my-4">
+        <div class="mb-4">
+            <p>1. Discuss query optimization with suitable example. What is the importance of query optimization in database? (4 + 2) (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>2. How can you convert an EER design to a relational design? Discuss with suitable example. (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>3. Discuss various type constructors used in object-oriented database. How are they used to create complex objects? (4 + 2) (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>4. What is complex object? What is the difference between structured and unstructured complex objects? (1 + 5) (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>5. Define object relational database. Discuss different types of knowledge discovered during data mining. (1 + 5) (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>6. What is active database? Discuss generalized mode for active databases? (2 + 4) (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>7. Discuss how time is represented in temporal databases and compare the different time dimensions. (3 + 3) (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>8. What is data mining? Discuss different types of knowledge discovered during data mining. (1 + 5) (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>9. What is data warehouse? How does it differ from a database? (2 + 4) (6)</p>
+        </div>
+
+        <div class="mb-4">
+            <p>10. What is mobile database? Discuss mobile computing architecture in detail. (1 + 5) (6)</p>
+        </div>
+    </div>
+</div>
+`,
+
+            pastYearQuestion2079: `
+
+<div class="container my-4">
+    <h5 class="text-center">Tribhuvan University</h5>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <h6 class="text-center">2079</h6>
+    <h6 class="text-center">Bachelor Level / Eighth Semester / Science</h6>
+    <h6 class="text-center">Computer Science and Information Technology (CSC461)</h6>
+    <h6 class="text-center">Advanced Database</h6>
+    <h6 class="text-center">Full Marks: 60 + 20 + 20</h6>
+    <h6 class="text-center">Pass Marks: 24 + 8 + 8</h6>
+    <h6 class="text-center">Time: 3 Hours</h6>
+    <p class="text-muted text-center">Candidates are required to give their answers in their own words as far as practicable.</p>
+    <p class="text-muted text-center">The figures in the margin indicate full marks.</p>
+
+    <div class="my-4">
+        <h4 class="font-weight-bold">SECTION A</h4>
+        <p>Attempt any TWO questions.</p>
+
+        <div class="mb-4">
+            <p>1. Design an EER model for a library management system having generalization and specialization hierarchies. The EER model should have disjoint and overlapping constraints with at least one of the entities having total participation. Use your own assumption for other concepts. Now convert the EER diagram into its equivalent relational model.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>2. What are different concepts and features of object oriented databases? What is object relational model?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>3. Define distributed database. What are the benefits of using distributed databases over centralized database? Explain availability, reliability, and scalability features of distributed databases.</p>
+        </div>
+    </div>
+
+    <div class="my-4">
+        <h4 class="font-weight-bold">SECTION B</h4>
+        <p>Attempt any EIGHT questions.</p>
+
+        <div class="mb-4">
+            <p>4. Why indexing is important to store data in database? What is multilevel index?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>5. What is aggregation? Explain with example.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>6. Define ODMG Object model? What is Object Query Language (OQL)?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>7. What is query processing? Differentiate query processing from query optimization.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>8. Why query optimization is necessary? Illustrate on the choices of query execution plans.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>9. Why fragmentation is carried out? Difference between horizontal and vertical fragmentation.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>10. Why NOSQL system is essential? What are the different characteristics of this system?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>11. What is spatial database? Explain the concept of trigger with an example.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>12. Write short notes on:</p>
+            <ul>
+                <li>a) CAP Theorem</li>
+                <li>b) Deductive database</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+`,
+
+            pastYearQuestion2080: `
+<div class="container my-4">
+    <h5 class="text-center">Tribhuvan University</h5>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <h6 class="text-center">2080</h6>
+    <h6 class="text-center">Bachelor Level / Eighth Semester / Science</h6>
+    <h6 class="text-center">Computer Science and Information Technology (CSC461)</h6>
+    <h6 class="text-center">Advanced Database</h6>
+    <h6 class="text-center">Full Marks: 60 + 20 + 20</h6>
+    <h6 class="text-center">Pass Marks: 24 + 8 + 8</h6>
+    <h6 class="text-center">Time: 3 Hours</h6>
+    <p class="text-muted text-center">Candidates are required to give their answers in their own words as far as practicable.</p>
+    <p class="text-muted text-center">The figures in the margin indicate full marks.</p>
+
+    <div class="my-4">
+        <h4 class="font-weight-bold">SECTION A</h4>
+        <p>Attempt any TWO questions.</p>
+
+        <div class="mb-4">
+            <p>1. Explain different features of enhanced ER(EER) model. Compare specialization with generalization.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>2. Compare object oriented database with object relational database. What are different object database features that have been included in SQL?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>3. Why distributed database is important? What is transparency? Explain different types of transparencies in distributed databases.</p>
+        </div>
+    </div>
+
+    <div class="my-4">
+        <h4 class="font-weight-bold">SECTION B</h4>
+        <p>Attempt any EIGHT questions.</p>
+
+        <div class="mb-4">
+            <p>4. Why hashing is important to store data in databases? What is primary file organization?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>5. Explain aggregation with suitable example.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>6. What is ODMG object model? What is object definition language?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>7. Explain different steps in query processing.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>8. Why query optimization is essential in databases? What is heuristic optimization?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>9. Define fragmentation. Explain horizontal fragmentation with an example.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>10. What are the characteristics of NOSQL Systems?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>11. What is the concept of active database? What are triggers?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>12. Write short notes on:</p>
+            <ul>
+                <li>a) Big data</li>
+                <li>b) Information retrieval</li>
+            </ul>
+        </div>
+    </div>
+</div>`,
+
+            pastYearQuestion2081: `
+            <div class="container my-4">
+    <h5 class="text-center">Tribhuvan University</h5>
+    <h5 class="text-center">Institute of Science and Technology</h5>
+    <h6 class="text-center">2081</h6>
+    <h6 class="text-center">Bachelor Level / Eighth Semester / Science</h6>
+    <h6 class="text-center">Computer Science and Information Technology (CSC461)</h6>
+    <h6 class="text-center">Advanced Database</h6>
+    <h6 class="text-center">Full Marks: 60 + 20 + 20</h6>
+    <h6 class="text-center">Pass Marks: 24 + 8 + 8</h6>
+    <h6 class="text-center">Time: 3 Hours</h6>
+    <p class="text-muted text-center">Candidates are required to give their answers in their own words as far as practicable.</p>
+    <p class="text-muted text-center">The figures in the margin indicate full marks.</p>
+
+    <div class="my-4">
+        <h4 class="font-weight-bold">Group A</h4>
+        <p>Attempt any TWO questions.</p>
+
+        <div class="mb-4">
+            <p>1. Explain different object database concepts in brief. What are type constructors?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>2. Why do we need query optimization in databases? Explain heuristic query optimization with examples.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>3. Explain different distributed database architectures. What is data fragmentation?</p>
+        </div>
+    </div>
+
+    <div class="my-4">
+        <h4 class="font-weight-bold">Group B</h4>
+        <p>Attempt any EIGHT questions.</p>
+
+        <div class="mb-4">
+            <p>4. Explain different constraints of specialization and generalization.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>5. What is hashing? How does hashing improve database efficiency?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>6. Explain ODMG object model.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>7. What are the uses of query trees in query processing? Explain.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>8. What is the CAP theorem? Explain.</p>
+        </div>
+
+        <div class="mb-4">
+            <p>9. What is Big Data? What are its 3 V’s?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>10. What are triggers? What are the uses of triggers?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>11. Why do we need spatial databases? What are common types of analysis for spatial data?</p>
+        </div>
+
+        <div class="mb-4">
+            <p>12. Write short notes on:</p>
+            <ul>
+                <li>a) Map Reduce</li>
+                <li>b) Multimedia database</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+            `,
+
+            pastYearSolution: `<h2 class="text-left">  Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            <h4> Please use Menu </h4> <p> Need Help Watch Tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `,
+
+            pastYearSolution2074: `
+<h5>  Solution 2074 </h5>   
+<hr>
+<iframe src="https://docs.google.com/document/d/1oYT0nI0x0DJxXL31zTVJexBh-L92aUIhVcPexk7ZMEk" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe> 
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1oYT0nI0x0DJxXL31zTVJexBh-L92aUIhVcPexk7ZMEk" target="_blank">
+View Solution in New Tab </a></button>
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1oYT0nI0x0DJxXL31zTVJexBh-L92aUIhVcPexk7ZMEk" download>
+Download Solution </a></button>
+`,
+
+            pastYearSolution2075: `
+<h5>  Solution 2075 </h5>   
+<hr>
+<iframe src="https://docs.google.com/document/d/1IqTj1Tcf5v6iY3IibF09E2LAlxYa6PRQXNGzLwQphQs/edit?usp=sharing" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe> 
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1IqTj1Tcf5v6iY3IibF09E2LAlxYa6PRQXNGzLwQphQs/edit?usp=sharing" target="_blank">
+View Solution in New Tab </a></button>
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1IqTj1Tcf5v6iY3IibF09E2LAlxYa6PRQXNGzLwQphQs/edit?usp=sharing" download>
+Download Solution </a></button>
+`,
+
+
+            pastYearSolution2076: `
+<h5>  Solution 2076 </h5>   
+<hr>
+
+<iframe src="https://docs.google.com/document/d/1Bu7-U93t86nFmzi2rDYEj-sIgX1MHqkGX3p-oTO4u3Y" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1Bu7-U93t86nFmzi2rDYEj-sIgX1MHqkGX3p-oTO4u3Y" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1Bu7-U93t86nFmzi2rDYEj-sIgX1MHqkGX3p-oTO4u3Y" download>
+Download Solution </a></button>
+
+</div>
+`,
+
+            pastYearSolution2078: `
+<h5> 
+     Solution 2078 </h5>   
+<hr>
+<iframe src="https://docs.google.com/document/d/1zWPSZpqT6_5mfWjyDd20ACsm5DaqSCvYDe18Uvzp3Uo" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1zWPSZpqT6_5mfWjyDd20ACsm5DaqSCvYDe18Uvzp3Uo" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1zWPSZpqT6_5mfWjyDd20ACsm5DaqSCvYDe18Uvzp3Uo" download>
+Download Solution </a></button>
+
+</div>
+
+`,
+
+            pastYearSolution2077: `
+    <h5> 
+     Solution 2077 </h5>   
+<hr>
+<iframe src="https://docs.google.com/document/d/1h4stY6x0DlTupu6oZh1OHY8JDkX_HWgwsUHH0H_xljc/edit?usp=sharing" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1h4stY6x0DlTupu6oZh1OHY8JDkX_HWgwsUHH0H_xljc/edit?usp=sharing" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1h4stY6x0DlTupu6oZh1OHY8JDkX_HWgwsUHH0H_xljc" download>
+Download Solution </a></button>
+
+</div>
+
+`,
+
+            pastYearSolution2079: `
+<h5> 
+     Solution 2079 </h5>   
+<hr>
+<iframe src="https://docs.google.com/document/d/1Zt-9Ec0qksmVtJ-_rAhnukDd2Yb-EJokS_O05-kp5xM/edit?usp=sharing" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1Zt-9Ec0qksmVtJ-_rAhnukDd2Yb-EJokS_O05-kp5xM/edit?usp=sharing" target="_blank">
+View Solution in New Tab </a></button>
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1Zt-9Ec0qksmVtJ-_rAhnukDd2Yb-EJokS_O05-kp5xM/edit?usp=sharing" download>
+Download Solution </a></button>
+
+</div>
+
+
+`,
+
+            pastYearSolution2080: `
+<h5> 
+     Solution 2080 </h5>   
+<hr>
+<iframe src="https://docs.google.com/document/d/1L2yE5ofJA-bJVOysJcNE-ZBBm_6qwC9J_dI0CfRYi7I" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+<br>
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1L2yE5ofJA-bJVOysJcNE-ZBBm_6qwC9J_dI0CfRYi7I" target="_blank">
+View Solution in New Tab </a></button>
+
+
+<button class="btn btn-outline-success mobileView">
+<a  class="nav-link" href="https://docs.google.com/document/d/1L2yE5ofJA-bJVOysJcNE-ZBBm_6qwC9J_dI0CfRYi7I" download>
+Download Solution </a></button>
+
+</div>
+
+
+
+
+`,
+
+            refBooks: `<iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+
+            refBook1: `
+            <h5> </h5>   
+            <hr>
+            <iframe src="" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+                <p>Sorry! PDF cannot be displayed.</p>
+            </iframe> 
+            <div class="d-flex flex-wrap"> 
+<button class="btn btn-outline-success mobileView mt-2">
+<a  class="nav-link" href="" target="_blank">
+View Book in New Tab </a></button>
+&nbsp; &nbsp;
+<button class="btn btn-outline-success mobileView mt-2">
+<a class="nav-link" 
+href="" 
+download>
+Download Reference Book
+</a>
+</button>
+</div>
+
+
+`,
+
+            refBook2: ``,
+
+            refBook3: ``
+            ,
+
+            refBook4: ``
+            ,
+
+
+            oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
+            // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
+            // notesNewSyllabus: `<h2>Notes - New 2079 Syllabus</h2><p>Here is the content for the notes of new 2079 syllabus.</p>`,
+            notesOldSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            notesNewSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+
+            notes: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            syllabus: `
+            <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            oldSyllabus: `
+
+
+      `,
+
+        };
+
+
+        document.getElementById('refBooks').addEventListener('click', () => {
+            content.innerHTML = contents.refBooks;
+        });
+
+
+        document.getElementById('refBook1').addEventListener('click', () => {
+            content.innerHTML = contents.refBook1;
+        });
+
+
+        document.getElementById('refBook2').addEventListener('click', () => {
+            content.innerHTML = contents.refBook2;
+        });
+
+
+        document.getElementById('refBook3').addEventListener('click', () => {
+            content.innerHTML = contents.refBook3;
+        });
+
+        document.getElementById('refBook4').addEventListener('click', () => {
+            content.innerHTML = contents.refBook4;
+        });
+
+        document.getElementById('refBook1').innerHTML = ""
+        document.getElementById('refBook2').innerHTML = ""
+        document.getElementById('refBook3').innerHTML = ""
+        document.getElementById('refBook4').innerHTML = ""
+
+        document.getElementById('questions').addEventListener('click', () => {
+            content.innerHTML = contents.questions;
+        });
+
+
+        document.getElementById('pastYearQuestion2069').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2069;
+        });
+
+        document.getElementById('pastYearQuestion2070').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2070;
+        });
+
+        document.getElementById('pastYearQuestion2071').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2071;
+        });
+
+        document.getElementById('pastYearQuestion2072').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2072;
+        });
+
+        document.getElementById('pastYearQuestion2073').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2073;
+        });
+
+        document.getElementById('pastYearQuestion2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2074;
+        });
+
+        document.getElementById('pastYearQuestion2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2075;
+        });
+
+        document.getElementById('pastYearQuestion2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2076;
+        });
+
+        document.getElementById('pastYearQuestion2077').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2077;
+        });
+
+
+        document.getElementById('pastYearQuestion2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2078;
+        });
+
+        document.getElementById('pastYearQuestion2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2079;
+        });
+
+
+        document.getElementById('pastYearQuestion2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2080;
+        });
+
+        document.getElementById('pastYearQuestion2081').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2081;
+        });
+
+
+
+        document.getElementById('pastYearSolution').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution;
+        });
+        document.getElementById('pastYearSolution2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2074;
+        });
+        document.getElementById('pastYearSolution2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2075;
+        });
+
+        document.getElementById('pastYearSolution2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2076;
+        });
+
+
+        document.getElementById('pastYearSolution2077').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2077;
+        });
+
+        document.getElementById('pastYearSolution2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2078;
+        });
+
+        document.getElementById('pastYearSolution2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2079;
+        });
+
+
+        document.getElementById('pastYearSolution2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2080;
+        });
+
+        document.getElementById('notes').addEventListener('click', () => {
+            content.innerHTML = contents.notes;
+        });
+
+        document.getElementById('syllabus').addEventListener('click', () => {
+            content.innerHTML = contents.syllabus;
+        });
+
+
+        document.getElementById("content").innerHTML = contents.oldSyllabus;
+
+        document.getElementById('oldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.oldSyllabus;
+        });
+
+        document.getElementById('oldAppVersion').addEventListener('click', () => {
+            content.innerHTML = contents.oldAppVersion;
+        });
+
+        document.getElementById('notesOldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesOldSyllabus;
+        });
+
+        document.getElementById('notesNewSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesNewSyllabus;
+        });
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+
+        // Set current year in the footer
+        document.getElementById('oldSyllabusYear').innerHTML = "";
+        document.getElementById('newSyllabusYear').innerHTML = "";
+        document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
+        document.getElementById('navName').innerHTML = ""
+        document.getElementById("titleInfo").innerHTML = "CSC461 Advanced Database "
+        function showModal(src, alt) {
+            $('#modalImage').attr('src', src);
+            $('#imageModalLabel').text(alt);
+            $('#imageModal').modal('show');
+        }
+    </script>
+</body>
+
+</html>
